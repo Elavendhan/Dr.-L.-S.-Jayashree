@@ -1,0 +1,9 @@
+# Ignore auxiliary source files & folders
+Executive Profile.docx
+Executive Profile.pdf
+Quartile_Details.xlsx
+Quartile_Distribution_Report.docx
+qurtile_info.png
+PRISM- MY PORTFOLIO/
+.DS_Store
+Thumbs.db
