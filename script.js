@@ -110,25 +110,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
+    const commercializedBanner = document.getElementById('commercialized-intro-text');
     
+    function applyProductFilter(filterValue) {
+        productCards.forEach(card => {
+            const status = card.getAttribute('data-status');
+            if (filterValue === 'all' || status === filterValue) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        if (commercializedBanner) {
+            if (filterValue === 'commercialized') {
+                commercializedBanner.style.display = 'block';
+            } else {
+                commercializedBanner.style.display = 'none';
+            }
+        }
+    }
+
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active from other buttons
             filterButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
             const filterValue = btn.getAttribute('data-filter');
-            
-            productCards.forEach(card => {
-                const status = card.getAttribute('data-status');
-                if (filterValue === 'all' || status === filterValue) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+            applyProductFilter(filterValue);
         });
     });
+
+    // Initialize default filter state on DOM load
+    const activeFilterBtn = document.querySelector('.filter-btn.active');
+    if (activeFilterBtn) {
+        applyProductFilter(activeFilterBtn.getAttribute('data-filter'));
+    }
 
     // ==========================================
     // PRODUCT MODALS CONTROLLER
@@ -1242,17 +1258,6 @@ document.addEventListener('DOMContentLoaded', () => {
     "Year": "2023",
     "Publisher": "",
     "Quartile": "Q2"
-  },
-  {
-    "Authors": "Malarvizhi, K; Jayashree, LS;",
-    "Title": "Retraction Note to: Dynamic scheduling and congestion control for minimizing delay in multihop wireless networks",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2023",
-    "Publisher": "Springer Berlin Heidelberg Berlin/Heidelberg",
-    "Quartile": "Unranked / Non-indexed"
   },
   {
     "Authors": "Madhana, K; Jayashree, LS; Perumal, Kalaivani;",

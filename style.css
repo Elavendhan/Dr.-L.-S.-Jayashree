@@ -2280,23 +2280,23 @@ body.light-theme .orb {
    AWARDS CHRONOLOGICAL LIST LAYOUT (ADDED)
    ========================================== */
 .awards-list-timeline {
-    max-width: 1050px;
-    margin: 30px auto 0 auto;
+    width: 100%;
+    margin: 0;
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 30px 40px;
-    box-shadow: var(--shadow-sm);
+    border-radius: 16px;
+    padding: 35px 40px;
+    box-shadow: var(--shadow-md);
 }
 
 .award-timeline-row {
     display: flex;
     gap: 2.5rem;
-    align-items: baseline;
-    padding: 16px 0;
+    align-items: center;
+    padding: 20px 0;
     border-bottom: 1px solid var(--border-color);
     font-size: 0.95rem;
-    transition: background-color 0.2s;
+    transition: all 0.3s ease;
 }
 
 .award-timeline-row:last-child {
@@ -2304,7 +2304,8 @@ body.light-theme .orb {
 }
 
 .award-timeline-row:hover {
-    background-color: rgba(0, 168, 204, 0.02);
+    background-color: rgba(15, 76, 129, 0.02);
+    padding-left: 8px;
 }
 
 .aw-timeline-yr {
@@ -2840,4 +2841,131 @@ body {
 
 .ceremony-thumb-container:hover img {
     transform: scale(1.05);
+}
+
+/* Responsive Research Impact Analytics Grid */
+.about-analytics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .about-analytics-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+.partner-logo-badge:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-color) !important;
+    box-shadow: var(--shadow-sm);
+}
+
+/* coe section responsive poster and details grid layout */
+.coe-poster-container:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
+}
+
+.coe-poster-container:hover .coe-zoom-overlay {
+    background-color: var(--accent-color) !important;
+    color: #ffffff !important;
+}
+
+@media (max-width: 992px) {
+    .coe-details-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+}
+
+/* Symmetrical Awards Grid Layout styles (Premium Rework) */
+.awards-layout-grid {
+    display: grid;
+    grid-template-columns: 310px 1fr 310px;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.awards-flank-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 1201px) {
+    .left-flank, .right-flank {
+        margin-top: 15px;
+    }
+}
+
+.ceremony-thumb-container {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 245px;
+    box-sizing: border-box;
+}
+
+.ceremony-thumb-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.ceremony-thumb-container:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: var(--accent-color) !important;
+    box-shadow: var(--shadow-lg);
+}
+
+.ceremony-thumb-container:hover img {
+    transform: scale(1.03);
+}
+
+.ceremony-thumb-label {
+    padding: 4px 6px 0 6px;
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .awards-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .awards-flank-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards-flank-col {
+        grid-template-columns: 1fr;
+    }
 }
