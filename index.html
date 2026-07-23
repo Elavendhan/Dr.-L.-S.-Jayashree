@@ -461,6 +461,60 @@
         </section>
 
         <!-- PSG CARES Section -->
+        <section id="publications" class="publications-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Research Publications</h2>
+                </div>
+
+                <!-- Single-column Publications search and listing (aligned at max-width 850px) -->
+                <div class="publications-layout-wrap" style="max-width: 1100px; margin: 0 auto;">
+                    <div class="publications-main-col" style="width: 100%;">
+                        <!-- Search & Filters Container -->
+                        <div class="pub-controls">
+                            <div class="search-box-wrapper">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="text" id="pub-search" placeholder="Search by title, author, journal or publisher...">
+                            </div>
+                            <div class="filter-dropdowns">
+                                <select id="pub-year-filter" class="filter-select">
+                                    <option value="all">All Years</option>
+                                </select>
+                                <select id="pub-type-filter" class="filter-select">
+                                    <option value="all">All Types</option>
+                                    <option value="journal">Journals</option>
+                                    <option value="conference">Conferences</option>
+                                    <option value="book">Books &amp; Chapters</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Info Counter -->
+                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; font-weight: 500;">
+                            Showing <span id="visible-pubs-count" style="color: var(--accent-color); font-weight: 700;">0</span> of <span id="total-pubs-count" style="font-weight: 700; color: var(--text-primary);">0</span> publications
+                        </div>
+
+                        <!-- Target container for publications list injection -->
+                        <div id="pub-list-container">
+                            <div class="pub-loading">
+                                <i class="fa-solid fa-spinner fa-spin"></i> Loading publications database...
+                            </div>
+                        </div>
+
+                        <!-- Pagination container -->
+                        <div class="pub-pagination" id="pub-pagination"></div>
+
+                        <!-- Google Scholar Link -->
+                        <div class="scholar-button-wrapper" style="text-align: center; margin-top: 30px;">
+                            <a href="https://scholar.google.com/citations?user=mmNPmLoAAAAJ&hl=en" target="_blank" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-graduation-cap"></i> View Google Scholar Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Outreach Section -->
         <section id="patents" class="patents-section scroll-reveal">
             <div class="section-container">
                 <div class="section-header">
@@ -711,60 +765,6 @@
         </section>
 
         <!-- Publications Section -->
-        <section id="publications" class="publications-section scroll-reveal">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Research Publications</h2>
-                </div>
-
-                <!-- Single-column Publications search and listing (aligned at max-width 850px) -->
-                <div class="publications-layout-wrap" style="max-width: 1100px; margin: 0 auto;">
-                    <div class="publications-main-col" style="width: 100%;">
-                        <!-- Search & Filters Container -->
-                        <div class="pub-controls">
-                            <div class="search-box-wrapper">
-                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                                <input type="text" id="pub-search" placeholder="Search by title, author, journal or publisher...">
-                            </div>
-                            <div class="filter-dropdowns">
-                                <select id="pub-year-filter" class="filter-select">
-                                    <option value="all">All Years</option>
-                                </select>
-                                <select id="pub-type-filter" class="filter-select">
-                                    <option value="all">All Types</option>
-                                    <option value="journal">Journals</option>
-                                    <option value="conference">Conferences</option>
-                                    <option value="book">Books &amp; Chapters</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Info Counter -->
-                        <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; font-weight: 500;">
-                            Showing <span id="visible-pubs-count" style="color: var(--accent-color); font-weight: 700;">0</span> of <span id="total-pubs-count" style="font-weight: 700; color: var(--text-primary);">0</span> publications
-                        </div>
-
-                        <!-- Target container for publications list injection -->
-                        <div id="pub-list-container">
-                            <div class="pub-loading">
-                                <i class="fa-solid fa-spinner fa-spin"></i> Loading publications database...
-                            </div>
-                        </div>
-
-                        <!-- Pagination container -->
-                        <div class="pub-pagination" id="pub-pagination"></div>
-
-                        <!-- Google Scholar Link -->
-                        <div class="scholar-button-wrapper" style="text-align: center; margin-top: 30px;">
-                            <a href="https://scholar.google.com/citations?user=mmNPmLoAAAAJ&hl=en" target="_blank" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
-                                <i class="fa-solid fa-graduation-cap"></i> View Google Scholar Profile
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        <!-- Outreach Section -->
         <section id="outreach" class="outreach-section scroll-reveal">
             <div class="section-container">
                 <div class="section-header">
