@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "",
     "Year": "2015",
     "Publisher": "",
-    "Quartile": "Q4"
+    "Quartile": "Q3"
   },
   {
     "Authors": "Jayashree, C. Padmavathy and L.S.;",
@@ -751,7 +751,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "927-933",
     "Year": "2016",
     "Publisher": "",
-    "Quartile": "Q4"
+    "Quartile": "Q3"
   },
   {
     "Authors": "Jayashree, LS; Palakkal, Nidhil; Papageorgiou, Elpiniki I; Papageorgiou, Konstantinos;",
@@ -883,7 +883,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "9875-9888",
     "Year": "2019",
     "Publisher": "Springer US New York",
-    "Quartile": "Q2"
+    "Quartile": "Q1"
   },
   {
     "Authors": "Anthony, L Britto; Jayashree, LS;",
@@ -1114,7 +1114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "",
     "Year": "2020",
     "Publisher": "Springer",
-    "Quartile": "Book Chapter / Series"
+    "Quartile": "Book"
   },
   {
     "Authors": "George, Geethu Mary; Jayashree, LS;",
@@ -1180,7 +1180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "111-137",
     "Year": "2021",
     "Publisher": "Inderscience Publishers (IEL)",
-    "Quartile": "Q4"
+    "Quartile": "Unranked / Non-indexed"
   },
   {
     "Authors": "Vijayalakshmi, S; Jayashree, LS;",
@@ -1268,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "41-53",
     "Year": "2023",
     "Publisher": "Emerald Publishing Limited",
-    "Quartile": "Q2"
+    "Quartile": "Q3"
   },
   {
     "Authors": "Jayashree, LS; Madhana, K; Kumar, V Preethish; Swathi, S; Soundharyan, P;",
@@ -1279,7 +1279,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "19-36",
     "Year": "2024",
     "Publisher": "LWW",
-    "Quartile": "Q4"
+    "Quartile": "Q3"
   },
   {
     "Authors": "Malarvizhi, K; Jayashree, LS;",
@@ -1290,7 +1290,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "3949-3957",
     "Year": "2021",
     "Publisher": "Springer Nature BV",
-    "Quartile": "Q1 (Retracted)"
+    "Quartile": "Q1"
   },
   {
     "Authors": "Kumar, L Ashok; Jayashree, LS; Manimegalai, R;",
@@ -1301,7 +1301,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "",
     "Year": "",
     "Publisher": "",
-    "Quartile": "Others"
+    "Quartile": "Book Chapter / Series"
   },
   {
     "Authors": "George, Geethu Mary; Jayashree, LS;",
@@ -1312,7 +1312,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Pages": "433",
     "Year": "2020",
     "Publisher": "Springer Nature",
-    "Quartile": "Conference Proceedings"
+    "Quartile": "Book Chapter / Series"
   },
   {
     "Authors": "MICHAEL GNANARAJ, SHERLIN JENIFER; Jayashree, LS;",
