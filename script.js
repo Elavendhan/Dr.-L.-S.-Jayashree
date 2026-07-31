@@ -1282,17 +1282,6 @@ document.addEventListener('DOMContentLoaded', () => {
     "Quartile": "Q3"
   },
   {
-    "Authors": "Malarvizhi, K; Jayashree, LS;",
-    "Title": "RETRACTED ARTICLE: Dynamic scheduling and congestion control for minimizing delay in multihop wireless networks",
-    "Publication": "Journal of Ambient Intelligence and Humanized Computing",
-    "Volume": "12",
-    "Number": "3",
-    "Pages": "3949-3957",
-    "Year": "2021",
-    "Publisher": "Springer Nature BV",
-    "Quartile": "Q1"
-  },
-  {
     "Authors": "Kumar, L Ashok; Jayashree, LS; Manimegalai, R;",
     "Title": "AISGSC 2019",
     "Publication": "",
