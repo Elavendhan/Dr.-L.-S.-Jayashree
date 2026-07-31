@@ -3113,6 +3113,11 @@ body {
         white-space: nowrap !important;
         font-size: 1.2rem !important;
     }
+
+    /* Hide the scrolling ticker Highlights label on mobile viewports */
+    .ticker-label {
+        display: none !important;
+    }
 }
 
 @media (max-width: 480px) {
