@@ -456,887 +456,727 @@ document.addEventListener('DOMContentLoaded', () => {
 
    // Inline publications database (prevents CORS fetch blocks when index.html is opened directly via file://)
     const publicationsDb = [
-  {
-    "Authors": "Jayashree, LS; Arumugam, S; Rajathi, N;",
-    "Title": "E/sup 2/LBC: an energy efficient load balanced clustering technique for heterogeneous wireless sensor networks",
-    "Publication": "2006 IFIP International Conference on Wireless and Optical Communications Networks",
-    "Volume": "",
-    "Number": "",
-    "Pages": "7 pp.-7",
-    "Year": "2006",
-    "Publisher": "IEEE",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree, LS; Arumugam, S; Anusha, M; Hariny, AB;",
-    "Title": "On the accuracy of centroid based multilateration procedure for location discovery in wireless sensor networks",
-    "Publication": "2006 IFIP international conference on wireless and optical communications networks",
-    "Volume": "",
-    "Number": "",
-    "Pages": "6 pp.-6",
-    "Year": "2006",
-    "Publisher": "IEEE",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree, LS; Arumugam, S; Vijayalakshmi, K;",
-    "Title": "A robust outlier detection scheme for collaborative sensor networks",
-    "Publication": "Journal of Digital Information Management",
-    "Volume": "5",
-    "Number": "1",
-    "Pages": "12",
-    "Year": "2007",
-    "Publisher": "Digital Information Research Foundation",
-    "Quartile": "Q4"
-  },
-  {
-    "Authors": "Jayashree, LS; Arumugam, S;",
-    "Title": "Design challenges for optimizing the performance of energy constrained wireless sensor networks",
-    "Publication": "\"2007 International Conference on Signal Processing\",\" Communications and Networking\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "537-540",
-    "Year": "2007",
-    "Publisher": "IEEE",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree, LS; Yamini, VK; Priya, R Manju;",
-    "Title": "A Communication Efficient Framework for Soil Moisture Monitoring using Wireless Sensor Networks",
-    "Publication": "International Journal of Computer Applications",
-    "Volume": "975",
-    "Number": "",
-    "Pages": "8887",
-    "Year": "2010",
-    "Publisher": "\"International Journal of Computer Applications\", 244 5 th Avenue,# 1526,\" New\"",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Jayashree, LS; Arumugam, S; Meenakshi, AR;",
-    "Title": "A communication?efficient framework for outlier?free data reporting in data?gathering sensor networks",
-    "Publication": "International Journal of Network Management",
-    "Volume": "18",
-    "Number": "5",
-    "Pages": "437-445",
-    "Year": "2008",
-    "Publisher": "\"John Wiley & Sons\", Ltd. Chichester,\" UK\"",
-    "Quartile": "Q2"
-  },
-  {
-    "Authors": "Akila, K; Jayashree, LS; Vasuki, A;",
-    "Title": "Mammographic image enhancement using indirect contrast enhancement techniquesa comparative study",
-    "Publication": "Procedia Computer Science",
-    "Volume": "47",
-    "Number": "",
-    "Pages": "255-261",
-    "Year": "2015",
-    "Publisher": "Elsevier",
-    "Quartile": "Q2"
-  },
-  {
-    "Authors": "Elpiniki I. Papageorgiou, Jayashree Subramanian, Akila Karmegam, Nikolaos Papandrianos;",
-    "Title": "A Risk Management Model for Familial Breast Cancer: A New Application using Fuzzy Cognitive Map method",
-    "Publication": "Computer Methods and Programmes in Bio-medicine",
-    "Volume": "122",
-    "Number": "2",
-    "Pages": "123135",
-    "Year": "2015",
-    "Publisher": "Elsevier",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "5. Jayashree Subramanian a, Akila Karmegam b, Elpiniki Papageorgiou c, Nikolaos Papandrianosd, A. Vasukie;",
-    "Title": "An Integrated breast cancer risk assessment and Risk Management model based on Fuzzy Cognitive Maps",
-    "Publication": "Computer Methods and Programmes in Bio-medicine",
-    "Volume": "118",
-    "Number": "3",
-    "Pages": "280297",
-    "Year": "2015",
-    "Publisher": "Elsevier",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "L. S. Jayashree, Nidhil Palakkal, Elpiniki I. Papageorgiou, Konstantinos Papageorgiou;",
-    "Title": "Application of Fuzzy Cognitive Maps for Coconut yield management in Malabar region of Southern India",
-    "Publication": "Neural Computing and Application",
-    "Volume": "26",
-    "Number": "8",
-    "Pages": "1963-1978",
-    "Year": "2015",
-    "Publisher": "Springer",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "L.S Jayashree, Lakshmi Devi.R, Dinesh.R;",
-    "Title": "Early Warning System  for Dengue outbreak- a preliminary approach using time series forecasting",
-    "Publication": "International Journal of Applied Engineering Research",
-    "Volume": "10",
-    "Number": "4",
-    "Pages": "",
-    "Year": "2015",
-    "Publisher": "",
-    "Quartile": "Q3"
-  },
-  {
-    "Authors": "Jayashree, C. Padmavathy and L.S.;",
-    "Title": "A Computer-assisted Crack Predicting System for Oil and Gas Pipelines Using Fuzzy Cognitive Map",
-    "Publication": "European Journal of Applied Science",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2015",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "M.Soundaryadevi, Dr.L.S.Jayashree;",
-    "Title": "Clustering of Data with Mixed Attributes based on Unified Similarity Metric",
-    "Publication": "International Journal of Innovative Research in Computer and Communication Engineering",
-    "Volume": "2",
-    "Number": "1",
-    "Pages": "",
-    "Year": "2014",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "L.S.Jayashree V.K.Yamini, R.Manju Priya;",
-    "Title": "Communication Efficient Spatial-Temporal Correlation aware Soil Moisture Monitoring Framework using Wireless Sensor Networks",
-    "Publication": "\"International Journal of Computer Applications (0975-8887)\",\" electrical & Telecommunication Engineering\"",
-    "Volume": "1",
-    "Number": "",
-    "Pages": "",
-    "Year": "2013",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree L.S., Arumugam S.and Vijayalakshmi K;",
-    "Title": "An Efficient and Fault Tolerant Aggregation Scheme for Distributed Sensor Networks using Modified Z-Score Method",
-    "Publication": "\"International Journal of Systemics\",\" Cybernetics and Informatics\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "76-81",
-    "Year": "2006",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Jayashree L.S., Arumugam S.and Rajathi N;",
-    "Title": "ESAC: An Energy and Stability Aware Clustering for Heterogeneous Wireless Sensor Networks",
-    "Publication": "Journal of Computer Science",
-    "Volume": "1",
-    "Number": "",
-    "Pages": "421-429",
-    "Year": "2006",
-    "Publisher": "",
-    "Quartile": "Q4"
-  },
-  {
-    "Authors": "Arumugam S, Jayashree L.S. and;",
-    "Title": "Design Optimizations in Clustered Wireless Sensor Networks: A Survey",
-    "Publication": "Indian Journal of Computing Technology",
-    "Volume": "1",
-    "Number": "2",
-    "Pages": "Jan-14",
-    "Year": "2006",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "N.Rajathi, Dr.L.S.Jayashree;",
-    "Title": "Soil Moisture Forecasting using Ensembles of Classifiers",
-    "Publication": "International Conference on Information and Communication Technology for Intelligent Systems(ICTIS 2015)",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2015",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "N.Rajathi Dr.L.S.Jayashree, R.Vijayakumari;",
-    "Title": "Communication  Efficient  Spatial-Temporal  Correlation  aware  Soil  Moisture Monitoring Framework using Wireless Sensor Networks",
-    "Publication": "\"National Ground Water Conference on Problems\",\" Challenges and Management of Groundwater in Agriculture\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2014",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "N.Rajathi Dr.L.S.Jayashree, R.Vijayakumari;",
-    "Title": "Spatial-Temporal Correlation Aware Soil Moisture monitoring Framework using Wireless Sensor networks",
-    "Publication": "23rd edition of Indian Engineering Congress",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2014",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree, L S;",
-    "Title": "Home Energy Management for Energy Conservation using Wireless Sensor Networks",
-    "Publication": "23rd edition of Indian Engineering Congress",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2014",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Arumugam S, Vijayalakshmi and Jayashree L.S. and;",
-    "Title": "Robust Data Aggregation Techniques in Wireless Sensor Networks",
-    "Publication": "RTCNC 2006",
-    "Volume": "",
-    "Number": "",
-    "Pages": "120-127",
-    "Year": "2006",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Rajathi N., Jayashree L.S. and Arumugam S;",
-    "Title": "Clustering Techniques in Wireless Sensor Networks",
-    "Publication": "Proceedings of RTCNC 2006",
-    "Volume": "",
-    "Number": "",
-    "Pages": "149-157",
-    "Year": "2006",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Roopa Chandrika, Jayashree L.S.and Arumugam S;",
-    "Title": "Coverage Problem in Wireless Sensor Networks",
-    "Publication": "RTCNC 2006",
-    "Volume": "",
-    "Number": "",
-    "Pages": "252-258",
-    "Year": "2006",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree L.S., Arumugam S. and Vijayalakshmi K;",
-    "Title": "A Report on Secure Information Processing in Wireless Sensor Networks",
-    "Publication": "International Conference on Information Security (ICIS05)",
-    "Volume": "",
-    "Number": "",
-    "Pages": "192-198",
-    "Year": "2005",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Livinsa, Z Mary; Jayashri, S;",
-    "Title": "LS and MMSE based Localization Algorithm for WSNs amid obstacles",
-    "Publication": "Indian Journal of Computer Science and Engineering",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2014",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Suganya, R; Jayashree, LS;",
-    "Title": "Measuring Various Conflict Decision Policies in Mobile Ad Hoc Networks",
-    "Publication": "International Journal of Applied Engineering Research",
-    "Volume": "11",
-    "Number": "2",
-    "Pages": "927-933",
-    "Year": "2016",
-    "Publisher": "",
-    "Quartile": "Q3"
-  },
-  {
-    "Authors": "Jayashree, LS; Palakkal, Nidhil; Papageorgiou, Elpiniki I; Papageorgiou, Konstantinos;",
-    "Title": "Application of fuzzy cognitive maps in precision agriculture: a case study on coconut yield management of southern Indias Malabar region",
-    "Publication": "Neural Computing and Applications",
-    "Volume": "26",
-    "Number": "8",
-    "Pages": "1963-1978",
-    "Year": "2015",
-    "Publisher": "Springer London London",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "Sennipppan, Jayashree Subramanian  Vijayalakshmi;",
-    "Title": "Application of fuzzy cognitive maps for crack categorization in columns of reinforced concrete structures",
-    "Publication": "Neural Computing   & Applications",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2016",
-    "Publisher": "Springer",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "Padmavathy, C; Jayashree, LS;",
-    "Title": "An enhanced delay sensitive data packet scheduling algorithm to maximizing the network lifetime",
-    "Publication": "Wireless Personal Communications",
-    "Volume": "94",
-    "Number": "4",
-    "Pages": "2213-2227",
-    "Year": "2017",
-    "Publisher": "Springer US New York",
-    "Quartile": "Q2"
-  },
-  {
-    "Authors": "C. Padmavathy, L.S. Jayashree;",
-    "Title": "A Computer-assisted Crack Predicting System for Oil and Gas Pipelines Using Fuzzy Cognitive Map",
-    "Publication": "European Journal of Applied Sciences",
-    "Volume": "7",
-    "Number": "3",
-    "Pages": "145-151",
-    "Year": "2015",
-    "Publisher": "European Journal of Applied Sciences",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Rajathi Natarajan , Jayashree Subramanian, Elpiniki I. Papageorgiou;",
-    "Title": "Hybrid learning of fuzzy cognitive maps for sugarcane yield classification",
-    "Publication": "Computers and Electronics in Agriculture",
-    "Volume": "127",
-    "Number": "",
-    "Pages": "147-157",
-    "Year": "2016",
-    "Publisher": "Elsevier",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "vijayalakhmi, Jayashree Subramanian;",
-    "Title": "Application of fuzzy cognitive maps for crack categorization in columns of reinforced concrete structures",
-    "Publication": "Neural Computing & Applications DOI 10.1007/s00521-016-2313-9",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2016",
-    "Publisher": "Springer",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "Rajathi, N; Jayashree, LS;",
-    "Title": "Energy efficient grid clustering based data aggregation in wireless sensor networks",
-    "Publication": "2016 IEEE region 10 conference (TENCON)",
-    "Volume": "",
-    "Number": "",
-    "Pages": "488-492",
-    "Year": "2016",
-    "Publisher": "IEEE",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree, LS; Rajathi, N; Thirumal, Athish;",
-    "Title": "Precision agriculture: On the accuracy of multilevel and clustered ANFIS models for sugarcane yield categorization",
-    "Publication": "2016 IEEE Region 10 Conference (TENCON)",
-    "Volume": "",
-    "Number": "",
-    "Pages": "1983-1987",
-    "Year": "2016",
-    "Publisher": "IEEE",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Akila, K; Jayashree, LS; Vasuki, A;",
-    "Title": "A hybrid image enhancement scheme for mammographic images",
-    "Publication": "Advances in Natural and Applied Sciences",
-    "Volume": "10",
-    "Number": "6 SE",
-    "Pages": "26-30",
-    "Year": "2016",
-    "Publisher": "American-Eurasian Network for Scientific Information",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Suganya, R; Jayashree, LS;",
-    "Title": "An Erlang Factor integrated channel allocation method for boosting quality of services in mobile ad hoc networks",
-    "Publication": "Computers & Electrical Engineering",
-    "Volume": "66",
-    "Number": "",
-    "Pages": "139-148",
-    "Year": "2018",
-    "Publisher": "Pergamon",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "Jayashree, LS; Lakshmi Devi, R; Papandrianos, Nikolaos; Papageorgiou, Elpiniki I;",
-    "Title": "Application of Fuzzy Cognitive Map for geospatial dengue outbreak risk prediction of tropical regions of Southern India",
-    "Publication": "Intelligent Decision Technologies",
-    "Volume": "12",
-    "Number": "2",
-    "Pages": "231-250",
-    "Year": "2018",
-    "Publisher": "\"SAGE Publications Sage UK: London\",\" England\"",
-    "Quartile": "Q4"
-  },
-  {
-    "Authors": "Suganya, R; Jayashree, LS;",
-    "Title": "Fuzzy rough set inspired rate adaptation and resource allocation using Hidden Markov Model (FRSIRA-HMM) in mobile ad hoc networks",
-    "Publication": "Cluster Computing",
-    "Volume": "22",
-    "Number": "Suppl 4",
-    "Pages": "9875-9888",
-    "Year": "2019",
-    "Publisher": "Springer US New York",
-    "Quartile": "Q1"
-  },
-  {
-    "Authors": "Anthony, L Britto; Jayashree, LS;",
-    "Title": "Comfort Management and Energy Conservation for Smart Home Environment Using Reinforcement Learning Technique",
-    "Publication": "Conference on Big Data and Cloud Computing 2017",
-    "Volume": "",
-    "Number": "",
-    "Pages": "65",
-    "Year": "",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Lakshmi Devi, R; Jayashree, LS;",
-    "Title": "Grey Wolf Optimization-Based Big Data Analytics for Dengue Outbreak Prediction",
-    "Publication": "Advances in Big Data and Cloud Computing",
-    "Volume": "",
-    "Number": "",
-    "Pages": "385-393",
-    "Year": "2018",
-    "Publisher": "Springer Singapore Singapore",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Padmavathy, C; Jayashree, LS; Rosario, A;",
-    "Title": "Combined vibration and RF harvester technique for energy management in sensor device",
-    "Publication": "International Journal of Networking and Virtual Organisations",
-    "Volume": "19",
-    "Number": "02-Apr",
-    "Pages": "196-208",
-    "Year": "2018",
-    "Publisher": "Inderscience Publishers (IEL)",
-    "Quartile": "Q4"
-  },
-  {
-    "Authors": "Ammal, S Meenakshi; Jayashree, LS;",
-    "Title": "A Risk Assessment Model for Alzheimers Disease Using Fuzzy Cognitive Map",
-    "Publication": "Advances in Computerized Analysis in Clinical and Medical Imaging",
-    "Volume": "",
-    "Number": "",
-    "Pages": "209-220",
-    "Year": "2019",
-    "Publisher": "Chapman and Hall/CRC",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Ammal, S Meenakshi; Jayashree, LS;",
-    "Title": "Early detection of cognitive impairment of elders using wearable sensors",
-    "Publication": "Systems Simulation and Modeling for Cloud Computing and Big Data Applications",
-    "Volume": "",
-    "Number": "",
-    "Pages": "147-159",
-    "Year": "2020",
-    "Publisher": "Academic Press",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Selvakumar, G; Jayashree, LS;",
-    "Title": "Agile supply chain management enabled by the internet of things and microservices",
-    "Publication": "\"International Conference on Artificial Intelligence\",\" Smart Grid and Smart City Applications\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "449-456",
-    "Year": "2019",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Swathi, S; Jayashree, LS;",
-    "Title": "Machine translation using deep learning: A comparison",
-    "Publication": "\"International conference on artificial intelligence\",\" smart grid and smart city applications\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "389-395",
-    "Year": "2019",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Iswarya, N; Jayashree, LS;",
-    "Title": "Spectrum Sensing Based on Cascaded Approach for Cognitive Radios",
-    "Publication": "\"International Conference on Artificial Intelligence\",\" Smart Grid and Smart City Applications\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "467-479",
-    "Year": "2019",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Anand Prabu, P; Jayashree, LS;",
-    "Title": "\"A smart agricultural model using iot\", mobile,\" and cloud-based predictive data analytics\"",
-    "Publication": "\"International Conference on Artificial Intelligence\",\" Smart Grid and Smart City Applications\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "383-387",
-    "Year": "2019",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Priya, MC Shunmuga; Jayashree, LS;",
-    "Title": "A Survey on Medical Image Registration Using Deep Learning Techniques",
-    "Publication": "\"International Conference on Artificial Intelligence\",\" Smart Grid and Smart City Applications\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "505-511",
-    "Year": "2019",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "George, Geethu Mary; Jayashree, LS;",
-    "Title": "Safest Secure and Consistent Data Services in the Storage of Cloud Computing",
-    "Publication": "\"International Conference on Artificial Intelligence\",\" Smart Grid and Smart City Applications\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "433-447",
-    "Year": "2019",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jaswanth, S; Jayashree, LS;",
-    "Title": "Agent-Based Temperature Monitoring System",
-    "Publication": "\"International Conference on Artificial Intelligence\",\" Smart Grid and Smart City Applications\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "513-520",
-    "Year": "2019",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing",
-    "Quartile": "Book Publication"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "The Internet of Things: Connectivity Standards",
-    "Publication": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
-    "Volume": "",
-    "Number": "",
-    "Pages": "Jan-30",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "Enterprise IoT development platforms",
-    "Publication": "Getting started with enterprise Internet of Things: design approaches and software architecture models",
-    "Volume": "",
-    "Number": "",
-    "Pages": "129-142",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "Architecture for an Enterprise IoT",
-    "Publication": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
-    "Volume": "",
-    "Number": "",
-    "Pages": "97-110",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "Design and Implementation of Enterprise IoT Solutions",
-    "Publication": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
-    "Volume": "",
-    "Number": "",
-    "Pages": "111-128",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "Cloud Solutions for IoT",
-    "Publication": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
-    "Volume": "",
-    "Number": "",
-    "Pages": "31-48",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "Introduction to Enterprise IoT",
-    "Publication": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
-    "Volume": "",
-    "Number": "",
-    "Pages": "71-96",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Jayashree, LS; Selvakumar, G;",
-    "Title": "Edge computing in IoT",
-    "Publication": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
-    "Volume": "",
-    "Number": "",
-    "Pages": "49-69",
-    "Year": "2020",
-    "Publisher": "Springer International Publishing Cham",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Kumar, L Ashok; Jayashree, LS; Manimegalai, R;",
-    "Title": "\"Proceedings of international conference on artificial intelligence\",\" smart grid and smart city applications: AISGSC 2019\"",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2020",
-    "Publisher": "Springer",
-    "Quartile": "Book"
-  },
-  {
-    "Authors": "George, Geethu Mary; Jayashree, LS;",
-    "Title": "\"Impact of AI\",\" BC and IoT for Smart Cities\"",
-    "Publication": "\"Blockchain\", Internet of Things,\" and Artificial Intelligence\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "179-204",
-    "Year": "2021",
-    "Publisher": "Chapman and Hall/CRC",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Madhana, K; Jayashree, LS;",
-    "Title": "Role of Edge Computing to Leverage IoT-Assisted AAL Ecosystem",
-    "Publication": "\"Research Anthology on Edge Computing Protocols\", Applications,\" and Integration\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "594-618",
-    "Year": "2022",
-    "Publisher": "IGI Global Scientific Publishing",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "Soundaryadevi, M; Jayashree, LS;",
-    "Title": "Forecasting Energy Demands based on Ensemble of Classifiers",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2015",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Iswarya, N; Jayashree, LS;",
-    "Title": "A survey on successive interference cancellation schemes in non-orthogonal multiple access for future radio access",
-    "Publication": "Wireless Personal Communications",
-    "Volume": "120",
-    "Number": "2",
-    "Pages": "1057-1078",
-    "Year": "2021",
-    "Publisher": "Springer US",
-    "Quartile": "Q2"
-  },
-  {
-    "Authors": "Akila, K; Jayashree, LS; Vasuki, A;",
-    "Title": "AUTOMATED INTEGRATED CLUSTERING ALGORITHM FOR MAMMOGRAPHIC MASS SEGMENTATION",
-    "Publication": "Pakistan Journal of Biotechnology",
-    "Volume": "14",
-    "Number": "Special II",
-    "Pages": "06-Sep",
-    "Year": "2017",
-    "Publisher": "",
-    "Quartile": "Q4"
-  },
-  {
-    "Authors": "George, Geethu Mary; Jayashree, LS;",
-    "Title": "A survey on user privacy preserving blockchain for health insurance using Ethereum smart contract",
-    "Publication": "\"International Journal of Information Privacy\",\" Security and Integrity\"",
-    "Volume": "5",
-    "Number": "2",
-    "Pages": "111-137",
-    "Year": "2021",
-    "Publisher": "Inderscience Publishers (IEL)",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Vijayalakshmi, S; Jayashree, LS;",
-    "Title": "Application of soft computing techniques for intelligent sensor data aggregation in structural health monitoring",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2017",
-    "Publisher": "ANNA UNIVERSITY",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Akila, K; Jayashree, LS;",
-    "Title": "Early detection of breast cancer Using image processing algorithms And estimation of overall risk",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2017",
-    "Publisher": "Anna University",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Rajathi, N; Jayashree, LS;",
-    "Title": "Certain investigations on application of soft computing techniques for sensor data processing in precision agriculture applications",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2017",
-    "Publisher": "ANNA UNIVERSITY",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "George, Geethu Mary; Jayashree, LS;",
-    "Title": "Ethereum blockchain-based authentication approach for Data Sharing in Cloud Storage Model",
-    "Publication": "Cybernetics and Systems",
-    "Volume": "54",
-    "Number": "6",
-    "Pages": "961-984",
-    "Year": "2023",
-    "Publisher": "Taylor & Francis",
-    "Quartile": "Q2"
-  },
-  {
-    "Authors": "George, Geethu Mary; Jayashree, LS;",
-    "Title": "Fusion of Blockchain-IoT network to improve supply chain traceability using E thermint Smart chain: A Review.",
-    "Publication": "KSII Transactions on Internet & Information Systems",
-    "Volume": "16",
-    "Number": "11",
-    "Pages": "",
-    "Year": "2022",
-    "Publisher": "",
-    "Quartile": "Q3"
-  },
-  {
-    "Authors": "Kumar, V; Troussas, C;",
-    "Title": "Springer: Cham",
-    "Publication": "Proceedings of the International Conference on Industrial and Manufacturing Systems (CIMS-",
-    "Volume": "",
-    "Number": "",
-    "Pages": "409-419",
-    "Year": "2020",
-    "Publisher": "",
-    "Quartile": "Conference Proceedings"
-  },
-  {
-    "Authors": "Selvakumar, G; Jayashree, LS; Arumugam, S;",
-    "Title": "Latency Minimization Using an Adaptive Load Balancing Technique in Microservices Applications.",
-    "Publication": "Comput. Syst. Sci. Eng.",
-    "Volume": "46",
-    "Number": "1",
-    "Pages": "1215-1231",
-    "Year": "2023",
-    "Publisher": "",
-    "Quartile": "Q2"
-  },
-  {
-    "Authors": "Madhana, K; Jayashree, LS; Perumal, Kalaivani;",
-    "Title": "System for classification of human gaits using markerless motion capture sensor",
-    "Publication": "Journal of Enabling Technologies",
-    "Volume": "17",
-    "Number": "2",
-    "Pages": "41-53",
-    "Year": "2023",
-    "Publisher": "Emerald Publishing Limited",
-    "Quartile": "Q3"
-  },
-  {
-    "Authors": "Jayashree, LS; Madhana, K; Kumar, V Preethish; Swathi, S; Soundharyan, P;",
-    "Title": "A Quantitative Gait Assessment Approach Using a Wearable Device and Its Validation for Different Neurological Disorder Conditions",
-    "Publication": "Topics in Geriatric Rehabilitation",
-    "Volume": "40",
-    "Number": "1",
-    "Pages": "19-36",
-    "Year": "2024",
-    "Publisher": "LWW",
-    "Quartile": "Q3"
-  },
-  {
-    "Authors": "Kumar, L Ashok; Jayashree, LS; Manimegalai, R;",
-    "Title": "AISGSC 2019",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "",
-    "Publisher": "",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "George, Geethu Mary; Jayashree, LS;",
-    "Title": "in the Storage of Cloud Computing",
-    "Publication": "\"Proceedings of International Conference on Artificial Intelligence\",\" Smart Grid and Smart City Applications: AISGSC 2019\"",
-    "Volume": "",
-    "Number": "",
-    "Pages": "433",
-    "Year": "2020",
-    "Publisher": "Springer Nature",
-    "Quartile": "Book Chapter / Series"
-  },
-  {
-    "Authors": "MICHAEL GNANARAJ, SHERLIN JENIFER; Jayashree, LS;",
-    "Title": "Advancing Cardiac Assessment Through Computational Synthesis in Seismocardiography",
-    "Publication": "Available at SSRN 5153389",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "",
-    "Publisher": "",
-    "Quartile": "Preprint Server"
-  },
-  {
-    "Authors": "Jayashree, LS;",
-    "Title": "Longitudinal Study of Mitral Valve Stenosis Prognosis using Deep Learning Techniques",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "2025",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  },
-  {
-    "Authors": "Lakshman Prabhu, B; Jayashree, LS;",
-    "Title": "Medical Image Enhancement for Improved Diagnostic Accuracy Using Generative Adversarial Network",
-    "Publication": "",
-    "Volume": "",
-    "Number": "",
-    "Pages": "",
-    "Year": "",
-    "Publisher": "",
-    "Quartile": "Unranked / Non-indexed"
-  }
-];
+      {
+        "Title": "-M-a-m-m-o-g-r-a-p-h-i-c- -i-m-a-g-e- -e-n-h-a-n-c-e-m-e-n-t- -u-s-i-n-g- -i-n-d-i-r-e-c-t- -c-o-n-t-r-a-s-t- -e-n-h-a-n-c-e-m-e-n-t- -t-e-c-h-n-i-q-u-e-s-–-a- -c-o-m-p-a-r-a-t-i-v-e- -s-t-u-d-y-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:vV6vV6tmYwMC",
+        "Authors": "K Akila, LS Jayashree, A Vasuki",
+        "Source": "-P-r-o-c-e-d-i-a- -C-o-m-p-u-t-e-r- -S-c-i-e-n-c-e- -4-7-,- -2-5-5---2-6-1-,- -2-0-1-5-",
+        "Citations": 124,
+        "Year": "2015",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "-H-y-b-r-i-d- -l-e-a-r-n-i-n-g- -o-f- -f-u-z-z-y- -c-o-g-n-i-t-i-v-e- -m-a-p-s- -f-o-r- -s-u-g-a-r-c-a-n-e- -y-i-e-l-d- -c-l-a-s-s-i-f-i-c-a-t-i-o-n-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:EUQCXRtRnyEC",
+        "Authors": "EIP Rajathi Natarajan , Jayashree Subramanian",
+        "Source": "-C-o-m-p-u-t-e-r-s- -a-n-d- -E-l-e-c-t-r-o-n-i-c-s- -i-n- -A-g-r-i-c-u-l-t-u-r-e- -1-2-7-,- -1-4-7---1-5-7-,- -2-0-1-6-",
+        "Citations": 93,
+        "Year": "2016",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-A-n- -I-n-t-e-g-r-a-t-e-d- -b-r-e-a-s-t- -c-a-n-c-e-r- -r-i-s-k- -a-s-s-e-s-s-m-e-n-t- -a-n-d- -R-i-s-k- -M-a-n-a-g-e-m-e-n-t- -m-o-d-e-l- -b-a-s-e-d- -o-n- -F-u-z-z-y- -C-o-g-n-i-t-i-v-e- -M-a-p-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:70eg2SAEIzsC",
+        "Authors": "AV 5. Jayashree Subramanian a, Akila Karmegam b, Elpiniki Papageorgiou c ...",
+        "Source": "-C-o-m-p-u-t-e-r- -M-e-t-h-o-d-s- -a-n-d- -P-r-o-g-r-a-m-m-e-s- -i-n- -B-i-o---m-e-d-i-c-i-n-e- -1-1-8- -(-3-)-,- -2-8-0-–-2-9-7-,- -2-0-1-5-",
+        "Citations": 86,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-A- -R-i-s-k- -M-a-n-a-g-e-m-e-n-t- -M-o-d-e-l- -f-o-r- -F-a-m-i-l-i-a-l- -B-r-e-a-s-t- -C-a-n-c-e-r-:- -A- -N-e-w- -A-p-p-l-i-c-a-t-i-o-n- -u-s-i-n-g- -F-u-z-z-y- -C-o-g-n-i-t-i-v-e- -M-a-p- -m-e-t-h-o-d-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:35N4QoGY0k4C",
+        "Authors": "Elpiniki I. Papageorgiou, Jayashree Subramanian, Akila Karmegam, Nikolaos ...",
+        "Source": "-C-o-m-p-u-t-e-r- -M-e-t-h-o-d-s- -a-n-d- -P-r-o-g-r-a-m-m-e-s- -i-n- -B-i-o---m-e-d-i-c-i-n-e- -1-2-2- -(-2-)-,- -1-2-3-–-1-3-5-,- -2-0-1-5-",
+        "Citations": 84,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-A- -s-u-r-v-e-y- -o-n- -s-u-c-c-e-s-s-i-v-e- -i-n-t-e-r-f-e-r-e-n-c-e- -c-a-n-c-e-l-l-a-t-i-o-n- -s-c-h-e-m-e-s- -i-n- -n-o-n---o-r-t-h-o-g-o-n-a-l- -m-u-l-t-i-p-l-e- -a-c-c-e-s-s- -f-o-r- -f-u-t-u-r-e- -r-a-d-i-o- -a-c-c-e-s-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eJXPG6dFmWUC",
+        "Authors": "N Iswarya, LS Jayashree",
+        "Source": "-W-i-r-e-l-e-s-s- -P-e-r-s-o-n-a-l- -C-o-m-m-u-n-i-c-a-t-i-o-n-s- -1-2-0- -(-2-)-,- -1-0-5-7---1-0-7-8-,- -2-0-2-1-",
+        "Citations": 57,
+        "Year": "2021",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "-A-p-p-l-i-c-a-t-i-o-n- -o-f- -f-u-z-z-y- -c-o-g-n-i-t-i-v-e- -m-a-p-s- -i-n- -p-r-e-c-i-s-i-o-n- -a-g-r-i-c-u-l-t-u-r-e-:- -a- -c-a-s-e- -s-t-u-d-y- -o-n- -c-o-c-o-n-u-t- -y-i-e-l-d- -m-a-n-a-g-e-m-e-n-t- -o-f- -s-o-u-t-h-e-r-n- -I-n-d-i-a-’-s- -M-a-l-a-b-a-r- -r-e-g-i-o-n-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:pyW8ca7W8N0C",
+        "Authors": "LS Jayashree, N Palakkal, EI Papageorgiou, K Papageorgiou",
+        "Source": "-N-e-u-r-a-l- -C-o-m-p-u-t-i-n-g- -a-n-d- -A-p-p-l-i-c-a-t-i-o-n-s- -2-6- -(-8-)-,- -1-9-6-3---1-9-7-8-,- -2-0-1-5-",
+        "Citations": 46,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-S-p-r-i-n-g-e-r-:- -C-h-a-m-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:WA5NYHcadZ8C",
+        "Authors": "V Kumar, C Troussas",
+        "Source": "-P-r-o-c-e-e-d-i-n-g-s- -o-f- -t-h-e- -I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -I-n-d-u-s-t-r-i-a-l- -a-n-d- -M-a-n-u-f-a-c-t-u-r-i-n-g- -…-,- -2-0-2-0-",
+        "Citations": 33,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-p-p-l-i-c-a-t-i-o-n- -o-f- -f-u-z-z-y- -c-o-g-n-i-t-i-v-e- -m-a-p-s- -f-o-r- -c-r-a-c-k- -c-a-t-e-g-o-r-i-z-a-t-i-o-n- -i-n- -c-o-l-u-m-n-s- -o-f- -r-e-i-n-f-o-r-c-e-d- -c-o-n-c-r-e-t-e- -s-t-r-u-c-t-u-r-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:f2IySw72cVMC",
+        "Authors": "JSV Sennipppan",
+        "Source": "-N-e-u-r-a-l- -C-o-m-p-u-t-i-n-g- - - -&-a-m-p-;- -A-p-p-l-i-c-a-t-i-o-n-s-,- -2-0-1-6-",
+        "Citations": 31,
+        "Year": "2016",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-O-n- -t-h-e- -a-c-c-u-r-a-c-y- -o-f- -c-e-n-t-r-o-i-d- -b-a-s-e-d- -m-u-l-t-i-l-a-t-e-r-a-t-i-o-n- -p-r-o-c-e-d-u-r-e- -f-o-r- -l-o-c-a-t-i-o-n- -d-i-s-c-o-v-e-r-y- -i-n- -w-i-r-e-l-e-s-s- -s-e-n-s-o-r- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u-x6o8ySG0sC",
+        "Authors": "LS Jayashree, S Arumugam, M Anusha, AB Hariny",
+        "Source": "-2-0-0-6- -I-F-I-P- -i-n-t-e-r-n-a-t-i-o-n-a-l- -c-o-n-f-e-r-e-n-c-e- -o-n- -w-i-r-e-l-e-s-s- -a-n-d- -o-p-t-i-c-a-l- -c-o-m-m-u-n-i-c-a-t-i-o-n-s- -…-,- -2-0-0-6-",
+        "Citations": 24,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-p-p-l-i-c-a-t-i-o-n- -o-f- -F-u-z-z-y- -C-o-g-n-i-t-i-v-e- -M-a-p- -f-o-r- -g-e-o-s-p-a-t-i-a-l- -d-e-n-g-u-e- -o-u-t-b-r-e-a-k- -r-i-s-k- -p-r-e-d-i-c-t-i-o-n- -o-f- -t-r-o-p-i-c-a-l- -r-e-g-i-o-n-s- -o-f- -S-o-u-t-h-e-r-n- -I-n-d-i-a-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:1sJd4Hv_s6UC",
+        "Authors": "LS Jayashree, R Lakshmi Devi, N Papandrianos, EI Papageorgiou",
+        "Source": "-I-n-t-e-l-l-i-g-e-n-t- -D-e-c-i-s-i-o-n- -T-e-c-h-n-o-l-o-g-i-e-s- -1-2- -(-2-)-,- -2-3-1---2-5-0-,- -2-0-1-8-",
+        "Citations": 23,
+        "Year": "2018",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "-E-/-s-u-p- -2-/-L-B-C-:- -a-n- -e-n-e-r-g-y- -e-f-f-i-c-i-e-n-t- -l-o-a-d- -b-a-l-a-n-c-e-d- -c-l-u-s-t-e-r-i-n-g- -t-e-c-h-n-i-q-u-e- -f-o-r- -h-e-t-e-r-o-g-e-n-e-o-u-s- -w-i-r-e-l-e-s-s- -s-e-n-s-o-r- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u5HHmVD_uO8C",
+        "Authors": "LS Jayashree, S Arumugam, N Rajathi",
+        "Source": "-2-0-0-6- -I-F-I-P- -I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -W-i-r-e-l-e-s-s- -a-n-d- -O-p-t-i-c-a-l- -C-o-m-m-u-n-i-c-a-t-i-o-n-s- -…-,- -2-0-0-6-",
+        "Citations": 19,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-F-u-s-i-o-n- -o-f- -B-l-o-c-k-c-h-a-i-n---I-o-T- -n-e-t-w-o-r-k- -t-o- -i-m-p-r-o-v-e- -s-u-p-p-l-y- -c-h-a-i-n- -t-r-a-c-e-a-b-i-l-i-t-y- -u-s-i-n-g- -E- -t-h-e-r-m-i-n-t- -S-m-a-r-t- -c-h-a-i-n-:- -A- -R-e-v-i-e-w-.-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:t6usbXjVLHcC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "-K-S-I-I- -T-r-a-n-s-a-c-t-i-o-n-s- -o-n- -I-n-t-e-r-n-e-t- -&-a-m-p-;- -I-n-f-o-r-m-a-t-i-o-n- -S-y-s-t-e-m-s- -1-6- -(-1-1-)-,- -2-0-2-2-",
+        "Citations": 16,
+        "Year": "2022",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "-G-e-t-t-i-n-g- -S-t-a-r-t-e-d- -w-i-t-h- -E-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -D-e-s-i-g-n- -A-p-p-r-o-a-c-h-e-s- -a-n-d- -S-o-f-t-w-a-r-e- -A-r-c-h-i-t-e-c-t-u-r-e- -M-o-d-e-l-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:08ZZubdj9fEC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-S-p-r-i-n-g-e-r- -I-n-t-e-r-n-a-t-i-o-n-a-l- -P-u-b-l-i-s-h-i-n-g-,- -2-0-2-0-",
+        "Citations": 12,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-L-a-t-e-n-c-y- -M-i-n-i-m-i-z-a-t-i-o-n- -U-s-i-n-g- -a-n- -A-d-a-p-t-i-v-e- -L-o-a-d- -B-a-l-a-n-c-i-n-g- -T-e-c-h-n-i-q-u-e- -i-n- -M-i-c-r-o-s-e-r-v-i-c-e-s- -A-p-p-l-i-c-a-t-i-o-n-s-.-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:Mojj43d5GZwC",
+        "Authors": "G Selvakumar, LS Jayashree, S Arumugam",
+        "Source": "-C-o-m-p-u-t-.- -S-y-s-t-.- -S-c-i-.- -E-n-g-.- -4-6- -(-1-)-,- -1-2-1-5---1-2-3-1-,- -2-0-2-3-",
+        "Citations": 11,
+        "Year": "2023",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "-A-g-i-l-e- -s-u-p-p-l-y- -c-h-a-i-n- -m-a-n-a-g-e-m-e-n-t- -e-n-a-b-l-e-d- -b-y- -t-h-e- -i-n-t-e-r-n-e-t- -o-f- -t-h-i-n-g-s- -a-n-d- -m-i-c-r-o-s-e-r-v-i-c-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u9iWguZQMMsC",
+        "Authors": "G Selvakumar, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -S-m-a-r-t- -G-r-i-d- -a-n-d- -S-m-a-r-t- -…-,- -2-0-1-9-",
+        "Citations": 9,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-E-t-h-e-r-e-u-m- -b-l-o-c-k-c-h-a-i-n---b-a-s-e-d- -a-u-t-h-e-n-t-i-c-a-t-i-o-n- -a-p-p-r-o-a-c-h- -f-o-r- -D-a-t-a- -S-h-a-r-i-n-g- -i-n- -C-l-o-u-d- -S-t-o-r-a-g-e- -M-o-d-e-l-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:olpn-zPbct0C",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "-C-y-b-e-r-n-e-t-i-c-s- -a-n-d- -S-y-s-t-e-m-s- -5-4- -(-6-)-,- -9-6-1---9-8-4-,- -2-0-2-3-",
+        "Citations": 8,
+        "Year": "2023",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "-P-r-e-c-i-s-i-o-n- -a-g-r-i-c-u-l-t-u-r-e-:- -O-n- -t-h-e- -a-c-c-u-r-a-c-y- -o-f- -m-u-l-t-i-l-e-v-e-l- -a-n-d- -c-l-u-s-t-e-r-e-d- -A-N-F-I-S- -m-o-d-e-l-s- -f-o-r- -s-u-g-a-r-c-a-n-e- -y-i-e-l-d- -c-a-t-e-g-o-r-i-z-a-t-i-o-n-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:NhqRSupF_l8C",
+        "Authors": "LS Jayashree, N Rajathi, A Thirumal",
+        "Source": "-2-0-1-6- -I-E-E-E- -R-e-g-i-o-n- -1-0- -C-o-n-f-e-r-e-n-c-e- -(-T-E-N-C-O-N-)-,- -1-9-8-3---1-9-8-7-,- -2-0-1-6-",
+        "Citations": 8,
+        "Year": "2016",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-M-a-c-h-i-n-e- -t-r-a-n-s-l-a-t-i-o-n- -u-s-i-n-g- -d-e-e-p- -l-e-a-r-n-i-n-g-:- -A- -c-o-m-p-a-r-i-s-o-n-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:XiSMed-E-HIC",
+        "Authors": "S Swathi, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -c-o-n-f-e-r-e-n-c-e- -o-n- -a-r-t-i-f-i-c-i-a-l- -i-n-t-e-l-l-i-g-e-n-c-e-,- -s-m-a-r-t- -g-r-i-d- -a-n-d- -s-m-a-r-t- -…-,- -2-0-1-9-",
+        "Citations": 7,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-P-r-o-c-e-e-d-i-n-g-s- -o-f- -i-n-t-e-r-n-a-t-i-o-n-a-l- -c-o-n-f-e-r-e-n-c-e- -o-n- -a-r-t-i-f-i-c-i-a-l- -i-n-t-e-l-l-i-g-e-n-c-e-,- -s-m-a-r-t- -g-r-i-d- -a-n-d- -s-m-a-r-t- -c-i-t-y- -a-p-p-l-i-c-a-t-i-o-n-s-:- -A-I-S-G-S-C- -2-0-1-9-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:5Ul4iDaHHb8C",
+        "Authors": "LA Kumar, LS Jayashree, R Manimegalai",
+        "Source": "-S-p-r-i-n-g-e-r-,- -2-0-2-0-",
+        "Citations": 6,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-n- -e-n-h-a-n-c-e-d- -d-e-l-a-y- -s-e-n-s-i-t-i-v-e- -d-a-t-a- -p-a-c-k-e-t- -s-c-h-e-d-u-l-i-n-g- -a-l-g-o-r-i-t-h-m- -t-o- -m-a-x-i-m-i-z-i-n-g- -t-h-e- -n-e-t-w-o-r-k- -l-i-f-e-t-i-m-e-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:bFI3QPDXJZMC",
+        "Authors": "C Padmavathy, LS Jayashree",
+        "Source": "-W-i-r-e-l-e-s-s- -P-e-r-s-o-n-a-l- -C-o-m-m-u-n-i-c-a-t-i-o-n-s- -9-4- -(-4-)-,- -2-2-1-3---2-2-2-7-,- -2-0-1-7-",
+        "Citations": 6,
+        "Year": "2017",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "-E-n-e-r-g-y- -e-f-f-i-c-i-e-n-t- -g-r-i-d- -c-l-u-s-t-e-r-i-n-g- -b-a-s-e-d- -d-a-t-a- -a-g-g-r-e-g-a-t-i-o-n- -i-n- -w-i-r-e-l-e-s-s- -s-e-n-s-o-r- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:abG-DnoFyZgC",
+        "Authors": "N Rajathi, LS Jayashree",
+        "Source": "-2-0-1-6- -I-E-E-E- -r-e-g-i-o-n- -1-0- -c-o-n-f-e-r-e-n-c-e- -(-T-E-N-C-O-N-)-,- -4-8-8---4-9-2-,- -2-0-1-6-",
+        "Citations": 6,
+        "Year": "2016",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -c-o-m-m-u-n-i-c-a-t-i-o-n-‐-e-f-f-i-c-i-e-n-t- -f-r-a-m-e-w-o-r-k- -f-o-r- -o-u-t-l-i-e-r-‐-f-r-e-e- -d-a-t-a- -r-e-p-o-r-t-i-n-g- -i-n- -d-a-t-a-‐-g-a-t-h-e-r-i-n-g- -s-e-n-s-o-r- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:qjMakFHDy7sC",
+        "Authors": "LS Jayashree, S Arumugam, AR Meenakshi",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -N-e-t-w-o-r-k- -M-a-n-a-g-e-m-e-n-t- -1-8- -(-5-)-,- -4-3-7---4-4-5-,- -2-0-0-8-",
+        "Citations": 6,
+        "Year": "2008",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "-E-a-r-l-y- -d-e-t-e-c-t-i-o-n- -o-f- -c-o-g-n-i-t-i-v-e- -i-m-p-a-i-r-m-e-n-t- -o-f- -e-l-d-e-r-s- -u-s-i-n-g- -w-e-a-r-a-b-l-e- -s-e-n-s-o-r-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:p2g8aNsByqUC",
+        "Authors": "SM Ammal, LS Jayashree",
+        "Source": "-S-y-s-t-e-m-s- -S-i-m-u-l-a-t-i-o-n- -a-n-d- -M-o-d-e-l-i-n-g- -f-o-r- -C-l-o-u-d- -C-o-m-p-u-t-i-n-g- -a-n-d- -B-i-g- -D-a-t-a- -…-,- -2-0-2-0-",
+        "Citations": 5,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-F-u-z-z-y- -r-o-u-g-h- -s-e-t- -i-n-s-p-i-r-e-d- -r-a-t-e- -a-d-a-p-t-a-t-i-o-n- -a-n-d- -r-e-s-o-u-r-c-e- -a-l-l-o-c-a-t-i-o-n- -u-s-i-n-g- -H-i-d-d-e-n- -M-a-r-k-o-v- -M-o-d-e-l- -(-F-R-S-I-R-A---H-M-M-)- -i-n- -m-o-b-i-l-e- -a-d- -h-o-c- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:P5F9QuxV20EC",
+        "Authors": "R Suganya, LS Jayashree",
+        "Source": "-C-l-u-s-t-e-r- -C-o-m-p-u-t-i-n-g- -2-2- -(-S-u-p-p-l- -4-)-,- -9-8-7-5---9-8-8-8-,- -2-0-1-9-",
+        "Citations": 5,
+        "Year": "2019",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-A-n- -E-r-l-a-n-g- -F-a-c-t-o-r- -i-n-t-e-g-r-a-t-e-d- -c-h-a-n-n-e-l- -a-l-l-o-c-a-t-i-o-n- -m-e-t-h-o-d- -f-o-r- -b-o-o-s-t-i-n-g- -q-u-a-l-i-t-y- -o-f- -s-e-r-v-i-c-e-s- -i-n- -m-o-b-i-l-e- -a-d- -h-o-c- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:CHSYGLWDkRkC",
+        "Authors": "R Suganya, LS Jayashree",
+        "Source": "-C-o-m-p-u-t-e-r-s- -&-a-m-p-;- -E-l-e-c-t-r-i-c-a-l- -E-n-g-i-n-e-e-r-i-n-g- -6-6-,- -1-3-9---1-4-8-,- -2-0-1-8-",
+        "Citations": 5,
+        "Year": "2018",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-E-d-g-e- -c-o-m-p-u-t-i-n-g- -i-n- -I-o-T-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:8AbLer7MMksC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-G-e-t-t-i-n-g- -S-t-a-r-t-e-d- -w-i-t-h- -E-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -D-e-s-i-g-n- -A-p-p-r-o-a-c-h-e-s- -a-n-d- -…-,- -2-0-2-0-",
+        "Citations": 4,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -h-y-b-r-i-d- -i-m-a-g-e- -e-n-h-a-n-c-e-m-e-n-t- -s-c-h-e-m-e- -f-o-r- -m-a-m-m-o-g-r-a-p-h-i-c- -i-m-a-g-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:xtRiw3GOFMkC",
+        "Authors": "K Akila, LS Jayashree, A Vasuki",
+        "Source": "-A-d-v-a-n-c-e-s- -i-n- -N-a-t-u-r-a-l- -a-n-d- -A-p-p-l-i-e-d- -S-c-i-e-n-c-e-s- -1-0- -(-6- -S-E-)-,- -2-6---3-0-,- -2-0-1-6-",
+        "Citations": 4,
+        "Year": "2016",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -C-o-m-m-u-n-i-c-a-t-i-o-n- -E-f-f-i-c-i-e-n-t- -F-r-a-m-e-w-o-r-k- -f-o-r- -S-o-i-l- -M-o-i-s-t-u-r-e- -M-o-n-i-t-o-r-i-n-g- -u-s-i-n-g- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:2osOgNQ5qMEC",
+        "Authors": "LS Jayashree, VK Yamini, RM Priya",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -C-o-m-p-u-t-e-r- -A-p-p-l-i-c-a-t-i-o-n-s- -9-7-5-,- -8-8-8-7-,- -2-0-1-0-",
+        "Citations": 4,
+        "Year": "2010",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-D-e-s-i-g-n- -c-h-a-l-l-e-n-g-e-s- -f-o-r- -o-p-t-i-m-i-z-i-n-g- -t-h-e- -p-e-r-f-o-r-m-a-n-c-e- -o-f- -e-n-e-r-g-y- -c-o-n-s-t-r-a-i-n-e-d- -w-i-r-e-l-e-s-s- -s-e-n-s-o-r- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:9yKSN-GCB0IC",
+        "Authors": "LS Jayashree, S Arumugam",
+        "Source": "-2-0-0-7- -I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -S-i-g-n-a-l- -P-r-o-c-e-s-s-i-n-g-,- -C-o-m-m-u-n-i-c-a-t-i-o-n-s- -a-n-d- -…-,- -2-0-0-7-",
+        "Citations": 4,
+        "Year": "2007",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-S-y-s-t-e-m- -f-o-r- -c-l-a-s-s-i-f-i-c-a-t-i-o-n- -o-f- -h-u-m-a-n- -g-a-i-t-s- -u-s-i-n-g- -m-a-r-k-e-r-l-e-s-s- -m-o-t-i-o-n- -c-a-p-t-u-r-e- -s-e-n-s-o-r-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eMMeJKvmdy0C",
+        "Authors": "K Madhana, LS Jayashree, K Perumal",
+        "Source": "-J-o-u-r-n-a-l- -o-f- -E-n-a-b-l-i-n-g- -T-e-c-h-n-o-l-o-g-i-e-s- -1-7- -(-2-)-,- -4-1---5-3-,- -2-0-2-3-",
+        "Citations": 3,
+        "Year": "2023",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "-C-l-o-u-d- -S-o-l-u-t-i-o-n-s- -f-o-r- -I-o-T-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:sSrBHYA8nusC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-G-e-t-t-i-n-g- -S-t-a-r-t-e-d- -w-i-t-h- -E-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -D-e-s-i-g-n- -A-p-p-r-o-a-c-h-e-s- -a-n-d- -…-,- -2-0-2-0-",
+        "Citations": 3,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-E-n-t-e-r-p-r-i-s-e- -I-o-T- -d-e-v-e-l-o-p-m-e-n-t- -p-l-a-t-f-o-r-m-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:tS2w5q8j5-wC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-G-e-t-t-i-n-g- -s-t-a-r-t-e-d- -w-i-t-h- -e-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -d-e-s-i-g-n- -a-p-p-r-o-a-c-h-e-s- -a-n-d- -…-,- -2-0-2-0-",
+        "Citations": 3,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-G-r-e-y- -W-o-l-f- -O-p-t-i-m-i-z-a-t-i-o-n---B-a-s-e-d- -B-i-g- -D-a-t-a- -A-n-a-l-y-t-i-c-s- -f-o-r- -D-e-n-g-u-e- -O-u-t-b-r-e-a-k- -P-r-e-d-i-c-t-i-o-n-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:KxtntwgDAa4C",
+        "Authors": "R Lakshmi Devi, LS Jayashree",
+        "Source": "-A-d-v-a-n-c-e-s- -i-n- -B-i-g- -D-a-t-a- -a-n-d- -C-l-o-u-d- -C-o-m-p-u-t-i-n-g-,- -3-8-5---3-9-3-,- -2-0-1-8-",
+        "Citations": 3,
+        "Year": "2018",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-S-o-i-l- -M-o-i-s-t-u-r-e- -F-o-r-e-c-a-s-t-i-n-g- -u-s-i-n-g- -E-n-s-e-m-b-l-e-s- -o-f- -C-l-a-s-s-i-f-i-e-r-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:3s1wT3WcHBgC",
+        "Authors": "DLSJ N.Rajathi",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -I-n-f-o-r-m-a-t-i-o-n- -a-n-d- -C-o-m-m-u-n-i-c-a-t-i-o-n- -T-e-c-h-n-o-l-o-g-y- -f-o-r- -…-,- -2-0-1-5-",
+        "Citations": 3,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-L-S- -a-n-d- -M-M-S-E- -b-a-s-e-d- -L-o-c-a-l-i-z-a-t-i-o-n- -A-l-g-o-r-i-t-h-m- -f-o-r- -W-S-N-s- -a-m-i-d- -o-b-s-t-a-c-l-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:yD5IFk8b50cC",
+        "Authors": "ZM Livinsa, S Jayashri",
+        "Source": "-I-n-d-i-a-n- -J-o-u-r-n-a-l- -o-f- -C-o-m-p-u-t-e-r- -S-c-i-e-n-c-e- -a-n-d- -E-n-g-i-n-e-e-r-i-n-g-,- -2-0-1-4-",
+        "Citations": 3,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -r-o-b-u-s-t- -o-u-t-l-i-e-r- -d-e-t-e-c-t-i-o-n- -s-c-h-e-m-e- -f-o-r- -c-o-l-l-a-b-o-r-a-t-i-v-e- -s-e-n-s-o-r- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:d1gkVwhDpl0C",
+        "Authors": "LS Jayashree, S Arumugam, K Vijayalakshmi",
+        "Source": "-J-o-u-r-n-a-l- -o-f- -D-i-g-i-t-a-l- -I-n-f-o-r-m-a-t-i-o-n- -M-a-n-a-g-e-m-e-n-t- -5- -(-1-)-,- -1-2-,- -2-0-0-7-",
+        "Citations": 3,
+        "Year": "2007",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "-A- -s-u-r-v-e-y- -o-n- -u-s-e-r- -p-r-i-v-a-c-y- -p-r-e-s-e-r-v-i-n-g- -b-l-o-c-k-c-h-a-i-n- -f-o-r- -h-e-a-l-t-h- -i-n-s-u-r-a-n-c-e- -u-s-i-n-g- -E-t-h-e-r-e-u-m- -s-m-a-r-t- -c-o-n-t-r-a-c-t-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:V3AGJWp-ZtQC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -I-n-f-o-r-m-a-t-i-o-n- -P-r-i-v-a-c-y-,- -S-e-c-u-r-i-t-y- -a-n-d- -I-n-t-e-g-r-i-t-y- -5- -(-2- -…-,- -2-0-2-1-",
+        "Citations": 2,
+        "Year": "2021",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-D-e-s-i-g-n- -a-n-d- -I-m-p-l-e-m-e-n-t-a-t-i-o-n- -o-f- -E-n-t-e-r-p-r-i-s-e- -I-o-T- -S-o-l-u-t-i-o-n-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:B3FOqHPlNUQC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-G-e-t-t-i-n-g- -S-t-a-r-t-e-d- -w-i-t-h- -E-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -D-e-s-i-g-n- -A-p-p-r-o-a-c-h-e-s- -a-n-d- -…-,- -2-0-2-0-",
+        "Citations": 2,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-C-o-m-b-i-n-e-d- -v-i-b-r-a-t-i-o-n- -a-n-d- -R-F- -h-a-r-v-e-s-t-e-r- -t-e-c-h-n-i-q-u-e- -f-o-r- -e-n-e-r-g-y- -m-a-n-a-g-e-m-e-n-t- -i-n- -s-e-n-s-o-r- -d-e-v-i-c-e-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:UxriW0iASnsC",
+        "Authors": "C Padmavathy, LS Jayashree, A Rosario",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -N-e-t-w-o-r-k-i-n-g- -a-n-d- -V-i-r-t-u-a-l- -O-r-g-a-n-i-s-a-t-i-o-n-s- -1-9- -(-2---4-)-,- -1-9-6---2-0-8-,- -2-0-1-8-",
+        "Citations": 2,
+        "Year": "2018",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "-A- -C-o-m-p-u-t-e-r---a-s-s-i-s-t-e-d- -C-r-a-c-k- -P-r-e-d-i-c-t-i-n-g- -S-y-s-t-e-m- -f-o-r- -O-i-l- -a-n-d- -G-a-s- -P-i-p-e-l-i-n-e-s- -U-s-i-n-g- -F-u-z-z-y- -C-o-g-n-i-t-i-v-e- -M-a-p-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:_xSYboBqXhAC",
+        "Authors": "LSJ C. Padmavathy",
+        "Source": "-E-u-r-o-p-e-a-n- -J-o-u-r-n-a-l- -o-f- -A-p-p-l-i-e-d- -S-c-i-e-n-c-e-s- -7- -(-3-)-,- -1-4-5---1-5-1-,- -2-0-1-5-",
+        "Citations": 0,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -C-o-m-p-u-t-e-r---a-s-s-i-s-t-e-d- -C-r-a-c-k- -P-r-e-d-i-c-t-i-n-g- -S-y-s-t-e-m- -f-o-r- -O-i-l- -a-n-d- -G-a-s- -P-i-p-e-l-i-n-e-s- -U-s-i-n-g- -F-u-z-z-y- -C-o-g-n-i-t-i-v-e- -M-a-p-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:M05iB0D1s5AC",
+        "Authors": "CPLS Jayashree",
+        "Source": "-E-u-r-o-p-e-a-n- -J-o-u-r-n-a-l- -o-f- -A-p-p-l-i-e-d- -S-c-i-e-n-c-e-,- -2-0-1-5-",
+        "Citations": 2,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-C-l-u-s-t-e-r-i-n-g- -o-f- -D-a-t-a- -w-i-t-h- -M-i-x-e-d- -A-t-t-r-i-b-u-t-e-s- -b-a-s-e-d- -o-n- -U-n-i-f-i-e-d- -S-i-m-i-l-a-r-i-t-y- -M-e-t-r-i-c-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:g5m5HwL7SMYC",
+        "Authors": "DLSJ M.Soundaryadevi",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -I-n-n-o-v-a-t-i-v-e- -R-e-s-e-a-r-c-h- -i-n- -C-o-m-p-u-t-e-r- -a-n-d- -C-o-m-m-u-n-i-c-a-t-i-o-n- -…-,- -2-0-1-4-",
+        "Citations": 2,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -Q-u-a-n-t-i-t-a-t-i-v-e- -G-a-i-t- -A-s-s-e-s-s-m-e-n-t- -A-p-p-r-o-a-c-h- -U-s-i-n-g- -a- -W-e-a-r-a-b-l-e- -D-e-v-i-c-e- -a-n-d- -I-t-s- -V-a-l-i-d-a-t-i-o-n- -f-o-r- -D-i-f-f-e-r-e-n-t- -N-e-u-r-o-l-o-g-i-c-a-l- -D-i-s-o-r-d-e-r- -C-o-n-d-i-t-i-o-n-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eq2jaN3J8jMC",
+        "Authors": "LS Jayashree, K Madhana, VP Kumar, S Swathi, P Soundharyan",
+        "Source": "-T-o-p-i-c-s- -i-n- -G-e-r-i-a-t-r-i-c- -R-e-h-a-b-i-l-i-t-a-t-i-o-n- -4-0- -(-1-)-,- -1-9---3-6-,- -2-0-2-4-",
+        "Citations": 1,
+        "Year": "2024",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "-R-o-l-e- -o-f- -E-d-g-e- -C-o-m-p-u-t-i-n-g- -t-o- -L-e-v-e-r-a-g-e- -I-o-T---A-s-s-i-s-t-e-d- -A-A-L- -E-c-o-s-y-s-t-e-m-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:fQNAKQ3IYiAC",
+        "Authors": "K Madhana, LS Jayashree",
+        "Source": "-R-e-s-e-a-r-c-h- -A-n-t-h-o-l-o-g-y- -o-n- -E-d-g-e- -C-o-m-p-u-t-i-n-g- -P-r-o-t-o-c-o-l-s-,- -A-p-p-l-i-c-a-t-i-o-n-s-,- -a-n-d- -…-,- -2-0-2-2-",
+        "Citations": 1,
+        "Year": "2022",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-I-n-t-r-o-d-u-c-t-i-o-n- -t-o- -E-n-t-e-r-p-r-i-s-e- -I-o-T-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:geHnlv5EZngC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-G-e-t-t-i-n-g- -S-t-a-r-t-e-d- -w-i-t-h- -E-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -D-e-s-i-g-n- -A-p-p-r-o-a-c-h-e-s- -a-n-d- -…-,- -2-0-2-0-",
+        "Citations": 1,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-S-a-f-e-s-t- -S-e-c-u-r-e- -a-n-d- -C-o-n-s-i-s-t-e-n-t- -D-a-t-a- -S-e-r-v-i-c-e-s- -i-n- -t-h-e- -S-t-o-r-a-g-e- -o-f- -C-l-o-u-d- -C-o-m-p-u-t-i-n-g-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:K3LRdlH-MEoC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -S-m-a-r-t- -G-r-i-d- -a-n-d- -S-m-a-r-t- -…-,- -2-0-1-9-",
+        "Citations": 1,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -s-m-a-r-t- -a-g-r-i-c-u-l-t-u-r-a-l- -m-o-d-e-l- -u-s-i-n-g- -i-o-t-,- -m-o-b-i-l-e-,- -a-n-d- -c-l-o-u-d---b-a-s-e-d- -p-r-e-d-i-c-t-i-v-e- -d-a-t-a- -a-n-a-l-y-t-i-c-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:WbkHhVStYXYC",
+        "Authors": "P Anand Prabu, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -S-m-a-r-t- -G-r-i-d- -a-n-d- -S-m-a-r-t- -…-,- -2-0-1-9-",
+        "Citations": 1,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-L-o-n-g-i-t-u-d-i-n-a-l- -S-t-u-d-y- -o-f- -M-i-t-r-a-l- -V-a-l-v-e- -S-t-e-n-o-s-i-s- -P-r-o-g-n-o-s-i-s- -u-s-i-n-g- -D-e-e-p- -L-e-a-r-n-i-n-g- -T-e-c-h-n-i-q-u-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:N5tVd3kTz84C",
+        "Authors": "LS Jayashree",
+        "Source": "-",
+        "Citations": 0,
+        "Year": "2025",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-I-m-p-a-c-t- -o-f- -A-I-,- -B-C- -a-n-d- -I-o-T- -f-o-r- -S-m-a-r-t- -C-i-t-i-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:LPZeul_q3PIC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "-B-l-o-c-k-c-h-a-i-n-,- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-,- -a-n-d- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -1-7-9---2-0-4-,- -2-0-2-1-",
+        "Citations": 0,
+        "Year": "2021",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-r-c-h-i-t-e-c-t-u-r-e- -f-o-r- -a-n- -E-n-t-e-r-p-r-i-s-e- -I-o-T-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:4fKUyHm3Qg0C",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-G-e-t-t-i-n-g- -S-t-a-r-t-e-d- -w-i-t-h- -E-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -D-e-s-i-g-n- -A-p-p-r-o-a-c-h-e-s- -a-n-d- -…-,- -2-0-2-0-",
+        "Citations": 0,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-T-h-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -C-o-n-n-e-c-t-i-v-i-t-y- -S-t-a-n-d-a-r-d-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:vRqMK49ujn8C",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "-G-e-t-t-i-n-g- -S-t-a-r-t-e-d- -w-i-t-h- -E-n-t-e-r-p-r-i-s-e- -I-n-t-e-r-n-e-t- -o-f- -T-h-i-n-g-s-:- -D-e-s-i-g-n- -A-p-p-r-o-a-c-h-e-s- -a-n-d- -…-,- -2-0-2-0-",
+        "Citations": 0,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-i-n- -t-h-e- -S-t-o-r-a-g-e- -o-f- -C-l-o-u-d- -C-o-m-p-u-t-i-n-g-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ye4kPcJQO24C",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "-P-r-o-c-e-e-d-i-n-g-s- -o-f- -I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -S-m-a-r-t- -…-,- -2-0-2-0-",
+        "Citations": 0,
+        "Year": "2020",
+        "Quartile": "Book Chapter / Series"
+      },
+      {
+        "Title": "-A- -R-i-s-k- -A-s-s-e-s-s-m-e-n-t- -M-o-d-e-l- -f-o-r- -A-l-z-h-e-i-m-e-r-’-s- -D-i-s-e-a-s-e- -U-s-i-n-g- -F-u-z-z-y- -C-o-g-n-i-t-i-v-e- -M-a-p-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:uWQEDVKXjbEC",
+        "Authors": "SM Ammal, LS Jayashree",
+        "Source": "-A-d-v-a-n-c-e-s- -i-n- -C-o-m-p-u-t-e-r-i-z-e-d- -A-n-a-l-y-s-i-s- -i-n- -C-l-i-n-i-c-a-l- -a-n-d- -M-e-d-i-c-a-l- -I-m-a-g-i-n-g-,- -2-0-9---2-2-0-,- -2-0-1-9-",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-g-e-n-t---B-a-s-e-d- -T-e-m-p-e-r-a-t-u-r-e- -M-o-n-i-t-o-r-i-n-g- -S-y-s-t-e-m-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:l7t_Zn2s7bgC",
+        "Authors": "S Jaswanth, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -S-m-a-r-t- -G-r-i-d- -a-n-d- -S-m-a-r-t- -…-,- -2-0-1-9-",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -S-u-r-v-e-y- -o-n- -M-e-d-i-c-a-l- -I-m-a-g-e- -R-e-g-i-s-t-r-a-t-i-o-n- -U-s-i-n-g- -D-e-e-p- -L-e-a-r-n-i-n-g- -T-e-c-h-n-i-q-u-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:738O_yMBCRsC",
+        "Authors": "MCS Priya, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -S-m-a-r-t- -G-r-i-d- -a-n-d- -S-m-a-r-t- -…-,- -2-0-1-9-",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-S-p-e-c-t-r-u-m- -S-e-n-s-i-n-g- -B-a-s-e-d- -o-n- -C-a-s-c-a-d-e-d- -A-p-p-r-o-a-c-h- -f-o-r- -C-o-g-n-i-t-i-v-e- -R-a-d-i-o-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:Tiz5es2fbqcC",
+        "Authors": "N Iswarya, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -A-r-t-i-f-i-c-i-a-l- -I-n-t-e-l-l-i-g-e-n-c-e-,- -S-m-a-r-t- -G-r-i-d- -a-n-d- -S-m-a-r-t- -…-,- -2-0-1-9-",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-U-T-O-M-A-T-E-D- -I-N-T-E-G-R-A-T-E-D- -C-L-U-S-T-E-R-I-N-G- -A-L-G-O-R-I-T-H-M- -F-O-R- -M-A-M-M-O-G-R-A-P-H-I-C- -M-A-S-S- -S-E-G-M-E-N-T-A-T-I-O-N-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:kRWSkSYxWN8C",
+        "Authors": "K Akila, LS Jayashree, A Vasuki",
+        "Source": "-P-a-k-i-s-t-a-n- -J-o-u-r-n-a-l- -o-f- -B-i-o-t-e-c-h-n-o-l-o-g-y- -1-4- -(-S-p-e-c-i-a-l- -I-I-)-,- -6---9-,- -2-0-1-7-",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "-E-a-r-l-y- -d-e-t-e-c-t-i-o-n- -o-f- -b-r-e-a-s-t- -c-a-n-c-e-r- -U-s-i-n-g- -i-m-a-g-e- -p-r-o-c-e-s-s-i-n-g- -a-l-g-o-r-i-t-h-m-s- -A-n-d- -e-s-t-i-m-a-t-i-o-n- -o-f- -o-v-e-r-a-l-l- -r-i-s-k-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:J-pR_7NvFogC",
+        "Authors": "K Akila, LS Jayashree",
+        "Source": "-A-n-n-a- -U-n-i-v-e-r-s-i-t-y-,- -2-0-1-7-",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-C-e-r-t-a-i-n- -i-n-v-e-s-t-i-g-a-t-i-o-n-s- -o-n- -a-p-p-l-i-c-a-t-i-o-n- -o-f- -s-o-f-t- -c-o-m-p-u-t-i-n-g- -t-e-c-h-n-i-q-u-e-s- -f-o-r- -s-e-n-s-o-r- -d-a-t-a- -p-r-o-c-e-s-s-i-n-g- -i-n- -p-r-e-c-i-s-i-o-n- -a-g-r-i-c-u-l-t-u-r-e- -a-p-p-l-i-c-a-t-i-o-n-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:wbdj-CoPYUoC",
+        "Authors": "N Rajathi, LS Jayashree",
+        "Source": "-A-N-N-A- -U-N-I-V-E-R-S-I-T-Y-,- -2-0-1-7-",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-p-p-l-i-c-a-t-i-o-n- -o-f- -s-o-f-t- -c-o-m-p-u-t-i-n-g- -t-e-c-h-n-i-q-u-e-s- -f-o-r- -i-n-t-e-l-l-i-g-e-n-t- -s-e-n-s-o-r- -d-a-t-a- -a-g-g-r-e-g-a-t-i-o-n- -i-n- -s-t-r-u-c-t-u-r-a-l- -h-e-a-l-t-h- -m-o-n-i-t-o-r-i-n-g-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:1qzjygNMrQYC",
+        "Authors": "S Vijayalakshmi, LS Jayashree",
+        "Source": "-A-N-N-A- -U-N-I-V-E-R-S-I-T-Y-,- -2-0-1-7-",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-p-p-l-i-c-a-t-i-o-n- -o-f- -f-u-z-z-y- -c-o-g-n-i-t-i-v-e- -m-a-p-s- -f-o-r- -c-r-a-c-k- -c-a-t-e-g-o-r-i-z-a-t-i-o-n- -i-n- -c-o-l-u-m-n-s- -o-f- -r-e-i-n-f-o-r-c-e-d- -c-o-n-c-r-e-t-e- -s-t-r-u-c-t-u-r-e-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:b0M2c_1WBrUC",
+        "Authors": "JS vijayalakhmi",
+        "Source": "-N-e-u-r-a-l- -C-o-m-p-u-t-i-n-g- -&-a-m-p-;- -A-p-p-l-i-c-a-t-i-o-n-s- -D-O-I- -1-0-.-1-0-0-7-/-s-0-0-5-2-1---0-1-6---2-3-1-3---9-,- -2-0-1-6-",
+        "Citations": 0,
+        "Year": "2016",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-M-e-a-s-u-r-i-n-g- -V-a-r-i-o-u-s- -C-o-n-f-l-i-c-t- -D-e-c-i-s-i-o-n- -P-o-l-i-c-i-e-s- -i-n- -M-o-b-i-l-e- -A-d- -H-o-c- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:a0OBvERweLwC",
+        "Authors": "R Suganya, LS Jayashree",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -A-p-p-l-i-e-d- -E-n-g-i-n-e-e-r-i-n-g- -R-e-s-e-a-r-c-h- -1-1- -(-2-)-,- -9-2-7---9-3-3-,- -2-0-1-6-",
+        "Citations": 0,
+        "Year": "2016",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "-A-p-p-l-i-c-a-t-i-o-n- -o-f- -F-u-z-z-y- -C-o-g-n-i-t-i-v-e- -M-a-p-s- -f-o-r- -C-o-c-o-n-u-t- -y-i-e-l-d- -m-a-n-a-g-e-m-e-n-t- -i-n- -M-a-l-a-b-a-r- -r-e-g-i-o-n- -o-f- -S-o-u-t-h-e-r-n- -I-n-d-i-a-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:2P1L_qKh6hAC",
+        "Authors": "KP L. S. Jayashree, Nidhil Palakkal, Elpiniki I. Papageorgiou",
+        "Source": "-N-e-u-r-a-l- -C-o-m-p-u-t-i-n-g- -a-n-d- -A-p-p-l-i-c-a-t-i-o-n- -2-6- -(-8-)-,- -1-9-6-3---1-9-7-8-,- -2-0-1-5-",
+        "Citations": 0,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "-E-a-r-l-y- -W-a-r-n-i-n-g- -S-y-s-t-e-m- - -f-o-r- -D-e-n-g-u-e- -o-u-t-b-r-e-a-k--- -a- -p-r-e-l-i-m-i-n-a-r-y- -a-p-p-r-o-a-c-h- -u-s-i-n-g- -t-i-m-e- -s-e-r-i-e-s- -f-o-r-e-c-a-s-t-i-n-g-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ldfaerwXgEUC",
+        "Authors": "DR L.S Jayashree, Lakshmi Devi.R",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -A-p-p-l-i-e-d- -E-n-g-i-n-e-e-r-i-n-g- -R-e-s-e-a-r-c-h- -1-0- -(-4-)-,- -2-0-1-5-",
+        "Citations": 0,
+        "Year": "2015",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "-F-o-r-e-c-a-s-t-i-n-g- -E-n-e-r-g-y- -D-e-m-a-n-d-s- -b-a-s-e-d- -o-n- -E-n-s-e-m-b-l-e- -o-f- -C-l-a-s-s-i-f-i-e-r-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:VOx2b1Wkg3QC",
+        "Authors": "M Soundaryadevi, LS Jayashree",
+        "Source": "-",
+        "Citations": 0,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-H-o-m-e- -E-n-e-r-g-y- -M-a-n-a-g-e-m-e-n-t- -f-o-r- -E-n-e-r-g-y- -C-o-n-s-e-r-v-a-t-i-o-n- -u-s-i-n-g- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u_35RYKgDlwC",
+        "Authors": "LS Jayashree",
+        "Source": "-2-3-r-d- -e-d-i-t-i-o-n- -o-f- -I-n-d-i-a-n- -E-n-g-i-n-e-e-r-i-n-g- -C-o-n-g-r-e-s-s-,- -2-0-1-4-",
+        "Citations": 0,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-S-p-a-t-i-a-l---T-e-m-p-o-r-a-l- -C-o-r-r-e-l-a-t-i-o-n- -A-w-a-r-e- -S-o-i-l- -M-o-i-s-t-u-r-e- -m-o-n-i-t-o-r-i-n-g- -F-r-a-m-e-w-o-r-k- -u-s-i-n-g- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -n-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:zA6iFVUQeVQC",
+        "Authors": "RV N.Rajathi Dr.L.S.Jayashree",
+        "Source": "-2-3-r-d- -e-d-i-t-i-o-n- -o-f- -I-n-d-i-a-n- -E-n-g-i-n-e-e-r-i-n-g- -C-o-n-g-r-e-s-s-,- -2-0-1-4-",
+        "Citations": 0,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-C-o-m-m-u-n-i-c-a-t-i-o-n- - -E-f-f-i-c-i-e-n-t- - -S-p-a-t-i-a-l---T-e-m-p-o-r-a-l- - -C-o-r-r-e-l-a-t-i-o-n- - -a-w-a-r-e- - -S-o-i-l- - -M-o-i-s-t-u-r-e- -M-o-n-i-t-o-r-i-n-g- -F-r-a-m-e-w-o-r-k- -u-s-i-n-g- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:rO6llkc54NcC",
+        "Authors": "RV N.Rajathi Dr.L.S.Jayashree",
+        "Source": "-N-a-t-i-o-n-a-l- -G-r-o-u-n-d- -W-a-t-e-r- -C-o-n-f-e-r-e-n-c-e- -o-n- -P-r-o-b-l-e-m-s-,- -C-h-a-l-l-e-n-g-e-s- -a-n-d- -M-a-n-a-g-e-m-e-n-t- -o-f- -…-,- -2-0-1-4-",
+        "Citations": 0,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-C-o-m-m-u-n-i-c-a-t-i-o-n- -E-f-f-i-c-i-e-n-t- -S-p-a-t-i-a-l---T-e-m-p-o-r-a-l- -C-o-r-r-e-l-a-t-i-o-n- -a-w-a-r-e- -S-o-i-l- -M-o-i-s-t-u-r-e- -M-o-n-i-t-o-r-i-n-g- -F-r-a-m-e-w-o-r-k- -u-s-i-n-g- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:pqnbT2bcN3wC",
+        "Authors": "RMP L.S.Jayashree V.K.Yamini",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -C-o-m-p-u-t-e-r- -A-p-p-l-i-c-a-t-i-o-n-s- -(-0-9-7-5---8-8-8-7-)-,- -e-l-e-c-t-r-i-c-a-l- -…-,- -2-0-1-3-",
+        "Citations": 0,
+        "Year": "2013",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-C-o-v-e-r-a-g-e- -P-r-o-b-l-e-m- -i-n- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:dfsIfKJdRG4C",
+        "Authors": "JLSAS Roopa Chandrika",
+        "Source": "-R-T-C-N-C- -2-0-0-6-,- -2-5-2---2-5-8-,- -2-0-0-6-",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-C-l-u-s-t-e-r-i-n-g- -T-e-c-h-n-i-q-u-e-s- -i-n- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:4OULZ7Gr8RgC",
+        "Authors": "JLSAS Rajathi N.",
+        "Source": "-P-r-o-c-e-e-d-i-n-g-s- -o-f- -R-T-C-N-C- -2-0-0-6-,- -1-4-9---1-5-7-,- -2-0-0-6-",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-R-o-b-u-s-t- -D-a-t-a- -A-g-g-r-e-g-a-t-i-o-n- -T-e-c-h-n-i-q-u-e-s- -i-n- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:fPk4N6BV_jEC",
+        "Authors": "VJLS Arumugam S",
+        "Source": "-R-T-C-N-C- -2-0-0-6-,- -1-2-0---1-2-7-,- -2-0-0-6-",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-D-e-s-i-g-n- -O-p-t-i-m-i-z-a-t-i-o-n-s- -i-n- -C-l-u-s-t-e-r-e-d- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-:- -A- -S-u-r-v-e-y-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ZHo1McVdvXMC",
+        "Authors": "JLS Arumugam S",
+        "Source": "-I-n-d-i-a-n- -J-o-u-r-n-a-l- -o-f- -C-o-m-p-u-t-i-n-g- -T-e-c-h-n-o-l-o-g-y- -1- -(-2-)-,- -1---1-4-,- -2-0-0-6-",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-E-S-A-C-:- -A-n- -E-n-e-r-g-y- -a-n-d- -S-t-a-b-i-l-i-t-y- -A-w-a-r-e- -C-l-u-s-t-e-r-i-n-g- -f-o-r- -H-e-t-e-r-o-g-e-n-e-o-u-s- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-’-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:SeFeTyx0c_EC",
+        "Authors": "ASRN Jayashree L.S.",
+        "Source": "-J-o-u-r-n-a-l- -o-f- -C-o-m-p-u-t-e-r- -S-c-i-e-n-c-e- -1-,- -4-2-1---4-2-9-,- -2-0-0-6-",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "-A-n- -E-f-f-i-c-i-e-n-t- -a-n-d- -F-a-u-l-t- -T-o-l-e-r-a-n-t- -A-g-g-r-e-g-a-t-i-o-n- -S-c-h-e-m-e- -f-o-r- -D-i-s-t-r-i-b-u-t-e-d- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s- -u-s-i-n-g- -M-o-d-i-f-i-e-d- -Z---S-c-o-r-e- -M-e-t-h-o-d-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:HoB7MX3m0LUC",
+        "Authors": "ASVK Jayashree L.S.",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -J-o-u-r-n-a-l- -o-f- -S-y-s-t-e-m-i-c-s-,- -C-y-b-e-r-n-e-t-i-c-s- -a-n-d- -I-n-f-o-r-m-a-t-i-c-s-,- -7-6---8-1-,- -2-0-0-6-",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A- -R-e-p-o-r-t- -o-n- -S-e-c-u-r-e- -I-n-f-o-r-m-a-t-i-o-n- -P-r-o-c-e-s-s-i-n-g- -i-n- -W-i-r-e-l-e-s-s- -S-e-n-s-o-r- -N-e-t-w-o-r-k-s-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:cFHS6HbyZ2cC",
+        "Authors": "ASVK Jayashree L.S.",
+        "Source": "-I-n-t-e-r-n-a-t-i-o-n-a-l- -C-o-n-f-e-r-e-n-c-e- -o-n- -I-n-f-o-r-m-a-t-i-o-n- -S-e-c-u-r-i-t-y- -(-I-C-I-S-’-0-5-)-,- -1-9-2---1-9-8-,- -2-0-0-5-",
+        "Citations": 0,
+        "Year": "2005",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-M-e-d-i-c-a-l- -I-m-a-g-e- -E-n-h-a-n-c-e-m-e-n-t- -f-o-r- -I-m-p-r-o-v-e-d- -D-i-a-g-n-o-s-t-i-c- -A-c-c-u-r-a-c-y- -U-s-i-n-g- -G-e-n-e-r-a-t-i-v-e- -A-d-v-e-r-s-a-r-i-a-l- -N-e-t-w-o-r-k-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ZuybSZzF8UAC",
+        "Authors": "B Lakshman Prabhu, LS Jayashree",
+        "Source": "-",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-d-v-a-n-c-i-n-g- -C-a-r-d-i-a-c- -A-s-s-e-s-s-m-e-n-t- -T-h-r-o-u-g-h- -C-o-m-p-u-t-a-t-i-o-n-a-l- -S-y-n-t-h-e-s-i-s- -i-n- -S-e-i-s-m-o-c-a-r-d-i-o-g-r-a-p-h-y-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:VL0QpB8kHFEC",
+        "Authors": "SJ MICHAEL GNANARAJ, LS Jayashree",
+        "Source": "-A-v-a-i-l-a-b-l-e- -a-t- -S-S-R-N- -5-1-5-3-3-8-9-,- -0-",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "-A-I-S-G-S-C- -2-0-1-9-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:WqliGbK-hY8C",
+        "Authors": "LA Kumar, LS Jayashree, R Manimegalai",
+        "Source": "-",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Book Chapter / Series"
+      },
+      {
+        "Title": "-C-o-m-f-o-r-t- -M-a-n-a-g-e-m-e-n-t- -a-n-d- -E-n-e-r-g-y- -C-o-n-s-e-r-v-a-t-i-o-n- -f-o-r- -S-m-a-r-t- -H-o-m-e- -E-n-v-i-r-o-n-m-e-n-t- -U-s-i-n-g- -R-e-i-n-f-o-r-c-e-m-e-n-t- -L-e-a-r-n-i-n-g- -T-e-c-h-n-i-q-u-e-",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:nb7KW1ujOQ8C",
+        "Authors": "LB Anthony, LS Jayashree",
+        "Source": "-C-o-n-f-e-r-e-n-c-e- -o-n- -B-i-g- -D-a-t-a- -a-n-d- -C-l-o-u-d- -C-o-m-p-u-t-i-n-g- -2-0-1-7-,- -6-5-,- -0-",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Others"
+      }
+    ];
 
 
         
