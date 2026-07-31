@@ -86,12 +86,12 @@ for row in rows:
         
     if title_match:
         title = title_match.group(1).strip()
-        title = title.replace('', '-').replace('\uFFFD', '-')
+        title = title.replace('\u00ad', '-').replace('\u2013', '-').replace('\u2014', '-').replace('\uFFFD', '-')
         
         link = "https://scholar.google.com" + link_match.group(1).strip() if link_match else ""
         authors = re.sub(r'<[^>]+>', '', divs[0]).strip() if len(divs) > 0 else ""
         venue = re.sub(r'<[^>]+>', '', divs[1]).strip() if len(divs) > 1 else ""
-        venue = venue.replace('', '-').replace('\uFFFD', '-')
+        venue = venue.replace('\u00ad', '-').replace('\u2013', '-').replace('\u2014', '-').replace('\uFFFD', '-')
         
         citations_str = citations_match.group(1).strip() if citations_match else "0"
         citations = int(citations_str) if citations_str.isdigit() else 0
