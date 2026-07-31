@@ -2216,19 +2216,19 @@ body.light-theme .orb {
 
 .profile-photo-col {
     flex-shrink: 0;
-    width: 220px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    border: 3px solid var(--border-color);
+    border: 4px solid var(--accent-color);
     background-color: var(--bg-secondary);
     box-shadow: var(--shadow-md);
 }
@@ -3077,4 +3077,71 @@ body {
     transform: scale(1.06);
     border-color: var(--accent-color) !important;
     box-shadow: var(--shadow-md);
+}
+
+/* Mobile-friendly specific adjustments for Hero, About and Header */
+@media (max-width: 992px) {
+    .about-analytics-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Force column layout for profile column, ignoring inline properties */
+    .profile-wrap {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2.5rem !important;
+    }
+    
+    .profile-photo-col {
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+    
+    /* Ensure the links row inside profile column is centered and fits mobile screen */
+    .profile-links-row {
+        width: 100% !important;
+        max-width: 240px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    /* Force main logo to stay in one line on small viewports */
+    .logo {
+        white-space: nowrap !important;
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce vertical padding of sections to reclaim screen space */
+    section {
+        padding: 40px 0 !important;
+    }
+    
+    /* Align hero headings centered for balance */
+    .profile-info {
+        text-align: center !important;
+    }
+    
+    .profile-info-inst {
+        justify-content: center !important;
+    }
+    
+    /* Optimize card paddings */
+    .highlight-box, .patent-card, .award-card, .product-card, .quartile-distribution-card {
+        padding: 16px !important;
+    }
+    
+    /* Make the scrolling ticker text slightly smaller */
+    .ticker-item {
+        font-size: 0.82rem !important;
+        gap: 6px !important;
+    }
+    .ticker-label {
+        font-size: 0.75rem !important;
+        padding: 4px 10px !important;
+    }
 }
