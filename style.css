@@ -2488,7 +2488,7 @@ body.light-theme .orb {
     font-size: 0.85rem;
     font-weight: 700;
     color: var(--text-muted);
-    min-width: 45px;
+    min-width: 38px;
     flex-shrink: 0;
     letter-spacing: 0.05em;
 }
