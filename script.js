@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyProductFilter(filterValue) {
         productCards.forEach(card => {
             const status = card.getAttribute('data-status');
-            if (filterValue === 'all' || status === filterValue) {
+            if (filterValue === 'all' || status === filterValue || (filterValue === 'completed' && status === 'commercialized')) {
                 card.style.display = 'flex';
             } else {
                 card.style.display = 'none';
