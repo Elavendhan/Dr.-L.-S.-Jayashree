@@ -815,7 +815,7 @@
                     </div>
 
                     <!-- DiaSole -->
-                    <div class="product-card" data-status="commercialized" data-product="diasole">
+                    <div class="product-card" data-status="completed" data-product="diasole">
                         <div class="product-img-wrapper">
                             <img src="assets/products/2023_24_diasole.png" alt="DiaSole Smart Shoe Sole"
                                 class="product-img">
@@ -831,7 +831,7 @@
                     </div>
 
                     <!-- WING Kit -->
-                    <div class="product-card" data-status="commercialized" data-product="wing-kit">
+                    <div class="product-card" data-status="completed" data-product="wing-kit">
                         <div class="product-img-wrapper">
                             <img src="assets/products/wing_kit.jpg" alt="WING Kit Device" class="product-img">
                             <span class="product-status-tag completed">DST Funded</span>
@@ -846,7 +846,7 @@
                     </div>
 
                     <!-- Memory Aide -->
-                    <div class="product-card" data-status="completed" data-product="memory-aide">
+                    <div class="product-card" data-status="commercialized" data-product="memory-aide">
                         <div class="product-img-wrapper">
                             <!-- Placeholder visual or clean gradient -->
                             <div class="product-img-placeholder">
@@ -864,10 +864,10 @@
                     </div>
 
                     <!-- VitaLink -->
-                    <div class="product-card" data-status="completed" data-product="vitalink">
+                    <div class="product-card" data-status="commercialized" data-product="vitalink">
                         <div class="product-img-wrapper">
                             <img src="assets/products/vitalink.png" alt="VitaLink Application" class="product-img">
-                            <span class="product-status-tag completed">Mobile Application</span>
+                            <span class="product-status-tag completed">Tech Transferred</span>
                         </div>
                         <div class="product-body">
                             <h3 class="product-title">VitaLink</h3>
@@ -1285,25 +1285,61 @@
                     <p class="section-desc">Centre of Excellence for Assistive Technology &amp; Rehabilitation Engineering</p>
                 </div>
 
-                <!-- 1. Milestones Poster Display (Replacing inauguration photo) -->
-                <div class="coe-poster-container" style="width: 100%; max-width: 900px; margin: 0 auto 40px auto; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); position: relative; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                    <img src="assets/professional_photographs/psg_caress_milstones_2018_2026.jpeg"
-                        alt="PSG CARES Milestones Poster (2018-2026)" class="coe-image lightbox-trigger"
-                        style="width: 100%; height: auto; display: block; object-fit: contain; max-height: 500px; margin: 0 auto;"
-                        data-title="PSG CARES Milestones Poster (2018-2026)"
-                        data-desc="A timeline overview of key institutional achievements and technology translations (2018-2026).">
-                    <div class="coe-zoom-overlay" style="position: absolute; bottom: 15px; right: 15px; background: rgba(11, 15, 25, 0.85); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 6px 14px; border-radius: 20px; backdrop-filter: blur(4px); border: 1px solid rgba(255, 255, 255, 0.1);"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</div>
+                <!-- 1. PSG CARES Images Grid (Extracted from CoE Overview) -->
+                <div class="coe-grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px; width: 100%;">
+                    
+                    <!-- Image 1: Official Board -->
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); cursor: pointer; height: 200px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <img src="assets/psg_cares_extracted/image1.jpeg" 
+                             alt="PSG CARES Entrance" 
+                             class="lightbox-trigger" 
+                             data-title="PSG CARES Entrance Board" 
+                             data-desc="DST Centre of Excellence for Assistive Technology and Rehabilitation Engineering Solutions (PSG CARES) entrance board."
+                             style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+                        <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.65rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; pointer-events: none;"><i class="fa-solid fa-magnifying-glass-plus"></i> Zoom</div>
+                    </div>
+
+                    <!-- Image 2: Ribbon Cutting -->
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); cursor: pointer; height: 200px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <img src="assets/psg_cares_extracted/image2.jpeg" 
+                             alt="Inauguration Ceremony" 
+                             class="lightbox-trigger" 
+                             data-title="Ribbon Cutting Ceremony" 
+                             data-desc="PSG CARES inauguration ribbon-cutting ceremony conducted by Dr. Konga Gopikrishna, Scientist F, DST on 9th August 2019."
+                             style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+                        <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.65rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; pointer-events: none;"><i class="fa-solid fa-magnifying-glass-plus"></i> Zoom</div>
+                    </div>
+
+                    <!-- Image 3: Advisory Meeting -->
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); cursor: pointer; height: 200px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <img src="assets/psg_cares_extracted/image3.jpeg" 
+                             alt="PSG CARES Advisory Meeting" 
+                             class="lightbox-trigger" 
+                             data-title="PSG CARES Meeting" 
+                             data-desc="Dignitaries and advisory committee meeting conducted in the CoE laboratory conference room."
+                             style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+                        <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.65rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; pointer-events: none;"><i class="fa-solid fa-magnifying-glass-plus"></i> Zoom</div>
+                    </div>
+
+                    <!-- Image 4: Lab & Project Demos -->
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); cursor: pointer; height: 200px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                        <img src="assets/psg_cares_extracted/image4.jpeg" 
+                             alt="Student Project Demonstrations" 
+                             class="lightbox-trigger" 
+                             data-title="Student Project Demonstrations" 
+                             data-desc="Students demonstrating IoT healthcare & smart assistive devices inside the PSG CARES mini conference hall."
+                             style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+                        <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.65rem; padding: 4px 8px; border-radius: 4px; font-weight: 600; pointer-events: none;"><i class="fa-solid fa-magnifying-glass-plus"></i> Zoom</div>
+                    </div>
+
                 </div>
 
                 <!-- 2. Details & Highlights Grid -->
                 <div class="coe-details-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; margin-top: 30px;">
                     <!-- Left Column: Expanded Description & Outcomes -->
                     <div class="coe-content" style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary);">
-                        <p style="margin-bottom: 16px; text-align: justify;">
-                            Established in the year 2019 under DST–SEED division funding, the <strong>Centre of Excellence for Assistive Technology and Rehabilitation Engineering Solutions (PSG CARES)</strong> was inaugurated by <strong>Dr. Konga Gopikrishna</strong>, Scientist F, Department of Science and Technology on 9th August 2019.
-                        </p>
-                        <p style="margin-bottom: 16px; text-align: justify;">
-                            This Centre of Excellence is a translational research ecosystem that transforms clinical needs into healthcare innovations through research in Assistive Technology, Wearable Intelligence, and Connected Healthcare. A major objective of this centre is to design and develop innovative, cost-effective assistive technology and smart wearable solutions.
+                        <p style="margin-bottom: 20px; text-align: justify;">
+                            The Centre of Excellence for Assistive Technology and Rehabilitant Engineering Solutions (PSG CARES) was established in the year 2019 partly under DST –SEED division  funding, The center was inagurated  by Dr Konga Gopikrishna , Scientist F, Department of Science and Technology on 9th August 2019. This  Centre of Excellence is an translational research ecosystems that transforms clinical needs into healthcare innovations through translational research in Assistive Technology, Wearable Intelligence, and Connected Healthcare. One of the major objectives of this centre is to design and develop innovative and  cost effective Assistive technology and smart  wearable solutions .
                         </p>
                         <p style="margin-bottom: 16px; text-align: justify;">
                             <strong>Technology Transfers & Impact:</strong>
