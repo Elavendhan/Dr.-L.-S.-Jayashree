@@ -13,9 +13,15 @@
         content="Dr. L. S. Jayashree, PSG College of Technology, PSG CARES, Assistive Technology, IoT Healthcare, Wearables, Computer Science Professor, Gait Watch, DiaSole">
     <meta name="author" content="Dr. L. S. Jayashree">
 
-    <!-- Google Fonts -->
+    <!-- Resource Preconnects for Speed Optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -24,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=2.9">
+    <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 
 <body class="dark-theme">
@@ -121,7 +127,7 @@
                     <!-- Left Column (Profile Photo & External Profiles) -->
                     <div class="profile-photo-col" style="flex-shrink: 0; width: 280px; display: flex; flex-direction: column; align-items: center; gap: 20px;">
                         <img class="profile-photo" src="assets/professional_photographs/dr_ls_jayashree.jpg"
-                            alt="Dr. L. S. Jayashree" style="width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent-color); box-shadow: var(--shadow-md);">
+                            alt="Dr. L. S. Jayashree" fetchpriority="high" decoding="async" style="width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent-color); box-shadow: var(--shadow-md);">
                         
                         <!-- External Profiles below Image -->
                         <div class="profile-links-row" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 240px; margin-top: 5px;">
@@ -809,7 +815,7 @@
                     <div class="product-card" data-status="commercialized" data-product="gait-watch">
                         <div class="product-img-wrapper">
                             <img src="assets/products/gait_watch_with_app.jpg" alt="Gait Watch Wearable System"
-                                class="product-img">
+                                class="product-img" loading="lazy" decoding="async">
                             <span class="product-status-tag completed">TRL-9 Commercialized</span>
                         </div>
                         <div class="product-body">
@@ -825,7 +831,7 @@
                     <div class="product-card" data-status="completed" data-product="diasole">
                         <div class="product-img-wrapper">
                             <img src="assets/products/2023_24_diasole.png" alt="DiaSole Smart Shoe Sole"
-                                class="product-img">
+                                class="product-img" loading="lazy" decoding="async">
                             <span class="product-status-tag completed">Clinically Validated</span>
                         </div>
                         <div class="product-body">
@@ -840,7 +846,7 @@
                     <!-- WING Kit -->
                     <div class="product-card" data-status="completed" data-product="wing-kit">
                         <div class="product-img-wrapper">
-                            <img src="assets/products/wing_kit.jpg" alt="WING Kit Device" class="product-img">
+                            <img src="assets/products/wing_kit.jpg" alt="WING Kit Device" class="product-img" loading="lazy" decoding="async">
                             <span class="product-status-tag completed">DST Funded</span>
                         </div>
                         <div class="product-body">
@@ -873,7 +879,7 @@
                     <!-- VitaLink -->
                     <div class="product-card" data-status="commercialized" data-product="vitalink">
                         <div class="product-img-wrapper">
-                            <img src="assets/products/vitalink.png" alt="VitaLink Application" class="product-img">
+                            <img src="assets/products/vitalink.png" alt="VitaLink Application" class="product-img" loading="lazy" decoding="async">
                             <span class="product-status-tag completed">Tech Transferred</span>
                         </div>
                         <div class="product-body">
@@ -955,6 +961,7 @@
                             <img src="assets/awards_recognitions/dr_lsj_iste_national_award_ceremony_2019.png" 
                                  alt="ISTE National Award Ceremony 2019" 
                                  class="lightbox-trigger"
+                                 loading="lazy" decoding="async"
                                  data-title="ISTE National Award Ceremony (2019)"
                                  data-desc="Awarded the ISTE National Award during the national convention in 2019.">
                             <div class="ceremony-thumb-label">ISTE National Award 2019</div>
@@ -965,6 +972,7 @@
                             <img src="assets/awards_recognitions/dr_lsj_best_innovation_stall_ceremony_2022.png" 
                                  alt="Best Innovation Stall Ceremony 2022" 
                                  class="lightbox-trigger"
+                                 loading="lazy" decoding="async"
                                  data-title="Best Innovation Stall Ceremony (2022)"
                                  data-desc="Receiving the Best Innovation Stall Award at the PSNA IIC Meet in 2022.">
                             <div class="ceremony-thumb-label">Best Innovation Stall 2022</div>
@@ -1090,6 +1098,7 @@
                             <img src="assets/awards_recognitions/higher_education_leader_from_university_leaders_forum.jpg?v=2.91" 
                                  alt="Higher Education Leader from University Leaders Forum" 
                                  class="lightbox-trigger"
+                                 loading="lazy" decoding="async"
                                  data-title="Higher Education Leader Award"
                                  data-desc="Awarded the Higher Education Leader recognition at the University Leaders Forum.">
                             <div class="ceremony-thumb-label">University Leaders Forum</div>
@@ -1100,6 +1109,7 @@
                             <img src="assets/awards_recognitions/dr_lsj_outstanding_academic_award_ceremony_2019.png" 
                                  alt="Outstanding Academic Award Ceremony 2019" 
                                  class="lightbox-trigger"
+                                 loading="lazy" decoding="async"
                                  data-title="Outstanding Academic Award Ceremony (2019)"
                                  data-desc="Receiving the Outstanding Academic Lead Award during the institutional ceremony in 2019.">
                             <div class="ceremony-thumb-label">Outstanding Academic 2019</div>
@@ -1642,6 +1652,7 @@
                         <img src="assets/psg_cares_extracted/image1.jpeg" 
                              alt="PSG CARES Entrance" 
                              class="lightbox-trigger" 
+                             loading="lazy" decoding="async"
                              data-title="PSG CARES Entrance Board" 
                              data-desc="DST Centre of Excellence for Assistive Technology and Rehabilitation Engineering Solutions (PSG CARES) entrance board."
                              style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
@@ -1653,6 +1664,7 @@
                         <img src="assets/psg_cares_extracted/image2.jpeg" 
                              alt="Inauguration Ceremony" 
                              class="lightbox-trigger" 
+                             loading="lazy" decoding="async"
                              data-title="Ribbon Cutting Ceremony" 
                              data-desc="PSG CARES inauguration ribbon-cutting ceremony conducted by Dr. Konga Gopikrishna, Scientist F, DST on 9th August 2019."
                              style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
@@ -1664,6 +1676,7 @@
                         <img src="assets/psg_cares_extracted/image3.jpeg" 
                              alt="PSG CARES Advisory Meeting" 
                              class="lightbox-trigger" 
+                             loading="lazy" decoding="async"
                              data-title="PSG CARES Meeting" 
                              data-desc="Dignitaries and advisory committee meeting conducted in the CoE laboratory conference room."
                              style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
@@ -1675,6 +1688,7 @@
                         <img src="assets/psg_cares_extracted/image4.jpeg" 
                              alt="Student Project Demonstrations" 
                              class="lightbox-trigger" 
+                             loading="lazy" decoding="async"
                              data-title="Student Project Demonstrations" 
                              data-desc="Students demonstrating IoT healthcare & smart assistive devices inside the PSG CARES mini conference hall."
                              style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
@@ -1705,18 +1719,16 @@
                         <!-- Clinical Partners Block -->
                         <div>
                             <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--accent-color); margin-bottom: 18px; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px;">
-                                <i class="fa-solid fa-handshake-angle"></i> Clinical Partners
-                            </h4>
-                            <div style="display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap;">
+                                                     <div style="display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap;">
                                 <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
                                     <div class="partner-circle-logo" style="width: 110px; height: 110px;">
-                                        <img src="assets/clinical_validations/psg_imsr_logo.svg" alt="PSG IMS&R Logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                                        <img src="assets/clinical_validations/psg_imsr_logo.svg" alt="PSG IMS&R Logo" loading="lazy" decoding="async" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                                     </div>
                                     <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em; text-align: center;">PSG IMS&amp;R</span>
                                 </div>
                                 <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
                                     <div class="partner-circle-logo" style="width: 110px; height: 110px;">
-                                        <img src="assets/clinical_validations/neuro_foundation_logo.jfif" alt="Neuro Foundation Logo" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 50%;">
+                                        <img src="assets/clinical_validations/neuro_foundation_logo.jfif" alt="Neuro Foundation Logo" loading="lazy" decoding="async" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 50%;">
                                     </div>
                                     <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em; text-align: center;">Neuro Foundation</span>
                                 </div>
@@ -1732,14 +1744,14 @@
                                 <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
                                     <!-- DST Logo -->
                                     <div class="partner-circle-logo" style="width: 160px; height: 75px; border-radius: 8px; background: #fff; padding: 6px;">
-                                        <img src="assets/clinical_validations/dst_logo.jpg" alt="DST Logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                                        <img src="assets/clinical_validations/dst_logo.jpg" alt="DST Logo" loading="lazy" decoding="async" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                                     </div>
                                     <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em; text-align: center;">DST</span>
                                 </div>
                                 <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
                                     <!-- BIRAC Logo -->
                                     <div class="partner-circle-logo" style="width: 140px; height: 90px; border-radius: 8px; background: #fff; padding: 6px;">
-                                        <img src="assets/clinical_validations/birac_logo.png?v=1.1" alt="BIRAC Logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                                        <img src="assets/clinical_validations/birac_logo.png?v=1.1" alt="BIRAC Logo" loading="lazy" decoding="async" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                                     </div>
                                     <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em; text-align: center;">BIRAC</span>
                                 </div>
@@ -1763,6 +1775,8 @@
                 <!-- Milestones Poster Display -->
                 <div class="coe-poster-container" style="width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); position: relative; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; margin-top: 40px;">
                     <img src="assets/professional_photographs/psg_caress_milstones_2018_2026.jpeg"
+                         alt="PSG CARES Milestones Poster (2018-2026)" class="coe-image lightbox-trigger"
+                         loading="lazy" decoding="async""
                         alt="PSG CARES Milestones Poster (2018-2026)" class="coe-image lightbox-trigger"
                         style="width: 100%; height: auto; display: block; object-fit: contain; max-height: 500px; margin: 0 auto;"
                         data-title="PSG CARES Milestones Poster (2018-2026)"

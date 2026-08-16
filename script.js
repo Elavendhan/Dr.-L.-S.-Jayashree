@@ -65,20 +65,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollProgress = document.getElementById('scroll-progress');
     const header = document.querySelector('.main-header');
     
-    window.addEventListener('scroll', () => {
-        // Calculate scroll percentage
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrolled = (scrollTop / docHeight) * 100;
-        scrollProgress.style.width = scrolled + '%';
-        
-        // Sticky Header class addition
-        if (scrollTop > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+    let isTicking = false;
+    let cachedDocHeight = 0;
+    
+    const updateScrollMetrics = () => {
+        const scrollTop = window.scrollY || window.pageYOffset;
+        if (!cachedDocHeight || scrollTop === 0) {
+            cachedDocHeight = document.documentElement.scrollHeight - window.innerHeight;
         }
-    });
+        const scrolled = (scrollTop / (cachedDocHeight || 1)) * 100;
+        if (scrollProgress) scrollProgress.style.width = scrolled + '%';
+        
+        if (header) {
+            if (scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }
+        isTicking = false;
+    };
+    
+    window.addEventListener('scroll', () => {
+        if (!isTicking) {
+            window.requestAnimationFrame(updateScrollMetrics);
+            isTicking = true;
+        }
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+        cachedDocHeight = document.documentElement.scrollHeight - window.innerHeight;
+    }, { passive: true });
 
     // ==========================================
     // SCROLL SPY ACTIVE SECTION LINK HIGHLIGHT

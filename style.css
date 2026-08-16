@@ -3633,4 +3633,28 @@ body {
     padding: 12px 18px !important;
 }
 
+/* ==========================================
+   MOBILE PERFORMANCE & HARDWARE ACCELERATION
+   ========================================== */
+.publications-section,
+.products-section,
+.awards-section,
+.milestones-section,
+.coe-section,
+.press-section,
+.contact-section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 700px;
+}
+
+/* Promote heavy animated elements to GPU compositor layers */
+.ticker-track,
+.hero-bg-orbs,
+.orb,
+.scroll-reveal {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+
 
