@@ -3457,4 +3457,180 @@ body {
     font-size: 0.8rem;
     color: var(--text-secondary);
 }
+
+/* ==========================================
+   CAREER MILESTONES TIMELINE SECTION (ADDED)
+   ========================================== */
+.milestones-section {
+    padding: 80px 0;
+    background-color: var(--bg-primary);
+}
+
+.milestones-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Central vertical timeline guide line */
+.milestones-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--accent-color) 0%, rgba(66, 133, 244, 0.2) 100%);
+    border-radius: 2px;
+}
+
+.milestone-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.milestone-row:last-child {
+    margin-bottom: 0;
+}
+
+.milestone-year-col {
+    width: 120px;
+    flex-shrink: 0;
+    padding-right: 24px;
+    text-align: right;
+    position: relative;
+}
+
+.milestone-year-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 800;
+    padding: 5px 13px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.25);
+    letter-spacing: 0.04em;
+}
+
+.milestone-node {
+    position: absolute;
+    left: 114px;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 3.5px solid var(--accent-color);
+    z-index: 2;
+    box-shadow: 0 0 0 4px var(--bg-primary);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.milestone-row:hover .milestone-node {
+    transform: scale(1.3);
+    background-color: var(--accent-color);
+}
+
+.milestone-content-col {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.milestone-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 18px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.milestone-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
+}
+
+.milestone-events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.milestone-event-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+.milestone-event-icon {
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* Mobile Responsiveness for Career Milestones */
+@media (max-width: 768px) {
+    .milestones-container::before {
+        left: 20px;
+    }
+
+    .milestone-row {
+        flex-direction: column;
+        padding-left: 45px;
+        margin-bottom: 24px;
+    }
+
+    .milestone-year-col {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .milestone-year-badge {
+        font-size: 0.85rem;
+        padding: 4px 12px;
+    }
+
+    .milestone-node {
+        left: 14px;
+        top: 6px;
+    }
+
+    .milestone-content-col {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .milestone-card {
+        padding: 14px 18px;
+    }
+}
+
+/* Responsive Table & Chart Wrapper for Narrow Screens */
+.responsive-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Touch target enhancement for social links */
+.sp-pill {
+    min-height: 48px;
+    padding: 12px 18px !important;
+}
+
 

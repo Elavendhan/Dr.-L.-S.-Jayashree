@@ -1525,6 +1525,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ==========================================
+    // DYNAMIC FOOTER COPYRIGHT YEAR & IMAGE FALLBACKS
+    // ==========================================
+    const copyrightYearSpan = document.getElementById('copyright-year');
+    if (copyrightYearSpan) {
+        copyrightYearSpan.textContent = new Date().getFullYear();
+    }
 
+    // Global SVG image fallback handler for missing external image assets
+    const svgFallback = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='100%25' height='100%25' fill='%23111827'/%3E%3Cpath d='M130 80 L170 80 L170 120 L130 120 Z' stroke='%234285F4' stroke-width='3' fill='none'/%3E%3Ccircle cx='150' cy='100' r='10' fill='%234285F4'/%3E%3Ctext x='150' y='150' font-size='12' fill='%239ca3af' text-anchor='middle' font-family='sans-serif'%3EImage Preview Unavailable%3C/text%3E%3C/svg%3E";
+
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('error', () => {
+            if (!img.dataset.fallbackApplied) {
+                img.dataset.fallbackApplied = 'true';
+                img.src = svgFallback;
+                img.style.objectFit = 'cover';
+            }
+        });
+    });
 
 });
+
