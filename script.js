@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:vV6vV6tmYwMC",
         "Authors": "K Akila, LS Jayashree, A Vasuki",
         "Source": "Procedia Computer Science 47, 255-261, 2015",
-        "Citations": 124,
+        "Citations": 121,
         "Year": "2015",
         "Quartile": "Q2"
       },
@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:EUQCXRtRnyEC",
         "Authors": "EIP Rajathi Natarajan , Jayashree Subramanian",
         "Source": "Computers and Electronics in Agriculture 127, 147-157, 2016",
-        "Citations": 93,
+        "Citations": 91,
         "Year": "2016",
         "Quartile": "Q1"
       },
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:35N4QoGY0k4C",
         "Authors": "Elpiniki I. Papageorgiou, Jayashree Subramanian, Akila Karmegam, Nikolaos ...",
         "Source": "Computer Methods and Programmes in Bio-medicine 122 (2), 123-135, 2015",
-        "Citations": 84,
+        "Citations": 85,
         "Year": "2015",
         "Quartile": "Q1"
       },
@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eJXPG6dFmWUC",
         "Authors": "N Iswarya, LS Jayashree",
         "Source": "Wireless Personal Communications 120 (2), 1057-1078, 2021",
-        "Citations": 57,
+        "Citations": 60,
         "Year": "2021",
         "Quartile": "Q2"
       },
@@ -532,7 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:WA5NYHcadZ8C",
         "Authors": "V Kumar, C Troussas",
         "Source": "Proceedings of the International Conference on Industrial and Manufacturing …, 2020",
-        "Citations": 33,
+        "Citations": 42,
         "Year": "2020",
         "Quartile": "Others"
       },
@@ -550,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u-x6o8ySG0sC",
         "Authors": "LS Jayashree, S Arumugam, M Anusha, AB Hariny",
         "Source": "2006 IFIP international conference on wireless and optical communications …, 2006",
-        "Citations": 24,
+        "Citations": 25,
         "Year": "2006",
         "Quartile": "Others"
       },
@@ -573,10 +573,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "Quartile": "Others"
       },
       {
-        "Title": "Fusion of Blockchain-IoT network to improve supply chain traceability using E thermint Smart chain: A Review.",
+        "Title": "Fusion of Blockchain-IoT network to improve supply chain traceability using Ethermint Smart chain: A Review.",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:t6usbXjVLHcC",
         "Authors": "GM George, LS Jayashree",
-        "Source": "KSII Transactions on Internet &amp; Information Systems 16 (11), 2022",
+        "Source": "KSII Trans. Internet Inf. Syst. 16 (11), 3694-3722, 2022",
         "Citations": 16,
         "Year": "2022",
         "Quartile": "Q3"
@@ -586,7 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:08ZZubdj9fEC",
         "Authors": "LS Jayashree, G Selvakumar",
         "Source": "Springer International Publishing, 2020",
-        "Citations": 12,
+        "Citations": 15,
         "Year": "2020",
         "Quartile": "Others"
       },
@@ -600,15 +600,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "Quartile": "Q2"
       },
       {
-        "Title": "Agile supply chain management enabled by the internet of things and microservices",
-        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u9iWguZQMMsC",
-        "Authors": "G Selvakumar, LS Jayashree",
-        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
-        "Citations": 9,
-        "Year": "2019",
-        "Quartile": "Others"
-      },
-      {
         "Title": "Ethereum blockchain-based authentication approach for Data Sharing in Cloud Storage Model",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:olpn-zPbct0C",
         "Authors": "GM George, LS Jayashree",
@@ -616,6 +607,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "Citations": 8,
         "Year": "2023",
         "Quartile": "Q2"
+      },
+      {
+        "Title": "Machine translation using deep learning: A comparison",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:XiSMed-E-HIC",
+        "Authors": "S Swathi, LS Jayashree",
+        "Source": "International conference on artificial intelligence, smart grid and smart …, 2019",
+        "Citations": 8,
+        "Year": "2019",
+        "Quartile": "Others"
       },
       {
         "Title": "Precision agriculture: On the accuracy of multilevel and clustered ANFIS models for sugarcane yield categorization",
@@ -627,21 +627,21 @@ document.addEventListener('DOMContentLoaded', () => {
         "Quartile": "Others"
       },
       {
-        "Title": "Machine translation using deep learning: A comparison",
-        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:XiSMed-E-HIC",
-        "Authors": "S Swathi, LS Jayashree",
-        "Source": "International conference on artificial intelligence, smart grid and smart …, 2019",
-        "Citations": 7,
+        "Title": "Agile supply chain management enabled by the internet of things and microservices",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u9iWguZQMMsC",
+        "Authors": "G Selvakumar, LS Jayashree",
+        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
+        "Citations": 6,
         "Year": "2019",
         "Quartile": "Others"
       },
       {
-        "Title": "Proceedings of international conference on artificial intelligence, smart grid and smart city applications: AISGSC 2019",
+        "Title": "Proceedings of International Conference on Artificial Intelligence, Smart Grid and Smart City Applications AISGSC 2019",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:5Ul4iDaHHb8C",
         "Authors": "LA Kumar, LS Jayashree, R Manimegalai",
-        "Source": "Springer, 2020",
+        "Source": "Conference proceedings info: AISGSC 2019, 155k, 2019",
         "Citations": 6,
-        "Year": "2020",
+        "Year": "2019",
         "Quartile": "Others"
       },
       {
@@ -717,7 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Quartile": "Others"
       },
       {
-        "Title": "A Communication Efficient Framework for Soil Moisture Monitoring using Wireless Sensor Networks",
+        "Title": "A communication efficient framework for soil moisture monitoring using wireless sensor networks",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:2osOgNQ5qMEC",
         "Authors": "LS Jayashree, VK Yamini, RM Priya",
         "Source": "International Journal of Computer Applications 975, 8887, 2010",
@@ -762,7 +762,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Quartile": "Others"
       },
       {
-        "Title": "Grey Wolf Optimization-Based Big Data Analytics for Dengue Outbreak Prediction",
+        "Title": "Grey wolf optimization-based big data analytics for dengue outbreak prediction",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:KxtntwgDAa4C",
         "Authors": "R Lakshmi Devi, LS Jayashree",
         "Source": "Advances in Big Data and Cloud Computing, 385-393, 2018",
@@ -823,6 +823,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "Citations": 2,
         "Year": "2018",
         "Quartile": "Q4"
+      },
+      {
+        "Title": "Early Warning System  for Dengue outbreak- a preliminary approach using time series forecasting",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ldfaerwXgEUC",
+        "Authors": "DR L.S Jayashree, Lakshmi Devi.R",
+        "Source": "International Journal of Applied Engineering Research 10 (4), 2015",
+        "Citations": 2,
+        "Year": "2015",
+        "Quartile": "Q3"
       },
       {
         "Title": "A Computer-assisted Crack Predicting System for Oil and Gas Pipelines Using Fuzzy Cognitive Map",
@@ -909,7 +918,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Title": "Impact of AI, BC and IoT for Smart Cities",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:LPZeul_q3PIC",
         "Authors": "GM George, LS Jayashree",
-        "Source": "Blockchain, Internet of Things, and Artificial Intelligence, 179-204, 2021",
+        "Source": "Blockchain, Internet of Things, and Artificial Intelligence, 179, 2021",
         "Citations": 0,
         "Year": "2021",
         "Quartile": "Others"
@@ -945,7 +954,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Title": "A Risk Assessment Model for Alzheimer’s Disease Using Fuzzy Cognitive Map",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:uWQEDVKXjbEC",
         "Authors": "SM Ammal, LS Jayashree",
-        "Source": "Advances in Computerized Analysis in Clinical and Medical Imaging, 209-220, 2019",
+        "Source": "Advances in Computerized Analysis in Clinical and Medical Imaging, 209, 2019",
         "Citations": 0,
         "Year": "2019",
         "Quartile": "Others"
@@ -1039,15 +1048,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "Citations": 0,
         "Year": "2015",
         "Quartile": "Q1"
-      },
-      {
-        "Title": "Early Warning System  for Dengue outbreak- a preliminary approach using time series forecasting",
-        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ldfaerwXgEUC",
-        "Authors": "DR L.S Jayashree, Lakshmi Devi.R",
-        "Source": "International Journal of Applied Engineering Research 10 (4), 2015",
-        "Citations": 0,
-        "Year": "2015",
-        "Quartile": "Q3"
       },
       {
         "Title": "Forecasting Energy Demands based on Ensemble of Classifiers",

@@ -1,0 +1,51 @@
+name: Auto Sync Google Scholar Publications
+
+on:
+  schedule:
+    # Runs automatically every Sunday at 00:00 UTC (05:30 AM IST)
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab anytime
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas openpyxl
+
+      - name: Run Publication Synchronizer
+        run: |
+          python scripts/update_publications.py
+
+      - name: Commit and Push Changes (if any)
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage updated database files
+          git add publications.json script.js
+          
+          # Commit only if files changed
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-sync: Update publications from Google Scholar [skip ci]"
+            git push origin main
+          else
+            echo "No new publications or citation updates found."
+          fi
