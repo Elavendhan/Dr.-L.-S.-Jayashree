@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eJXPG6dFmWUC",
         "Authors": "N Iswarya, LS Jayashree",
         "Source": "Wireless Personal Communications 120 (2), 1057-1078, 2021",
-        "Citations": 60,
+        "Citations": 61,
         "Year": "2021",
         "Quartile": "Q2"
       },
@@ -903,6 +903,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
         "Citations": 1,
         "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Longitudinal Study of Mitral Valve Stenosis Prognosis using Deep Learning Techniques",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:N5tVd3kTz84C",
+        "Authors": "LS Jayashree",
+        "Source": "",
+        "Citations": 0,
+        "Year": "2025",
         "Quartile": "Others"
       },
       {
