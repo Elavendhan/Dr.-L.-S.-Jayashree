@@ -906,15 +906,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "Quartile": "Others"
       },
       {
-        "Title": "Longitudinal Study of Mitral Valve Stenosis Prognosis using Deep Learning Techniques",
-        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:N5tVd3kTz84C",
-        "Authors": "LS Jayashree",
-        "Source": "",
-        "Citations": 0,
-        "Year": "2025",
-        "Quartile": "Others"
-      },
-      {
         "Title": "Impact of AI, BC and IoT for Smart Cities",
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:LPZeul_q3PIC",
         "Authors": "GM George, LS Jayashree",
