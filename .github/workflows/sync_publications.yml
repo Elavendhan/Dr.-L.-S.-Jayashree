@@ -17,6 +17,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -36,9 +37,11 @@ jobs:
           python scripts/update_publications.py
 
       - name: Commit and Push Changes (if any)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # Stage updated database files
           git add publications.json script.js
@@ -46,7 +49,7 @@ jobs:
           # Commit only if files changed
           if ! git diff --staged --quiet; then
             git commit -m "Auto-sync: Update publications from Google Scholar [skip ci]"
-            git push origin main
+            git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
           else
             echo "No new publications or citation updates found."
           fi
