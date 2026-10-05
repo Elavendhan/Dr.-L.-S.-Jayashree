@@ -2,8 +2,8 @@ name: Auto Sync Google Scholar Publications
 
 on:
   schedule:
-    # Runs automatically every Sunday at 00:00 UTC (05:30 AM IST)
-    - cron: '0 0 * * 0'
+    # Runs automatically every Monday at 00:00 UTC (05:30 AM IST)
+    - cron: '0 0 * * 1'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab anytime
 
 permissions:
