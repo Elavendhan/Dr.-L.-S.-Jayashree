@@ -2,8 +2,8 @@ name: Auto Sync Google Scholar Publications
 
 on:
   schedule:
-    # Runs automatically every Monday at 00:00 UTC (05:30 AM IST)
-    - cron: '0 0 * * 1'
+    # Runs automatically every day at 00:00 UTC (05:30 AM IST)
+    - cron: '0 0 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab anytime
 
 permissions:
@@ -39,8 +39,8 @@ jobs:
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-sync: Update publications from Google Scholar [skip ci]"
-          file_pattern: "publications.json script.js"
+          commit_message: "Auto-sync: Update publications & citation metrics from Google Scholar [skip ci]"
+          file_pattern: "publications.json script.js index.html"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
