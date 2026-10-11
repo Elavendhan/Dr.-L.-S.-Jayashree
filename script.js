@@ -472,7 +472,728 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
    // Inline publications database (prevents CORS fetch blocks when index.html is opened directly via file://)
-    const publicationsDb = [];
+    const publicationsDb = [
+      {
+        "Title": "Mammographic image enhancement using indirect contrast enhancement techniques-a comparative study",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:vV6vV6tmYwMC",
+        "Authors": "K Akila, LS Jayashree, A Vasuki",
+        "Source": "Procedia Computer Science 47, 255-261, 2015",
+        "Citations": 121,
+        "Year": "2015",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "Hybrid learning of fuzzy cognitive maps for sugarcane yield classification",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:EUQCXRtRnyEC",
+        "Authors": "EIP Rajathi Natarajan , Jayashree Subramanian",
+        "Source": "Computers and Electronics in Agriculture 127, 147-157, 2016",
+        "Citations": 91,
+        "Year": "2016",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "An Integrated breast cancer risk assessment and Risk Management model based on Fuzzy Cognitive Maps",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:70eg2SAEIzsC",
+        "Authors": "AV 5. Jayashree Subramanian a, Akila Karmegam b, Elpiniki Papageorgiou c ...",
+        "Source": "Computer Methods and Programmes in Bio-medicine 118 (3), 280-297, 2015",
+        "Citations": 86,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "A Risk Management Model for Familial Breast Cancer: A New Application using Fuzzy Cognitive Map method",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:35N4QoGY0k4C",
+        "Authors": "Elpiniki I. Papageorgiou, Jayashree Subramanian, Akila Karmegam, Nikolaos ...",
+        "Source": "Computer Methods and Programmes in Bio-medicine 122 (2), 123-135, 2015",
+        "Citations": 85,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "A survey on successive interference cancellation schemes in non-orthogonal multiple access for future radio access",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eJXPG6dFmWUC",
+        "Authors": "N Iswarya, LS Jayashree",
+        "Source": "Wireless Personal Communications 120 (2), 1057-1078, 2021",
+        "Citations": 61,
+        "Year": "2021",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "Application of fuzzy cognitive maps in precision agriculture: a case study on coconut yield management of southern India’s Malabar region",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:pyW8ca7W8N0C",
+        "Authors": "LS Jayashree, N Palakkal, EI Papageorgiou, K Papageorgiou",
+        "Source": "Neural Computing and Applications 26 (8), 1963-1978, 2015",
+        "Citations": 46,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "Springer: Cham",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:WA5NYHcadZ8C",
+        "Authors": "V Kumar, C Troussas",
+        "Source": "Proceedings of the International Conference on Industrial and Manufacturing …, 2020",
+        "Citations": 42,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Application of fuzzy cognitive maps for crack categorization in columns of reinforced concrete structures",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:f2IySw72cVMC",
+        "Authors": "JSV Sennipppan",
+        "Source": "Neural Computing   &amp; Applications, 2016",
+        "Citations": 31,
+        "Year": "2016",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "On the accuracy of centroid based multilateration procedure for location discovery in wireless sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u-x6o8ySG0sC",
+        "Authors": "LS Jayashree, S Arumugam, M Anusha, AB Hariny",
+        "Source": "2006 IFIP international conference on wireless and optical communications …, 2006",
+        "Citations": 25,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Application of Fuzzy Cognitive Map for geospatial dengue outbreak risk prediction of tropical regions of Southern India",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:1sJd4Hv_s6UC",
+        "Authors": "LS Jayashree, R Lakshmi Devi, N Papandrianos, EI Papageorgiou",
+        "Source": "Intelligent Decision Technologies 12 (2), 231-250, 2018",
+        "Citations": 23,
+        "Year": "2018",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "E/sup 2/LBC: an energy efficient load balanced clustering technique for heterogeneous wireless sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u5HHmVD_uO8C",
+        "Authors": "LS Jayashree, S Arumugam, N Rajathi",
+        "Source": "2006 IFIP International Conference on Wireless and Optical Communications …, 2006",
+        "Citations": 19,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Fusion of Blockchain-IoT network to improve supply chain traceability using Ethermint Smart chain: A Review.",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:t6usbXjVLHcC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "KSII Trans. Internet Inf. Syst. 16 (11), 3694-3722, 2022",
+        "Citations": 16,
+        "Year": "2022",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "Getting Started with Enterprise Internet of Things: Design Approaches and Software Architecture Models",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:08ZZubdj9fEC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Springer International Publishing, 2020",
+        "Citations": 15,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Latency Minimization Using an Adaptive Load Balancing Technique in Microservices Applications.",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:Mojj43d5GZwC",
+        "Authors": "G Selvakumar, LS Jayashree, S Arumugam",
+        "Source": "Comput. Syst. Sci. Eng. 46 (1), 1215-1231, 2023",
+        "Citations": 11,
+        "Year": "2023",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "Ethereum blockchain-based authentication approach for Data Sharing in Cloud Storage Model",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:olpn-zPbct0C",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "Cybernetics and Systems 54 (6), 961-984, 2023",
+        "Citations": 8,
+        "Year": "2023",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "Machine translation using deep learning: A comparison",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:XiSMed-E-HIC",
+        "Authors": "S Swathi, LS Jayashree",
+        "Source": "International conference on artificial intelligence, smart grid and smart …, 2019",
+        "Citations": 8,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Precision agriculture: On the accuracy of multilevel and clustered ANFIS models for sugarcane yield categorization",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:NhqRSupF_l8C",
+        "Authors": "LS Jayashree, N Rajathi, A Thirumal",
+        "Source": "2016 IEEE Region 10 Conference (TENCON), 1983-1987, 2016",
+        "Citations": 8,
+        "Year": "2016",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Agile supply chain management enabled by the internet of things and microservices",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u9iWguZQMMsC",
+        "Authors": "G Selvakumar, LS Jayashree",
+        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
+        "Citations": 6,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Proceedings of International Conference on Artificial Intelligence, Smart Grid and Smart City Applications AISGSC 2019",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:5Ul4iDaHHb8C",
+        "Authors": "LA Kumar, LS Jayashree, R Manimegalai",
+        "Source": "Conference proceedings info: AISGSC 2019, 155k, 2019",
+        "Citations": 6,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "An enhanced delay sensitive data packet scheduling algorithm to maximizing the network lifetime",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:bFI3QPDXJZMC",
+        "Authors": "C Padmavathy, LS Jayashree",
+        "Source": "Wireless Personal Communications 94 (4), 2213-2227, 2017",
+        "Citations": 6,
+        "Year": "2017",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "Energy efficient grid clustering based data aggregation in wireless sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:abG-DnoFyZgC",
+        "Authors": "N Rajathi, LS Jayashree",
+        "Source": "2016 IEEE region 10 conference (TENCON), 488-492, 2016",
+        "Citations": 6,
+        "Year": "2016",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A communication‐efficient framework for outlier‐free data reporting in data‐gathering sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:qjMakFHDy7sC",
+        "Authors": "LS Jayashree, S Arumugam, AR Meenakshi",
+        "Source": "International Journal of Network Management 18 (5), 437-445, 2008",
+        "Citations": 6,
+        "Year": "2008",
+        "Quartile": "Q2"
+      },
+      {
+        "Title": "Early detection of cognitive impairment of elders using wearable sensors",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:p2g8aNsByqUC",
+        "Authors": "SM Ammal, LS Jayashree",
+        "Source": "Systems Simulation and Modeling for Cloud Computing and Big Data …, 2020",
+        "Citations": 5,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Fuzzy rough set inspired rate adaptation and resource allocation using Hidden Markov Model (FRSIRA-HMM) in mobile ad hoc networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:P5F9QuxV20EC",
+        "Authors": "R Suganya, LS Jayashree",
+        "Source": "Cluster Computing 22 (Suppl 4), 9875-9888, 2019",
+        "Citations": 5,
+        "Year": "2019",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "An Erlang Factor integrated channel allocation method for boosting quality of services in mobile ad hoc networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:CHSYGLWDkRkC",
+        "Authors": "R Suganya, LS Jayashree",
+        "Source": "Computers &amp; Electrical Engineering 66, 139-148, 2018",
+        "Citations": 5,
+        "Year": "2018",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "Edge computing in IoT",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:8AbLer7MMksC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Getting Started with Enterprise Internet of Things: Design Approaches and …, 2020",
+        "Citations": 4,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A hybrid image enhancement scheme for mammographic images",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:xtRiw3GOFMkC",
+        "Authors": "K Akila, LS Jayashree, A Vasuki",
+        "Source": "Advances in Natural and Applied Sciences 10 (6 SE), 26-30, 2016",
+        "Citations": 4,
+        "Year": "2016",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A communication efficient framework for soil moisture monitoring using wireless sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:2osOgNQ5qMEC",
+        "Authors": "LS Jayashree, VK Yamini, RM Priya",
+        "Source": "International Journal of Computer Applications 975, 8887, 2010",
+        "Citations": 4,
+        "Year": "2010",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Design challenges for optimizing the performance of energy constrained wireless sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:9yKSN-GCB0IC",
+        "Authors": "LS Jayashree, S Arumugam",
+        "Source": "2007 International Conference on Signal Processing, Communications and …, 2007",
+        "Citations": 4,
+        "Year": "2007",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "System for classification of human gaits using markerless motion capture sensor",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eMMeJKvmdy0C",
+        "Authors": "K Madhana, LS Jayashree, K Perumal",
+        "Source": "Journal of Enabling Technologies 17 (2), 41-53, 2023",
+        "Citations": 3,
+        "Year": "2023",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "Cloud Solutions for IoT",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:sSrBHYA8nusC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Getting Started with Enterprise Internet of Things: Design Approaches and …, 2020",
+        "Citations": 3,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Enterprise IoT development platforms",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:tS2w5q8j5-wC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Getting started with enterprise Internet of Things: design approaches and …, 2020",
+        "Citations": 3,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Grey wolf optimization-based big data analytics for dengue outbreak prediction",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:KxtntwgDAa4C",
+        "Authors": "R Lakshmi Devi, LS Jayashree",
+        "Source": "Advances in Big Data and Cloud Computing, 385-393, 2018",
+        "Citations": 3,
+        "Year": "2018",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Soil Moisture Forecasting using Ensembles of Classifiers",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:3s1wT3WcHBgC",
+        "Authors": "DLSJ N.Rajathi",
+        "Source": "International Conference on Information and Communication Technology for …, 2015",
+        "Citations": 3,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "LS and MMSE based Localization Algorithm for WSNs amid obstacles",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:yD5IFk8b50cC",
+        "Authors": "ZM Livinsa, S Jayashri",
+        "Source": "Indian Journal of Computer Science and Engineering, 2014",
+        "Citations": 3,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A robust outlier detection scheme for collaborative sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:d1gkVwhDpl0C",
+        "Authors": "LS Jayashree, S Arumugam, K Vijayalakshmi",
+        "Source": "Journal of Digital Information Management 5 (1), 12, 2007",
+        "Citations": 3,
+        "Year": "2007",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "A survey on user privacy preserving blockchain for health insurance using Ethereum smart contract",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:V3AGJWp-ZtQC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "International Journal of Information Privacy, Security and Integrity 5 (2 …, 2021",
+        "Citations": 2,
+        "Year": "2021",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Design and Implementation of Enterprise IoT Solutions",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:B3FOqHPlNUQC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Getting Started with Enterprise Internet of Things: Design Approaches and …, 2020",
+        "Citations": 2,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Combined vibration and RF harvester technique for energy management in sensor device",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:UxriW0iASnsC",
+        "Authors": "C Padmavathy, LS Jayashree, A Rosario",
+        "Source": "International Journal of Networking and Virtual Organisations 19 (2-4), 196-208, 2018",
+        "Citations": 2,
+        "Year": "2018",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "Early Warning System  for Dengue outbreak- a preliminary approach using time series forecasting",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ldfaerwXgEUC",
+        "Authors": "DR L.S Jayashree, Lakshmi Devi.R",
+        "Source": "International Journal of Applied Engineering Research 10 (4), 2015",
+        "Citations": 2,
+        "Year": "2015",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "A Computer-assisted Crack Predicting System for Oil and Gas Pipelines Using Fuzzy Cognitive Map",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:_xSYboBqXhAC",
+        "Authors": "LSJ C. Padmavathy",
+        "Source": "European Journal of Applied Sciences 7 (3), 145-151, 2015",
+        "Citations": 0,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A Computer-assisted Crack Predicting System for Oil and Gas Pipelines Using Fuzzy Cognitive Map",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:M05iB0D1s5AC",
+        "Authors": "CPLS Jayashree",
+        "Source": "European Journal of Applied Science, 2015",
+        "Citations": 2,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Clustering of Data with Mixed Attributes based on Unified Similarity Metric",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:g5m5HwL7SMYC",
+        "Authors": "DLSJ M.Soundaryadevi",
+        "Source": "International Journal of Innovative Research in Computer and Communication …, 2014",
+        "Citations": 2,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A Quantitative Gait Assessment Approach Using a Wearable Device and Its Validation for Different Neurological Disorder Conditions",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eq2jaN3J8jMC",
+        "Authors": "LS Jayashree, K Madhana, VP Kumar, S Swathi, P Soundharyan",
+        "Source": "Topics in Geriatric Rehabilitation 40 (1), 19-36, 2024",
+        "Citations": 1,
+        "Year": "2024",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "Role of Edge Computing to Leverage IoT-Assisted AAL Ecosystem",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:fQNAKQ3IYiAC",
+        "Authors": "K Madhana, LS Jayashree",
+        "Source": "Research Anthology on Edge Computing Protocols, Applications, and …, 2022",
+        "Citations": 1,
+        "Year": "2022",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Introduction to Enterprise IoT",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:geHnlv5EZngC",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Getting Started with Enterprise Internet of Things: Design Approaches and …, 2020",
+        "Citations": 1,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Safest Secure and Consistent Data Services in the Storage of Cloud Computing",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:K3LRdlH-MEoC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
+        "Citations": 1,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A smart agricultural model using iot, mobile, and cloud-based predictive data analytics",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:WbkHhVStYXYC",
+        "Authors": "P Anand Prabu, LS Jayashree",
+        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
+        "Citations": 1,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Longitudinal Study of Mitral Valve Stenosis Prognosis using Deep Learning Techniques",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:N5tVd3kTz84C",
+        "Authors": "LS Jayashree",
+        "Source": "",
+        "Citations": 0,
+        "Year": "2025",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Impact of AI, BC and IoT for Smart Cities",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:LPZeul_q3PIC",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "Blockchain, Internet of Things, and Artificial Intelligence, 179, 2021",
+        "Citations": 0,
+        "Year": "2021",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Architecture for an Enterprise IoT",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:4fKUyHm3Qg0C",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Getting Started with Enterprise Internet of Things: Design Approaches and …, 2020",
+        "Citations": 0,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "The Internet of Things: Connectivity Standards",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:vRqMK49ujn8C",
+        "Authors": "LS Jayashree, G Selvakumar",
+        "Source": "Getting Started with Enterprise Internet of Things: Design Approaches and …, 2020",
+        "Citations": 0,
+        "Year": "2020",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "in the Storage of Cloud Computing",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ye4kPcJQO24C",
+        "Authors": "GM George, LS Jayashree",
+        "Source": "Proceedings of International Conference on Artificial Intelligence, Smart …, 2020",
+        "Citations": 0,
+        "Year": "2020",
+        "Quartile": "Book Chapter / Series"
+      },
+      {
+        "Title": "A Risk Assessment Model for Alzheimer’s Disease Using Fuzzy Cognitive Map",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:uWQEDVKXjbEC",
+        "Authors": "SM Ammal, LS Jayashree",
+        "Source": "Advances in Computerized Analysis in Clinical and Medical Imaging, 209, 2019",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Agent-Based Temperature Monitoring System",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:l7t_Zn2s7bgC",
+        "Authors": "S Jaswanth, LS Jayashree",
+        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A Survey on Medical Image Registration Using Deep Learning Techniques",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:738O_yMBCRsC",
+        "Authors": "MCS Priya, LS Jayashree",
+        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Spectrum Sensing Based on Cascaded Approach for Cognitive Radios",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:Tiz5es2fbqcC",
+        "Authors": "N Iswarya, LS Jayashree",
+        "Source": "International Conference on Artificial Intelligence, Smart Grid and Smart …, 2019",
+        "Citations": 0,
+        "Year": "2019",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "AUTOMATED INTEGRATED CLUSTERING ALGORITHM FOR MAMMOGRAPHIC MASS SEGMENTATION",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:kRWSkSYxWN8C",
+        "Authors": "K Akila, LS Jayashree, A Vasuki",
+        "Source": "Pakistan Journal of Biotechnology 14 (Special II), 6-9, 2017",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "Early detection of breast cancer Using image processing algorithms And estimation of overall risk",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:J-pR_7NvFogC",
+        "Authors": "K Akila, LS Jayashree",
+        "Source": "Anna University, 2017",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Certain investigations on application of soft computing techniques for sensor data processing in precision agriculture applications",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:wbdj-CoPYUoC",
+        "Authors": "N Rajathi, LS Jayashree",
+        "Source": "ANNA UNIVERSITY, 2017",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Application of soft computing techniques for intelligent sensor data aggregation in structural health monitoring",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:1qzjygNMrQYC",
+        "Authors": "S Vijayalakshmi, LS Jayashree",
+        "Source": "ANNA UNIVERSITY, 2017",
+        "Citations": 0,
+        "Year": "2017",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Application of fuzzy cognitive maps for crack categorization in columns of reinforced concrete structures",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:b0M2c_1WBrUC",
+        "Authors": "JS vijayalakhmi",
+        "Source": "Neural Computing &amp; Applications DOI 10.1007/s00521-016-2313-9, 2016",
+        "Citations": 0,
+        "Year": "2016",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "Measuring Various Conflict Decision Policies in Mobile Ad Hoc Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:a0OBvERweLwC",
+        "Authors": "R Suganya, LS Jayashree",
+        "Source": "International Journal of Applied Engineering Research 11 (2), 927-933, 2016",
+        "Citations": 0,
+        "Year": "2016",
+        "Quartile": "Q3"
+      },
+      {
+        "Title": "Application of Fuzzy Cognitive Maps for Coconut yield management in Malabar region of Southern India",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:2P1L_qKh6hAC",
+        "Authors": "KP L. S. Jayashree, Nidhil Palakkal, Elpiniki I. Papageorgiou",
+        "Source": "Neural Computing and Application 26 (8), 1963-1978, 2015",
+        "Citations": 0,
+        "Year": "2015",
+        "Quartile": "Q1"
+      },
+      {
+        "Title": "Forecasting Energy Demands based on Ensemble of Classifiers",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:VOx2b1Wkg3QC",
+        "Authors": "M Soundaryadevi, LS Jayashree",
+        "Source": "",
+        "Citations": 0,
+        "Year": "2015",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Home Energy Management for Energy Conservation using Wireless Sensor Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:u_35RYKgDlwC",
+        "Authors": "LS Jayashree",
+        "Source": "23rd edition of Indian Engineering Congress, 2014",
+        "Citations": 0,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Spatial-Temporal Correlation Aware Soil Moisture monitoring Framework using Wireless Sensor networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:zA6iFVUQeVQC",
+        "Authors": "RV N.Rajathi Dr.L.S.Jayashree",
+        "Source": "23rd edition of Indian Engineering Congress, 2014",
+        "Citations": 0,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Communication  Efficient  Spatial-Temporal  Correlation  aware  Soil  Moisture Monitoring Framework using Wireless Sensor Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:rO6llkc54NcC",
+        "Authors": "RV N.Rajathi Dr.L.S.Jayashree",
+        "Source": "National Ground Water Conference on Problems, Challenges and Management of …, 2014",
+        "Citations": 0,
+        "Year": "2014",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Communication Efficient Spatial-Temporal Correlation aware Soil Moisture Monitoring Framework using Wireless Sensor Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:pqnbT2bcN3wC",
+        "Authors": "RMP L.S.Jayashree V.K.Yamini",
+        "Source": "International Journal of Computer Applications (0975-8887), electrical …, 2013",
+        "Citations": 0,
+        "Year": "2013",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Coverage Problem in Wireless Sensor Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:dfsIfKJdRG4C",
+        "Authors": "JLSAS Roopa Chandrika",
+        "Source": "RTCNC 2006, 252-258, 2006",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Clustering Techniques in Wireless Sensor Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:4OULZ7Gr8RgC",
+        "Authors": "JLSAS Rajathi N.",
+        "Source": "Proceedings of RTCNC 2006, 149-157, 2006",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Robust Data Aggregation Techniques in Wireless Sensor Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:fPk4N6BV_jEC",
+        "Authors": "VJLS Arumugam S",
+        "Source": "RTCNC 2006, 120-127, 2006",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Design Optimizations in Clustered Wireless Sensor Networks: A Survey",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ZHo1McVdvXMC",
+        "Authors": "JLS Arumugam S",
+        "Source": "Indian Journal of Computing Technology 1 (2), 1-14, 2006",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "ESAC: An Energy and Stability Aware Clustering for Heterogeneous Wireless Sensor Networks’",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:SeFeTyx0c_EC",
+        "Authors": "ASRN Jayashree L.S.",
+        "Source": "Journal of Computer Science 1, 421-429, 2006",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Q4"
+      },
+      {
+        "Title": "An Efficient and Fault Tolerant Aggregation Scheme for Distributed Sensor Networks using Modified Z-Score Method",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:HoB7MX3m0LUC",
+        "Authors": "ASVK Jayashree L.S.",
+        "Source": "International Journal of Systemics, Cybernetics and Informatics, 76-81, 2006",
+        "Citations": 0,
+        "Year": "2006",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "A Report on Secure Information Processing in Wireless Sensor Networks",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:cFHS6HbyZ2cC",
+        "Authors": "ASVK Jayashree L.S.",
+        "Source": "International Conference on Information Security (ICIS’05), 192-198, 2005",
+        "Citations": 0,
+        "Year": "2005",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Medical Image Enhancement for Improved Diagnostic Accuracy Using Generative Adversarial Network",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:ZuybSZzF8UAC",
+        "Authors": "B Lakshman Prabhu, LS Jayashree",
+        "Source": "",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "Advancing Cardiac Assessment Through Computational Synthesis in Seismocardiography",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:VL0QpB8kHFEC",
+        "Authors": "SJ MICHAEL GNANARAJ, LS Jayashree",
+        "Source": "Available at SSRN 5153389, 0",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Others"
+      },
+      {
+        "Title": "AISGSC 2019",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:WqliGbK-hY8C",
+        "Authors": "LA Kumar, LS Jayashree, R Manimegalai",
+        "Source": "",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Book Chapter / Series"
+      },
+      {
+        "Title": "Comfort Management and Energy Conservation for Smart Home Environment Using Reinforcement Learning Technique",
+        "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:nb7KW1ujOQ8C",
+        "Authors": "LB Anthony, LS Jayashree",
+        "Source": "Conference on Big Data and Cloud Computing 2017, 65, 0",
+        "Citations": 0,
+        "Year": "",
+        "Quartile": "Others"
+      }
+    ];
 
 
         
