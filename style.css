@@ -1625,13 +1625,14 @@ h6 {
 }
 
 .lightbox-content {
-    max-width: 80%;
-    max-height: 75vh;
+    max-width: 85%;
+    max-height: 88vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: scale(0.95);
     transition: transform var(--transition-normal);
+    box-sizing: border-box;
 }
 
 .lightbox.active .lightbox-content {
@@ -1640,10 +1641,15 @@ h6 {
 
 #lightbox-img {
     max-width: 100%;
-    max-height: 65vh;
+    max-height: 75vh;
     object-fit: contain;
-    border-radius: 4px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+}
+
+.gcp-award-banner a.lightbox-trigger:hover img {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6) !important;
 }
 
 .lightbox-caption {

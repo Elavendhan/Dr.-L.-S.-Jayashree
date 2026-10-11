@@ -219,42 +219,56 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // LIGHTBOX GALLERY FOR CERTIFICATES
+    // LIGHTBOX GALLERY FOR CERTIFICATES & POSTERS
     // ==========================================
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxTitle = document.getElementById('lightbox-title');
     const lightboxDesc = document.getElementById('lightbox-desc');
     const lightboxClose = document.querySelector('.lightbox-close');
-    const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
     
-    lightboxTriggers.forEach(trigger => {
-        trigger.addEventListener('click', (e) => {
+    const openLightbox = (trigger) => {
+        if (!lightbox || !lightboxImg || !trigger) return;
+        const href = trigger.getAttribute('href') || trigger.getAttribute('src') || trigger.querySelector('img')?.getAttribute('src');
+        if (!href) return;
+        
+        // Strip query string and hash when validating extension
+        const cleanHref = href.split('?')[0].split('#')[0].toLowerCase();
+        if (cleanHref.endsWith('.jpg') || cleanHref.endsWith('.jpeg') || cleanHref.endsWith('.png') || cleanHref.endsWith('.webp') || cleanHref.endsWith('.svg') || cleanHref.endsWith('.gif')) {
+            lightboxImg.src = href;
+            lightboxTitle.textContent = trigger.getAttribute('data-title') || trigger.querySelector('img')?.getAttribute('alt') || 'Award / Certificate View';
+            lightboxDesc.textContent = trigger.getAttribute('data-desc') || '';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+
+    // Event delegation catches all current and dynamic .lightbox-trigger elements and renders in page modal
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.lightbox-trigger');
+        if (trigger) {
             e.preventDefault();
-            const href = trigger.getAttribute('src') || trigger.getAttribute('href');
-            
-            // Verify if link points to image
-            if (href && (href.endsWith('.jpg') || href.endsWith('.jpeg') || href.endsWith('.png'))) {
-                lightboxImg.src = href;
-                lightboxTitle.textContent = trigger.getAttribute('data-title') || 'Certificate View';
-                lightboxDesc.textContent = trigger.getAttribute('data-desc') || '';
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-        });
+            openLightbox(trigger);
+        }
     });
     
     const closeLightbox = () => {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
+        if (lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     };
     
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) {
-            closeLightbox();
-        }
-    });
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    }
     
     // Close on Escape key press
     document.addEventListener('keydown', (e) => {
