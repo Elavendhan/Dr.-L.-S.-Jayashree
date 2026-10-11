@@ -358,6 +358,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateDonutChart = () => {
         const total = filteredPublications.length;
         
+        // Defensive check: If database is unpopulated, do not overwrite pre-bound static HTML values
+        if (total === 0 && (!allPublications || allPublications.length === 0)) {
+            return;
+        }
+        
         // Count occurrences
         let counts = { Q1: 0, Q2: 0, Q3: 0, Q4: 0, Others: 0 };
         filteredPublications.forEach(pub => {
