@@ -533,7 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mmNPmLoAAAAJ&amp;pagesize=100&amp;citation_for_view=mmNPmLoAAAAJ:eJXPG6dFmWUC",
         "Authors": "N Iswarya, LS Jayashree",
         "Source": "Wireless Personal Communications 120 (2), 1057-1078, 2021",
-        "Citations": 61,
+        "Citations": 62,
         "Year": "2021",
         "Quartile": "Q2"
       },
