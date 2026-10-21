@@ -2449,7 +2449,7 @@ body.light-theme .orb {
     display: inline-flex;
     align-items: center;
     gap: 0;
-    animation: tickerScroll 42s linear infinite;
+    animation: tickerScroll 68s linear infinite;
     will-change: transform;
     flex-shrink: 0;
 }
