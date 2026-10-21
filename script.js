@@ -1582,5 +1582,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // ==========================================
+    // LATEST ANNOUNCEMENT OVERLAY CONTROLLER (GCP CREDITS)
+    // ==========================================
+    const annOverlay = document.getElementById('announcement-overlay-modal');
+    const annTrigger = document.getElementById('announcement-overlay-trigger');
+    const annCloseBtns = document.querySelectorAll('.ann-close-btn, .ann-modal-close');
+    const annExploreBtn = document.querySelector('.ann-explore-btn');
+
+    const openAnnouncementOverlay = () => {
+        if (annOverlay) {
+            annOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+
+    const closeAnnouncementOverlay = () => {
+        if (annOverlay) {
+            annOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    if (annTrigger) {
+        annTrigger.addEventListener('click', openAnnouncementOverlay);
+    }
+
+    annCloseBtns.forEach(btn => {
+        btn.addEventListener('click', closeAnnouncementOverlay);
+    });
+
+    if (annExploreBtn) {
+        annExploreBtn.addEventListener('click', () => {
+            closeAnnouncementOverlay();
+        });
+    }
+
+    // Auto-open announcement overlay on page load
+    setTimeout(() => {
+        openAnnouncementOverlay();
+    }, 600);
+
 });
 

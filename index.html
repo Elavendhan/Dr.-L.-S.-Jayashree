@@ -40,61 +40,6 @@
 
     <!-- Navigation Header -->
         <header class="main-header">
-        <!-- Top Flashing Announcements / Updates Bar -->
-        <div class="top-announcements-bar">
-            <div class="top-announcements-inner">
-                <div class="top-ann-badge-container">
-                    <span class="top-ann-badge"><i class="fa-solid fa-bullhorn"></i> <span class="badge-full-text">ANNOUNCEMENTS</span></span>
-                    <span class="top-ann-flash-tag">NEW</span>
-                </div>
-                <div class="top-ann-ticker-container">
-                    <div class="top-ann-ticker-content">
-                        <a href="#awards" class="top-ann-item">
-                            <span class="top-ann-star">⭐</span>
-                            <span><strong>Dr L S Jayashree has been awarded USD 30,000 Cloud Credits</strong> from Gemini Academic Research Programme of Google Inc. USA</span>
-                            <span class="top-ann-pill">View Award <i class="fa-solid fa-arrow-right"></i></span>
-                        </a>
-                        <span class="top-ann-dot">•</span>
-                        <a href="#awards" class="top-ann-item">
-                            <span class="top-ann-star">🏆</span>
-                            <span><strong>Finalist of National Teachers Award 2024</strong> &mdash; Ministry of Education, Govt. of India</span>
-                        </a>
-                        <span class="top-ann-dot">•</span>
-                        <a href="#press" class="top-ann-item">
-                            <span class="top-ann-star">📰</span>
-                            <span><strong>Gait Watch shortlisted in DST’s Annual Report 2023-24</strong> &amp; published in PIB portal of Govt of India</span>
-                        </a>
-                        <span class="top-ann-dot">•</span>
-                        <a href="#products" class="top-ann-item">
-                            <span class="top-ann-star">⚙️</span>
-                            <span><strong>4 Healthcare Technologies Transferred</strong> and Commercialized</span>
-                        </a>
-                        <span class="top-ann-dot">•</span>
-                        <!-- Seamless loop duplicate -->
-                        <a href="#awards" class="top-ann-item">
-                            <span class="top-ann-star">⭐</span>
-                            <span><strong>Dr L S Jayashree has been awarded USD 30,000 Cloud Credits</strong> from Gemini Academic Research Programme of Google Inc. USA</span>
-                            <span class="top-ann-pill">View Award <i class="fa-solid fa-arrow-right"></i></span>
-                        </a>
-                        <span class="top-ann-dot">•</span>
-                        <a href="#awards" class="top-ann-item">
-                            <span class="top-ann-star">🏆</span>
-                            <span><strong>Finalist of National Teachers Award 2024</strong> &mdash; Ministry of Education, Govt. of India</span>
-                        </a>
-                        <span class="top-ann-dot">•</span>
-                        <a href="#press" class="top-ann-item">
-                            <span class="top-ann-star">📰</span>
-                            <span><strong>Gait Watch shortlisted in DST’s Annual Report 2023-24</strong> &amp; published in PIB portal of Govt of India</span>
-                        </a>
-                        <span class="top-ann-dot">•</span>
-                        <a href="#products" class="top-ann-item">
-                            <span class="top-ann-star">⚙️</span>
-                            <span><strong>4 Healthcare Technologies Transferred</strong> and Commercialized</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="header-container">
             <a href="#hero" class="logo">
@@ -117,6 +62,11 @@
             </nav>
 
             <div class="header-actions">
+                <button id="announcement-overlay-trigger" class="announcement-btn" title="View Latest Announcement: USD 30,000 GCP Credits" aria-label="View latest announcement">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span class="ann-btn-label">New Announcement</span>
+                    <span class="ann-btn-pulse"></span>
+                </button>
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
                     <i class="fa-solid fa-sun"></i>
                 </button>
@@ -168,7 +118,7 @@
 
         <!-- Hero Section -->
         <section id="hero" class="hero-section scroll-reveal"
-            style="padding-top: 160px; min-height: auto; padding-bottom: 40px;">
+            style="padding-top: 130px; min-height: auto; padding-bottom: 40px;">
             <div class="hero-bg-overlay"></div>
             <div class="hero-bg-grid"></div>
             <div class="hero-bg-orbs">
@@ -246,7 +196,8 @@
                 </div>
 
                 <!-- Side-by-Side Research Impact & Analytics Grid -->
-                
+                
+
 
                 <!-- GCP Gemini Academic Research Programme Award Banner -->
                 <div class="gcp-award-banner reveal-stagger" style="margin: 30px 0 10px 0; border-radius: 16px; overflow: hidden; display: flex; align-items: stretch; gap: 0; background: linear-gradient(135deg, #0f2a6b 0%, #1a3fa8 50%, #0d2255 100%); border: 1px solid rgba(255,215,0,0.3); box-shadow: 0 8px 32px rgba(66,133,244,0.25);">
@@ -302,7 +253,8 @@
                             data-decimals="2">0.00</span>
                         <p class="metric-label">funding mobilized through translational research initiatives</p>
                     </div>
-                </div>
+                </div>
+
 
                 <div class="about-analytics-grid">
                     
@@ -405,71 +357,104 @@
                                         <div class="grid-line"></div>
                                     </div>
                                     
-                                    <div class="chart-bars">
+                                    <div class="chart-bars">
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 51.7%;" data-val="62"><span class="bar-tooltip">62</span></div>
+                                        <div class="chart-bar-col">
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2019</span>
 
-                                        </div>
+                                            <div class="chart-bar" style="height: 51.7%;" data-val="62"><span class="bar-tooltip">62</span></div>
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 63.3%;" data-val="76"><span class="bar-tooltip">76</span></div>
+                                            <span class="bar-year" style="font-size: 0.55rem;">2019</span>
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2020</span>
 
-                                        </div>
+                                        </div>
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 68.3%;" data-val="82"><span class="bar-tooltip">82</span></div>
+                                        <div class="chart-bar-col">
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2021</span>
 
-                                        </div>
+                                            <div class="chart-bar" style="height: 63.3%;" data-val="76"><span class="bar-tooltip">76</span></div>
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 86.7%;" data-val="104"><span class="bar-tooltip">104</span></div>
+                                            <span class="bar-year" style="font-size: 0.55rem;">2020</span>
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2022</span>
 
-                                        </div>
+                                        </div>
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 66.7%;" data-val="80"><span class="bar-tooltip">80</span></div>
+                                        <div class="chart-bar-col">
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2023</span>
 
-                                        </div>
+                                            <div class="chart-bar" style="height: 68.3%;" data-val="82"><span class="bar-tooltip">82</span></div>
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 61.7%;" data-val="74"><span class="bar-tooltip">74</span></div>
+                                            <span class="bar-year" style="font-size: 0.55rem;">2021</span>
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2024</span>
 
-                                        </div>
+                                        </div>
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 51.7%;" data-val="62"><span class="bar-tooltip">62</span></div>
+                                        <div class="chart-bar-col">
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2025</span>
 
-                                        </div>
+                                            <div class="chart-bar" style="height: 86.7%;" data-val="104"><span class="bar-tooltip">104</span></div>
 
-                                        <div class="chart-bar-col">
 
-                                            <div class="chart-bar" style="height: 30.0%;" data-val="36"><span class="bar-tooltip">36</span></div>
+                                            <span class="bar-year" style="font-size: 0.55rem;">2022</span>
 
-                                            <span class="bar-year" style="font-size: 0.55rem;">2026</span>
 
-                                        </div>
+                                        </div>
+
+
+                                        <div class="chart-bar-col">
+
+
+                                            <div class="chart-bar" style="height: 66.7%;" data-val="80"><span class="bar-tooltip">80</span></div>
+
+
+                                            <span class="bar-year" style="font-size: 0.55rem;">2023</span>
+
+
+                                        </div>
+
+
+                                        <div class="chart-bar-col">
+
+
+                                            <div class="chart-bar" style="height: 61.7%;" data-val="74"><span class="bar-tooltip">74</span></div>
+
+
+                                            <span class="bar-year" style="font-size: 0.55rem;">2024</span>
+
+
+                                        </div>
+
+
+                                        <div class="chart-bar-col">
+
+
+                                            <div class="chart-bar" style="height: 51.7%;" data-val="62"><span class="bar-tooltip">62</span></div>
+
+
+                                            <span class="bar-year" style="font-size: 0.55rem;">2025</span>
+
+
+                                        </div>
+
+
+                                        <div class="chart-bar-col">
+
+
+                                            <div class="chart-bar" style="height: 30.0%;" data-val="36"><span class="bar-tooltip">36</span></div>
+
+
+                                            <span class="bar-year" style="font-size: 0.55rem;">2026</span>
+
+
+                                        </div>
+
 
                                     </div>
                                     </div>
@@ -2235,6 +2220,93 @@
 
         </div>
     </footer>
+
+        <!-- ==========================================
+         LATEST ANNOUNCEMENT OVERLAY MODAL (GCP CREDITS)
+         ========================================== -->
+    <div id="announcement-overlay-modal" class="modal announcement-modal">
+        <div class="modal-content announcement-modal-content">
+            <button class="modal-close ann-modal-close" aria-label="Close announcement">&times;</button>
+            <div class="ann-modal-header">
+                <div class="ann-modal-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>LATEST ANNOUNCEMENT</span>
+                </div>
+                <span class="ann-flash-tag">NEW</span>
+            </div>
+            <div class="modal-grid ann-modal-grid">
+                <div class="ann-modal-visual">
+                    <a href="assets/awards_recognitions/linkedin_award_post.png"
+                       class="lightbox-trigger"
+                       data-title="Google Gemini Academic Research Award &mdash; Official LinkedIn Announcement"
+                       data-desc="Dr L S Jayashree, Professor of CSE, PSG College of Technology, awarded USD 30,000 in Google Cloud Credits under Google’s Gemini Academic Research Program to advance Responsible AI models for healthcare applications."
+                       title="Click to zoom announcement">
+                        <img src="assets/awards_recognitions/linkedin_award_post.png"
+                             alt="Dr. L. S. Jayashree Google Gemini Research Award Official LinkedIn Announcement"
+                             class="ann-preview-img">
+                        <div class="ann-img-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</div>
+                    </a>
+                </div>
+                <div class="modal-info ann-modal-info">
+                    <div class="ann-meta-row">
+                        <span class="ann-tag">Google Gemini Academic Research Program</span>
+                        <span class="ann-date">October 2026</span>
+                    </div>
+                    <h2 class="ann-modal-title">Dr. L. S. Jayashree Awarded <span class="text-gold">USD 30,000</span> Google Cloud Credits</h2>
+                    <h3 class="ann-modal-subtitle">To advance Responsible AI models for healthcare applications</h3>
+                    
+                    <p class="ann-modal-desc">
+                        <strong>Dr. L. S. Jayashree</strong>, Professor in the Department of Computer Science &amp; Engineering at <strong>PSG College of Technology</strong>, has been awarded <strong>USD 30,000 in Google Cloud Credits</strong> under Google's <strong>Gemini Academic Research Program</strong>.
+                    </p>
+                    <p class="ann-modal-desc" style="margin-top: -10px;">
+                        The award will support her pioneering research into <em>Responsible AI models for healthcare applications</em>, leveraging Google Cloud high-performance computing resources and Gemini multimodal technologies.
+                    </p>
+
+                    <div class="ann-social-links-title">Official Announcements &amp; Media:</div>
+                    <div class="ann-social-links-grid">
+                        <a href="https://www.linkedin.com/posts/psgandsonscharities-psgcollegeoftechnology-share-7515330083641888769-mc-k/"
+                           target="_blank" rel="noopener noreferrer" class="ann-social-btn ann-linkedin"
+                           title="Open official post on LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn Post</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square ann-ext-icon"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/p/1DVjWSDeNN/"
+                           target="_blank" rel="noopener noreferrer" class="ann-social-btn ann-facebook"
+                           title="Open official post on Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Facebook Post</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square ann-ext-icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/p/DeY1i19D2iN/?vrfl=cGtkbnpqM3o2YzBy"
+                           target="_blank" rel="noopener noreferrer" class="ann-social-btn ann-instagram"
+                           title="Open official post on Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram Post</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square ann-ext-icon"></i>
+                        </a>
+                        <a href="assets/awards_recognitions/gcp_gemini_award_poster.png"
+                           class="lightbox-trigger ann-social-btn ann-poster"
+                           data-title="Google Gemini Academic Research Programme Poster"
+                           data-desc="Dr L S Jayashree has been awarded USD 30,000 Google Cloud Credits under Google’s Gemini Academic Research Program to advance Responsible AI for Healthcare Applications."
+                           title="View Award Poster">
+                            <i class="fa-solid fa-file-image"></i>
+                            <span>Award Poster</span>
+                        </a>
+                    </div>
+
+                    <div class="ann-modal-actions">
+                        <a href="#awards" class="btn btn-primary ann-explore-btn">
+                            <i class="fa-solid fa-award"></i> View in Honors &amp; Awards
+                        </a>
+                        <button type="button" class="btn btn-outline ann-close-btn">
+                            Close &amp; Explore Site
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- PRODUCT MODALS -->
 
