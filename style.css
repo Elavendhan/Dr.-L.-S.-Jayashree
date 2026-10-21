@@ -443,33 +443,34 @@ h6 {
 .ann-modal-visual {
     background: rgba(10, 20, 45, 0.5);
     border-right: 1px solid var(--border-color);
-    padding: 24px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .ann-modal-visual a {
     display: block;
+    width: 100%;
     position: relative;
-    border-radius: 10px;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: none;
+    border: none;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .ann-modal-visual a:hover {
-    transform: scale(1.02);
-    box-shadow: 0 12px 30px rgba(66, 133, 244, 0.35);
+    opacity: 0.96;
 }
 
 .ann-preview-img {
     display: block;
-    width: 100%;
-    max-width: 420px;
+    width: 100% !important;
+    max-width: 100% !important;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0;
     object-fit: cover;
 }
 
@@ -652,10 +653,17 @@ h6 {
     .ann-modal-visual {
         border-right: none;
         border-bottom: 1px solid var(--border-color);
-        padding: 16px;
+        padding: 0;
+        width: 100%;
+    }
+    .ann-modal-visual a {
+        width: 100%;
+        max-width: 100%;
     }
     .ann-preview-img {
-        max-width: 200px;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0;
     }
     .ann-modal-info {
         padding: 20px;
@@ -4715,11 +4723,17 @@ body {
     .ann-modal-visual {
         border-right: none;
         border-bottom: 1px solid var(--border-color);
-        padding: 20px;
+        padding: 0;
+        width: 100%;
+    }
+    .ann-modal-visual a {
+        width: 100%;
+        max-width: 100%;
     }
     .ann-preview-img {
-        max-width: 340px;
-        margin: 0 auto;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0;
     }
     .ann-modal-info {
         padding: 22px 20px;
