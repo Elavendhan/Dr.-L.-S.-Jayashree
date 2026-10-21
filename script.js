@@ -1587,7 +1587,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // LATEST ANNOUNCEMENT OVERLAY CONTROLLER (GCP CREDITS)
     // ==========================================
     const annOverlay = document.getElementById('announcement-overlay-modal');
-    const annTrigger = document.getElementById('announcement-overlay-trigger');
+    const annTriggers = document.querySelectorAll('#announcement-overlay-trigger, #hero-announcement-trigger, .hero-announcement-card');
     const annCloseBtns = document.querySelectorAll('.ann-close-btn, .ann-modal-close');
     const annExploreBtn = document.querySelector('.ann-explore-btn');
 
@@ -1605,9 +1605,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    if (annTrigger) {
-        annTrigger.addEventListener('click', openAnnouncementOverlay);
-    }
+    annTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openAnnouncementOverlay();
+        });
+    });
 
     annCloseBtns.forEach(btn => {
         btn.addEventListener('click', closeAnnouncementOverlay);

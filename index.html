@@ -62,11 +62,6 @@
             </nav>
 
             <div class="header-actions">
-                <button id="announcement-overlay-trigger" class="announcement-btn" title="View Latest Announcement: USD 30,000 GCP Credits" aria-label="View latest announcement">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <span class="ann-btn-label">New Announcement</span>
-                    <span class="ann-btn-pulse"></span>
-                </button>
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
                     <i class="fa-solid fa-sun"></i>
                 </button>
@@ -130,6 +125,24 @@
             <div class="section-container"
                 style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                 
+                <!-- Hero Latest Announcement Card (GCP Credits) -->
+                <div class="hero-announcement-card" id="hero-announcement-card">
+                    <div class="hero-ann-content">
+                        <span class="hero-ann-badge">
+                            <span class="hero-ann-pulse"></span>
+                            <i class="fa-solid fa-bullhorn"></i> LATEST ANNOUNCEMENT
+                        </span>
+                        <div class="hero-ann-text">
+                            <span class="hero-ann-headline">Dr L S Jayashree awarded <strong class="text-gold">USD 30,000</strong> Google Cloud Credits</span>
+                            <span class="hero-ann-sub">Google Gemini Academic Research Program &bull; Responsible AI for Healthcare</span>
+                        </div>
+                    </div>
+                    <button id="hero-announcement-trigger" class="hero-ann-btn" aria-label="View Announcement Details">
+                        <span>View Details</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
                 <!-- (img 1) Profile Wrap Split Layout (Restructured Symmetrically) -->
                 <div class="profile-wrap reveal-stagger">
                     <!-- Left Column (Profile Photo & External Profiles) -->
@@ -234,13 +247,7 @@
                             <div class="spotlight-actions">
                                 <a href="https://www.linkedin.com/posts/psgandsonscharities-psgcollegeoftechnology-share-7515330083641888769-mc-k/"
                                    target="_blank" rel="noopener noreferrer" class="spotlight-btn btn-linkedin">
-                                    <i class="fa-brands fa-linkedin"></i> View on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                                <a href="assets/awards_recognitions/gcp_gemini_award_poster.png"
-                                   class="lightbox-trigger spotlight-btn btn-poster"
-                                   data-title="Google Gemini Academic Research Programme Poster"
-                                   data-desc="Dr L S Jayashree has been awarded USD 30,000 Google Cloud Credits under Google’s Gemini Academic Research Program to advance Responsible AI for Healthcare Applications.">
-                                    <i class="fa-solid fa-file-image"></i> View Poster
+                                    <i class="fa-brands fa-linkedin"></i> View Official LinkedIn Post <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
                         </div>
@@ -2328,8 +2335,7 @@
                 </div>
                 <div class="modal-info ann-modal-info">
                     <div class="ann-meta-row">
-                        <span class="ann-tag">Google Gemini Academic Research Program</span>
-                        <span class="ann-date">October 2026</span>
+                        <span class="ann-date"><i class="fa-regular fa-calendar-days"></i> October 2026</span>
                     </div>
                     <h2 class="ann-modal-title">Dr. L. S. Jayashree Awarded <span class="text-gold">USD 30,000</span> Google Cloud Credits</h2>
                     <h3 class="ann-modal-subtitle">To advance Responsible AI models for healthcare applications</h3>
@@ -2341,30 +2347,48 @@
                         The award will support her pioneering research into <em>Responsible AI models for healthcare applications</em>, leveraging Google Cloud high-performance computing resources and Gemini multimodal technologies.
                     </p>
 
-                    <div class="ann-social-links-title">Official Announcements &amp; Media:</div>
-                    <div class="social-recognition-header" style="margin-bottom: 12px;">
-                        <span class="social-sync-pill" style="font-size: 0.72rem; padding: 3px 10px;">
+                    <div class="ann-social-links-header-row">
+                        <div class="ann-social-links-title">Official Announcements &amp; Media:</div>
+                        <div class="social-sync-pill">
                             <i class="fa-solid fa-clock-rotate-left"></i>
                             <span>Stats as on <strong>20th October 2026</strong></span>
                             <span class="sync-live-dot"></span>
-                        </span>
+                        </div>
                     </div>
 
-                    <div class="social-analytics-cards-grid" style="grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px;">
-                        <a href="https://www.instagram.com/p/DeY1i19D2iN/?vrfl=cGtkbnpqM3o2YzBy" target="_blank" rel="noopener noreferrer" class="social-stat-card instagram-card" style="padding: 12px;">
-                            <div class="stat-card-icon-wrap ig-icon-wrap" style="width: 32px; height: 32px; font-size: 1.1rem;"><i class="fa-brands fa-instagram"></i></div>
-                            <div class="stat-card-body"><span class="stat-card-number" style="font-size: 1.4rem;">8,010</span><span class="stat-card-metric-label" style="font-size: 0.8rem;">Likes</span><span class="stat-card-subtext" style="font-size: 0.72rem;">791 comments</span></div>
-                            <div class="stat-card-footer" style="padding-top: 6px; font-size: 0.7rem;"><span>Instagram ↗</span></div>
+                    <div class="ann-social-links-grid-large">
+                        <a href="https://www.linkedin.com/posts/psgandsonscharities-psgcollegeoftechnology-share-7515330083641888769-mc-k/"
+                           target="_blank" rel="noopener noreferrer" class="ann-social-large-btn ann-li-btn" title="View official LinkedIn announcement">
+                            <div class="ann-large-icon-box li-icon-box">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div class="ann-btn-content">
+                                <span class="ann-btn-platform">LinkedIn Post</span>
+                                <span class="ann-btn-stats" id="modal-social-li">1,722+ Reactions &bull; 97 comments</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square ann-ext-icon"></i>
                         </a>
-                        <a href="https://www.facebook.com/share/p/1DVjWSDeNN/" target="_blank" rel="noopener noreferrer" class="social-stat-card facebook-card" style="padding: 12px;">
-                            <div class="stat-card-icon-wrap fb-icon-wrap" style="width: 32px; height: 32px; font-size: 1.1rem;"><i class="fa-brands fa-facebook"></i></div>
-                            <div class="stat-card-body"><span class="stat-card-number" style="font-size: 1.4rem;">5K+</span><span class="stat-card-metric-label" style="font-size: 0.8rem;">Reactions</span><span class="stat-card-subtext" style="font-size: 0.72rem;">742 comments</span></div>
-                            <div class="stat-card-footer" style="padding-top: 6px; font-size: 0.7rem;"><span>Facebook ↗</span></div>
+                        <a href="https://www.facebook.com/share/p/1DVjWSDeNN/"
+                           target="_blank" rel="noopener noreferrer" class="ann-social-large-btn ann-fb-btn" title="View official Facebook announcement">
+                            <div class="ann-large-icon-box fb-icon-box">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="ann-btn-content">
+                                <span class="ann-btn-platform">Facebook Post</span>
+                                <span class="ann-btn-stats" id="modal-social-fb">5K+ Reactions &bull; 742 comments</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square ann-ext-icon"></i>
                         </a>
-                        <a href="https://www.linkedin.com/posts/psgandsonscharities-psgcollegeoftechnology-share-7515330083641888769-mc-k/" target="_blank" rel="noopener noreferrer" class="social-stat-card linkedin-card" style="padding: 12px;">
-                            <div class="stat-card-icon-wrap li-icon-wrap" style="width: 32px; height: 32px; font-size: 1.1rem;"><i class="fa-brands fa-linkedin"></i></div>
-                            <div class="stat-card-body"><span class="stat-card-number" style="font-size: 1.4rem;">1,681+</span><span class="stat-card-metric-label" style="font-size: 0.8rem;">Reactions</span><span class="stat-card-subtext" style="font-size: 0.72rem;">97 comments</span></div>
-                            <div class="stat-card-footer" style="padding-top: 6px; font-size: 0.7rem;"><span>LinkedIn ↗</span></div>
+                        <a href="https://www.instagram.com/p/DeY1i19D2iN/?vrfl=cGtkbnpqM3o2YzBy"
+                           target="_blank" rel="noopener noreferrer" class="ann-social-large-btn ann-ig-btn" title="View official Instagram announcement">
+                            <div class="ann-large-icon-box ig-icon-box">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="ann-btn-content">
+                                <span class="ann-btn-platform">Instagram Post</span>
+                                <span class="ann-btn-stats" id="modal-social-ig">8,010 Likes &bull; 791 comments</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square ann-ext-icon"></i>
                         </a>
                     </div>
 

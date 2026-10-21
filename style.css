@@ -372,8 +372,8 @@ h6 {
 }
 
 .announcement-modal-content {
-    max-width: 960px;
-    width: 92%;
+    max-width: 1120px;
+    width: 94%;
     max-height: 90vh;
     border-radius: 18px;
     overflow: hidden;
@@ -435,7 +435,7 @@ h6 {
 
 .ann-modal-grid {
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 460px 1fr;
     overflow-y: auto;
     max-height: calc(90vh - 58px);
 }
@@ -467,7 +467,7 @@ h6 {
 .ann-preview-img {
     display: block;
     width: 100%;
-    max-width: 290px;
+    max-width: 420px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -4444,6 +4444,287 @@ body {
         max-width: 200px;
     }
     .social-analytics-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Hero Section Announcement Card (GCP Credits) */
+.hero-announcement-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 14px 22px;
+    margin-bottom: 28px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(10, 27, 68, 0.88) 0%, rgba(17, 38, 86, 0.88) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 20px rgba(66, 133, 244, 0.2);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+[data-theme="light"] .hero-announcement-card {
+    background: linear-gradient(135deg, rgba(238, 244, 255, 0.95) 0%, rgba(225, 238, 255, 0.95) 100%);
+    border: 1px solid rgba(66, 133, 244, 0.35);
+    box-shadow: 0 8px 24px rgba(66, 133, 244, 0.15);
+}
+
+.hero-announcement-card:hover {
+    border-color: #FFD700;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 215, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.hero-ann-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-ann-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+}
+
+.hero-ann-pulse {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: flash-badge-blink 1.2s infinite;
+}
+
+.hero-ann-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.hero-ann-headline {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.35;
+}
+
+.hero-ann-headline .text-gold {
+    color: #FFD700;
+    font-weight: 800;
+}
+
+[data-theme="light"] .hero-ann-headline .text-gold {
+    color: #b45309;
+}
+
+.hero-ann-sub {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.hero-ann-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 20px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, var(--accent-color), #2563eb);
+    color: #ffffff;
+    border: none;
+    font-size: 0.84rem;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+    font-family: var(--font-body);
+}
+
+.hero-ann-btn:hover {
+    background: linear-gradient(135deg, #2563eb, var(--accent-color));
+    transform: translateX(3px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+}
+
+/* Modal Large Social Announcement Buttons */
+.ann-social-links-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 10px 0 10px 0;
+    flex-wrap: wrap;
+}
+
+.ann-social-links-grid-large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.ann-social-large-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.ann-large-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.ann-large-icon-box.li-icon-box {
+    color: #0A66C2;
+    background: rgba(10, 102, 194, 0.12);
+    border: 1px solid rgba(10, 102, 194, 0.25);
+}
+
+.ann-large-icon-box.fb-icon-box {
+    color: #1877F2;
+    background: rgba(24, 119, 242, 0.12);
+    border: 1px solid rgba(24, 119, 242, 0.25);
+}
+
+.ann-large-icon-box.ig-icon-box {
+    color: #E1306C;
+    background: rgba(225, 48, 108, 0.12);
+    border: 1px solid rgba(225, 48, 108, 0.25);
+}
+
+.ann-social-large-btn .ann-btn-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+}
+
+.ann-social-large-btn .ann-btn-platform {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.25;
+}
+
+.ann-social-large-btn .ann-btn-stats {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 3px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ann-social-large-btn .ann-ext-icon {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: transform 0.2s ease, color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.ann-social-large-btn.ann-li-btn:hover {
+    border-color: #0A66C2;
+    box-shadow: 0 6px 18px rgba(10, 102, 194, 0.25);
+    transform: translateY(-2px);
+}
+.ann-social-large-btn.ann-li-btn:hover .ann-large-icon-box {
+    background: #0A66C2;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.ann-social-large-btn.ann-fb-btn:hover {
+    border-color: #1877F2;
+    box-shadow: 0 6px 18px rgba(24, 119, 242, 0.25);
+    transform: translateY(-2px);
+}
+.ann-social-large-btn.ann-fb-btn:hover .ann-large-icon-box {
+    background: #1877F2;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.ann-social-large-btn.ann-ig-btn:hover {
+    border-color: #E1306C;
+    box-shadow: 0 6px 18px rgba(225, 48, 108, 0.25);
+    transform: translateY(-2px);
+}
+.ann-social-large-btn.ann-ig-btn:hover .ann-large-icon-box {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.ann-social-large-btn:hover .ann-ext-icon {
+    transform: translate(2px, -2px);
+    color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+    .hero-announcement-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+    .hero-ann-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+    .hero-ann-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .ann-modal-grid {
+        grid-template-columns: 1fr;
+    }
+    .ann-modal-visual {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 20px;
+    }
+    .ann-preview-img {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+    .ann-modal-info {
+        padding: 22px 20px;
+    }
+    .ann-social-links-grid-large {
         grid-template-columns: 1fr;
     }
 }

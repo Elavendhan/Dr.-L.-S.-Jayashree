@@ -183,6 +183,23 @@ if os.path.exists(html_path):
         html
     )
 
+    # Update Modal Button Stats
+    html = re.sub(
+        r'(id="modal-social-li"[^>]*>)[^<]+(</span>)',
+        rf'\g<1>{li["reactions_display"]} Reactions &bull; {li["comments"]} comments\g<2>',
+        html
+    )
+    html = re.sub(
+        r'(id="modal-social-fb"[^>]*>)[^<]+(</span>)',
+        rf'\g<1>{fb["reactions_display"]} Reactions &bull; {fb["comments"]} comments\g<2>',
+        html
+    )
+    html = re.sub(
+        r'(id="modal-social-ig"[^>]*>)[^<]+(</span>)',
+        rf'\g<1>{ig["likes_display"]} Likes &bull; {ig["comments"]} comments\g<2>',
+        html
+    )
+
     with open(html_path, "w", encoding="utf-8", newline="") as f:
         f.write(html)
     print("Updated index.html social media analytics numbers and date stamp successfully!")
