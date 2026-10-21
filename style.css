@@ -433,59 +433,39 @@ h6 {
     color: #ffffff;
 }
 
+div.modal.announcement-modal .modal-grid,
 .ann-modal-grid {
-    display: grid;
-    grid-template-columns: 460px 1fr;
-    overflow-y: auto;
-    max-height: calc(90vh - 58px);
+    display: grid !important;
+    grid-template-columns: 480px 1fr !important;
+    overflow-y: auto !important;
+    max-height: calc(90vh - 58px) !important;
 }
 
+div.modal.announcement-modal .ann-modal-visual,
 .ann-modal-visual {
-    background: rgba(10, 20, 45, 0.5);
-    border-right: 1px solid var(--border-color);
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.ann-modal-visual a {
-    display: block;
-    width: 100%;
-    position: relative;
-    border-radius: 0;
-    overflow: hidden;
-    box-shadow: none;
-    border: none;
-    transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.ann-modal-visual a:hover {
-    opacity: 0.96;
-}
-
-.ann-preview-img {
-    display: block;
+    background: rgba(10, 20, 45, 0.6) !important;
+    border-right: 1px solid var(--border-color) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
     width: 100% !important;
     max-width: 100% !important;
-    height: auto;
-    border-radius: 0;
-    object-fit: cover;
+    overflow: hidden !important;
 }
 
-.ann-img-overlay {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    background: rgba(11, 15, 25, 0.85);
-    color: #ffffff;
-    font-size: 0.72rem;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 14px;
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+div.modal.announcement-modal .ann-preview-img,
+.ann-preview-img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .ann-modal-info {
