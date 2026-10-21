@@ -1,4 +1,4 @@
-name: Auto Sync Google Scholar Publications
+name: Auto Sync Google Scholar Publications & Social Analytics
 
 on:
   schedule:
@@ -32,15 +32,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Publication Synchronizer
+      - name: Run Synchronizers
         run: |
           python scripts/update_publications.py
+          python scripts/update_social_analytics.py
 
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-sync: Update publications & citation metrics from Google Scholar [skip ci]"
-          file_pattern: "publications.json script.js index.html quartiles_lookup.json"
+          commit_message: "Auto-sync: Update publications, citation metrics & social analytics [skip ci]"
+          file_pattern: "publications.json script.js index.html quartiles_lookup.json social_analytics.json"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"

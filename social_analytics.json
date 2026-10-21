@@ -1,0 +1,41 @@
+{
+  "last_updated": "20th October 2026",
+  "last_updated_iso": "2026-10-20",
+  "award": {
+    "title": "Google Cloud credits",
+    "amount": "$30,000",
+    "program": "Google's Gemini Academic Research Program",
+    "focus": "Responsible AI models for healthcare applications",
+    "recipient": "Dr. L. S. Jayashree"
+  },
+  "platforms": {
+    "instagram": {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/p/DeY1i19D2iN/?vrfl=cGtkbnpqM3o2YzBy",
+      "likes": 8010,
+      "likes_display": "8,010",
+      "comments": 791,
+      "reposts": 37,
+      "metrics_summary": "8,010 likes \u00b7 791 comments \u00b7 37 reposts"
+    },
+    "facebook": {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/share/p/1DVjWSDeNN/",
+      "reactions": 5000,
+      "reactions_display": "5K+",
+      "comments": 742,
+      "shares": 177,
+      "metrics_summary": "5K+ reactions \u00b7 742 comments \u00b7 177 shares"
+    },
+    "linkedin": {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/psgandsonscharities-psgcollegeoftechnology-share-7515330083641888769-mc-k/",
+      "reactions": 1722,
+      "reactions_display": "1,722+",
+      "comments": 97,
+      "reposts": 6,
+      "followers": 13435,
+      "metrics_summary": "1,722+ reactions \u00b7 97 comments \u00b7 6 reposts \u00b7 13,435 followers*"
+    }
+  }
+}
