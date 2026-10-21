@@ -369,20 +369,24 @@ h6 {
 /* Announcement Overlay Modal */
 .announcement-modal {
     z-index: 1250 !important;
+    overflow-x: hidden !important;
 }
 
+div.modal.announcement-modal .modal-content,
 .announcement-modal-content {
-    max-width: 1120px;
-    width: 94%;
-    max-height: 90vh;
-    border-radius: 18px;
-    overflow: hidden;
-    padding: 0;
-    background: var(--bg-secondary);
-    border: 1px solid rgba(255, 215, 0, 0.35);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 40px rgba(66, 133, 244, 0.25);
-    display: flex;
-    flex-direction: column;
+    max-width: 1040px !important;
+    width: 92% !important;
+    max-height: 88vh !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    padding: 0 !important;
+    background: var(--bg-secondary) !important;
+    border: 1px solid rgba(255, 215, 0, 0.35) !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 40px rgba(66, 133, 244, 0.25) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
 }
 
 .ann-modal-header {
@@ -392,6 +396,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .ann-modal-badge {
@@ -436,9 +441,13 @@ h6 {
 div.modal.announcement-modal .modal-grid,
 .ann-modal-grid {
     display: grid !important;
-    grid-template-columns: 480px 1fr !important;
+    grid-template-columns: minmax(320px, 390px) minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
     overflow-y: auto !important;
-    max-height: calc(90vh - 58px) !important;
+    max-height: calc(88vh - 58px) !important;
+    box-sizing: border-box !important;
 }
 
 div.modal.announcement-modal .ann-modal-visual,
@@ -450,7 +459,9 @@ div.modal.announcement-modal .ann-modal-visual,
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
+    min-width: 0 !important;
     overflow: hidden !important;
+    box-sizing: border-box !important;
 }
 
 div.modal.announcement-modal .ann-preview-img,
@@ -468,11 +479,16 @@ div.modal.announcement-modal .ann-preview-img,
     padding: 0 !important;
 }
 
+div.modal.announcement-modal .ann-modal-info,
 .ann-modal-info {
-    padding: 28px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 24px 28px !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
 }
 
 .ann-meta-row {
@@ -4550,137 +4566,117 @@ body {
     box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
 }
 
-/* Modal Large Social Announcement Buttons */
+/* Modal Large Social Announcement Buttons (Image 2 Match & Zero Overflow) */
 .ann-social-links-header-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    margin: 10px 0 10px 0;
+    gap: 10px;
+    margin: 8px 0 8px 0;
     flex-wrap: wrap;
 }
 
 .ann-social-links-grid-large {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 20px;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    margin: 10px 0 10px 0 !important;
+    box-sizing: border-box !important;
 }
 
 .ann-social-large-btn {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 14px;
-    border-radius: 12px;
-    text-decoration: none;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    transition: all 0.25s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    position: relative;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    padding: 10px 12px !important;
+    border-radius: 10px !important;
+    text-decoration: none !important;
+    background: var(--card-bg) !important;
+    border: 1.5px solid var(--border-color) !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    transition: all 0.2s ease !important;
 }
 
-.ann-large-icon-box {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    flex-shrink: 0;
-    transition: transform 0.25s ease;
-}
-
-.ann-large-icon-box.li-icon-box {
-    color: #0A66C2;
-    background: rgba(10, 102, 194, 0.12);
-    border: 1px solid rgba(10, 102, 194, 0.25);
-}
-
-.ann-large-icon-box.fb-icon-box {
-    color: #1877F2;
-    background: rgba(24, 119, 242, 0.12);
-    border: 1px solid rgba(24, 119, 242, 0.25);
-}
-
-.ann-large-icon-box.ig-icon-box {
-    color: #E1306C;
-    background: rgba(225, 48, 108, 0.12);
-    border: 1px solid rgba(225, 48, 108, 0.25);
-}
-
-.ann-social-large-btn .ann-btn-content {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    flex: 1;
+.ann-social-large-btn .ann-brand-icon {
+    font-size: 1.4rem !important;
+    flex-shrink: 0 !important;
 }
 
 .ann-social-large-btn .ann-btn-platform {
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    line-height: 1.25;
-}
-
-.ann-social-large-btn .ann-btn-stats {
-    font-size: 0.72rem;
-    color: var(--text-muted);
-    margin-top: 3px;
-    font-weight: 500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    flex: 1 !important;
+    text-align: left !important;
 }
 
 .ann-social-large-btn .ann-ext-icon {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    transition: transform 0.2s ease, color 0.2s ease;
-    flex-shrink: 0;
+    font-size: 0.72rem !important;
+    color: var(--text-muted) !important;
+    flex-shrink: 0 !important;
 }
 
+.ann-social-large-btn.ann-li-btn {
+    border-color: rgba(10, 102, 194, 0.45) !important;
+}
+.ann-social-large-btn.ann-li-btn .ann-brand-icon {
+    color: #0A66C2 !important;
+}
 .ann-social-large-btn.ann-li-btn:hover {
-    border-color: #0A66C2;
-    box-shadow: 0 6px 18px rgba(10, 102, 194, 0.25);
-    transform: translateY(-2px);
-}
-.ann-social-large-btn.ann-li-btn:hover .ann-large-icon-box {
-    background: #0A66C2;
-    color: #ffffff;
-    transform: scale(1.05);
+    border-color: #0A66C2 !important;
+    background: rgba(10, 102, 194, 0.12) !important;
+    transform: translateY(-1px) !important;
 }
 
+.ann-social-large-btn.ann-fb-btn {
+    border-color: rgba(24, 119, 242, 0.45) !important;
+}
+.ann-social-large-btn.ann-fb-btn .ann-brand-icon {
+    color: #1877F2 !important;
+}
 .ann-social-large-btn.ann-fb-btn:hover {
-    border-color: #1877F2;
-    box-shadow: 0 6px 18px rgba(24, 119, 242, 0.25);
-    transform: translateY(-2px);
-}
-.ann-social-large-btn.ann-fb-btn:hover .ann-large-icon-box {
-    background: #1877F2;
-    color: #ffffff;
-    transform: scale(1.05);
+    border-color: #1877F2 !important;
+    background: rgba(24, 119, 242, 0.12) !important;
+    transform: translateY(-1px) !important;
 }
 
+.ann-social-large-btn.ann-ig-btn {
+    border-color: rgba(225, 48, 108, 0.45) !important;
+}
+.ann-social-large-btn.ann-ig-btn .ann-brand-icon {
+    color: #E1306C !important;
+}
 .ann-social-large-btn.ann-ig-btn:hover {
-    border-color: #E1306C;
-    box-shadow: 0 6px 18px rgba(225, 48, 108, 0.25);
-    transform: translateY(-2px);
-}
-.ann-social-large-btn.ann-ig-btn:hover .ann-large-icon-box {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    color: #ffffff;
-    transform: scale(1.05);
+    border-color: #E1306C !important;
+    background: rgba(225, 48, 108, 0.12) !important;
+    transform: translateY(-1px) !important;
 }
 
-.ann-social-large-btn:hover .ann-ext-icon {
-    transform: translate(2px, -2px);
-    color: var(--text-primary);
+.ann-social-stats-summary {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-size: 0.74rem !important;
+    color: var(--text-secondary) !important;
+    margin-bottom: 16px !important;
+    flex-wrap: wrap !important;
 }
 
-@media (max-width: 900px) {
+.ann-social-stats-summary span {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+@media (max-width: 860px) {
     .hero-announcement-card {
         flex-direction: column;
         align-items: flex-start;
@@ -4697,28 +4693,31 @@ body {
         width: 100%;
         justify-content: center;
     }
+    div.modal.announcement-modal .modal-grid,
     .ann-modal-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
+    div.modal.announcement-modal .ann-modal-visual,
     .ann-modal-visual {
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
-        padding: 0;
-        width: 100%;
+        border-right: none !important;
+        border-bottom: 1px solid var(--border-color) !important;
+        padding: 0 !important;
+        width: 100% !important;
     }
-    .ann-modal-visual a {
-        width: 100%;
-        max-width: 100%;
-    }
+    div.modal.announcement-modal .ann-preview-img,
     .ann-preview-img {
         width: 100% !important;
         max-width: 100% !important;
-        margin: 0;
+        margin: 0 !important;
     }
+    div.modal.announcement-modal .ann-modal-info,
     .ann-modal-info {
-        padding: 22px 20px;
+        padding: 20px 18px !important;
     }
+}
+
+@media (max-width: 580px) {
     .ann-social-links-grid-large {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }

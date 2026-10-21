@@ -185,18 +185,18 @@ if os.path.exists(html_path):
 
     # Update Modal Button Stats
     html = re.sub(
-        r'(id="modal-social-li"[^>]*>)[^<]+(</span>)',
-        rf'\g<1>{li["reactions_display"]} Reactions &bull; {li["comments"]} comments\g<2>',
+        r'(id="modal-social-li"[^>]*>)[^<]+(</strong>)',
+        rf'\g<1>{li["reactions_display"]}\g<2>',
         html
     )
     html = re.sub(
-        r'(id="modal-social-fb"[^>]*>)[^<]+(</span>)',
-        rf'\g<1>{fb["reactions_display"]} Reactions &bull; {fb["comments"]} comments\g<2>',
+        r'(id="modal-social-fb"[^>]*>)[^<]+(</strong>)',
+        rf'\g<1>{fb["reactions_display"]}\g<2>',
         html
     )
     html = re.sub(
-        r'(id="modal-social-ig"[^>]*>)[^<]+(</span>)',
-        rf'\g<1>{ig["likes_display"]} Likes &bull; {ig["comments"]} comments\g<2>',
+        r'(id="modal-social-ig"[^>]*>)[^<]+(</strong>)',
+        rf'\g<1>{ig["likes_display"]}\g<2>',
         html
     )
 
